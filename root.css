@@ -1,0 +1,206 @@
+:root{
+
+/* //////////// CORES ////////////*/
+/* Primary Color: #6000AC*/
+
+  /*BG*/
+
+  --BG-Purple-1: #FDFCFF;
+  --BG-Purple-2: #FAF8FF;
+
+  /*Componentes Interativos*/
+
+  --BG-Component-Normal: #F5EEFF;
+  --BG-Component-Hover: #EDE2FF;
+  --BG-Component-Pressed-Selected: #E5D5FF;
+
+  /*Bordas e Separadores*/
+
+  --Borda-Sutil: #DAC4FF;
+  --Bord-Sutil-Interativa: #CBAEFF; 
+  --Borda-Forte: #DAC4FF; 
+
+  /*Cores Puras - Solid*/
+
+  --Solid-Normal: #6000AC;
+  --Solid-Hover: #4F008E;
+
+  /*Texto*/ 
+
+  --Text-Baixo-Contraste: #7C36CF;
+  --Text-Alto-Constraste: #3E176B;
+
+/* Secondary Color: #009C85*/
+
+  /*BG*/
+
+  --BG-Verde-1: #FAFEFD;
+  --BG-Verde-2: #F3FBF9;
+
+  /*Componentes Interativos*/
+
+  --BG-Component-Normal: #DFF9F2; 
+  --BG-Component-Hover: #CCF3E9; 
+  --BG-Component-Pressed-Selected: #B7EBDE; 
+
+  /*Bordas e Separadores*/
+
+  --Borda-Sutil: #A0DFD0; 
+  --Borda-Sutil-Interativa: #81CFBD; 
+  --Borda-Forte: #4EBAA5;
+
+  /*Cores Puras - Solid*/
+
+  --Solid-Normal: #009C85;
+  --Solid-Hover: #009C85; 
+
+  /*Texto*/
+
+  --Text-Baixo-Contraste: #009C85; 
+  --Text-Alto-Contraste: #0E3D34; 
+
+
+/*Gray Scale: #8B8D98*/ 
+
+  /*BG*/
+
+  --BG-Verde-1: #FCFCFD;
+  --BG-Verde-2: #F9F9FB;
+
+  /*Componentes Interativos*/
+
+  --BG-Component-Normal: #EFF0F3; 
+  --BG-Component-Hover: #E7E8EC; 
+  --BG-Component-Pressed-Selected: #E0E1E6; 
+
+  /*Bordas e Separadores*/
+
+  --Borda-Sutil: #D8D9E0; 
+  --Borda-Sutil-Interativa: #CDCED7; 
+  --Borda-Forte: #B9BBC6;
+
+  /*Cores Puras - Solid*/
+
+  --Solid-Normal: #8B8D98;
+  --Solid-Hover: #80828D; 
+
+  /*Texto*/
+
+  --Text-Baixo-Contraste: #62636C; 
+  --Text-Alto-Contraste: #1E1F24;  
+
+
+/*Semantic Colors*/ 
+
+/*Success*/
+
+--Success-100: #E7FBD6;  /*Light Color_ Lighter*/
+--Success-200-Light: #C8F8AE;  /*Light Color_ Light*/
+--Success-300-Light_Active: #9DE881;  /*Light Color_ LightActive*/
+--Success-400-Light_Hover: #75D25F;  /*Light Color_ LightHover*/
+--Success-500-Normal: #40B530; /*Solid Color_ Cor principal*/
+--Success-600-Dark_Hover: #289B24; /*Dark Color_ Hover*/
+--Success-700-Dark_Active: #18821D; /*Dark Color_ Active*/
+--Success-800: #0F6719; /*Dark Color_ Dark*/
+
+/*Info*/
+
+--Info-100: #C8F3FA; /*Light Color_ Lighter*/
+--Info-200-Light: #94E0F7; /*Light Color_ Light*/
+--Info-300-Light_Active: #5BBFE3;  /*Light Color_ LightActive*/
+--Info-400-Light_Hover: #3195C7; /*Light Color_ LightHover*/
+--Info-500-Normal: #0064A2; /*Solid Color_ Cor principal*/
+--Info-600-Dark_Hover: #004D8B; /*Dark Color_ Hover*/
+--Info-700-Dark_Active: #013976; /*Dark Color_ Active*/
+--Info-800: #00295D; /*Dark Color_ Dark*/
+
+/*Warning*/
+
+--Warning-100: #FDEDCB; /*Light Color_ Lighter*/
+--Warning-200-Light: #FDD599; /*Light Color_ Light*/
+--Warning-300-Light_Active: #F4B663;  /*Light Color_ LightActive*/
+--Warning-400-Light_Hover: #EC973C; /*Light Color_ LightHover*/
+--Warning-500-Normal: #E06901; /*Solid Color_ Cor principal*/
+--Warning-600-Dark_Hover: #C04F01; /*Dark Color_ Hover*/
+--Warning-700-Dark_Active: #A13A00; /*Dark Color_ Active*/
+--Warning-800: #802700; /*Dark Color_ Dark*/
+  
+/*Danger*/
+
+--Danger-100: #FADCD1; /*Light Color_ Lighter*/
+--Danger-200-Light: #F7B2A3; /*Light Color_ Light*/
+--Danger-300-Light_Active: #E97D73;  /*Light Color_ LightActive*/
+--Danger-400-Light_Hover: #D44E4F; /*Light Color_ LightHover*/
+--Danger-500-Normal: #BA1D2E; /*Solid Color_ Cor principal*/
+--Danger-600-Dark_Hover: #9F152F; /*Dark Color_ Hover*/
+--Danger-700-Dark_Active: #850D30; /*Dark Color_ Active*/
+--Danger-800: #6B092F; /*Dark Color_ Dark*/
+
+
+
+/* //////////// Variáveis de Estilo ////////////*/
+  
+/* BORDER RADIUS*/ 
+
+--border-radius-xs: 4px; 
+--border-radius-sm: 8px; 
+--border-radius-md: 12px; 
+--border-radius-pill: 1000000px; 
+
+/* PADDING */
+
+--padding-2xs: 2px;
+--padding-xs: 4px; 
+--padding-sm: 8px; /* para botões */
+--padding-md: 12px;
+--padding-lg: 16px;
+--padding-xl: 24px; /* áeras tipo categoria*/
+--padding-2xl: 32px;
+--padding-3xl: 40px;
+
+    
+/* Tipografia */
+
+--line-height: 2.4rem;
+
+/*Título*/
+
+--titulo-size: 2rem;
+--titulo-weight-7: 700; 
+
+/* Título de seção*/
+
+--titulo-secao-size: 1.6875rem;
+--titulo-weight-6: 600; 
+
+/* Subtítulo */
+
+--Subtitulo-size: 1.4375rem;
+--titulo-weight-5: 500; 
+
+/* Parágrafo Bold */
+
+--paragrafo-size: 1rem;
+--titulo-weight-4: 500;   
+    
+/* Parágrafo */
+
+--paragrafo-size: 1rem;
+--titulo-weight-4: 400;   
+
+/* Legenda Bold*/
+
+--legenda-size: 0.75rem;
+--titulo-weight: 400;
+
+/* Legenda*/
+
+--legenda-size: 0.75rem;
+--titulo-weight: 400;
+    
+
+
+
+
+
+}
