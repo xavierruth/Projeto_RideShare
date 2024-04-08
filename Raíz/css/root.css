@@ -10,25 +10,25 @@
 
   /*Componentes Interativos*/
 
-  --BG-Component-Normal: #F5EEFF;
-  --BG-Component-Hover: #EDE2FF;
-  --BG-Component-Pressed-Selected: #E5D5FF;
+  --BG-PURPLE-Component-Normal: #F5EEFF;
+  --BG-PURPLE-Component-Hover: #EDE2FF;
+  --BG-PURPLE-Component-Pressed-Selected: #E5D5FF;
 
   /*Bordas e Separadores*/
 
-  --Borda-Sutil: #DAC4FF;
-  --Bord-Sutil-Interativa: #CBAEFF; 
-  --Borda-Forte: #DAC4FF; 
+  --Borda-PURPLE-Sutil: #DAC4FF;
+  --Bord-PURPLE-Sutil-Interativa: #CBAEFF; 
+  --Borda-PURPLE-Forte: #DAC4FF; 
 
   /*Cores Puras - Solid*/
 
-  --Solid-Normal: #6000AC;
-  --Solid-Hover: #4F008E;
+  --Solid-PURPLE-Normal: #6000AC;
+  --Solid-PURPLE-Hover: #4F008E;
 
   /*Texto*/ 
 
-  --Text-Baixo-Contraste: #7C36CF;
-  --Text-Alto-Constraste: #3E176B;
+  --Text-PURPLE-Baixo-Contraste: #7C36CF;
+  --Text-PURPLE-Alto-Constraste: #3E176B;
 
 /* Secondary Color: #009C85*/
 
@@ -39,55 +39,55 @@
 
   /*Componentes Interativos*/
 
-  --BG-Component-Normal: #DFF9F2; 
-  --BG-Component-Hover: #CCF3E9; 
-  --BG-Component-Pressed-Selected: #B7EBDE; 
+  --BG-Verde-Component-Normal: #DFF9F2; 
+  --BG-Verde-Component-Hover: #CCF3E9; 
+  --BG-Verde-Component-Pressed-Selected: #B7EBDE; 
 
   /*Bordas e Separadores*/
 
-  --Borda-Sutil: #A0DFD0; 
-  --Borda-Sutil-Interativa: #81CFBD; 
-  --Borda-Forte: #4EBAA5;
+  --Borda-Verde-Sutil: #A0DFD0; 
+  --Borda-Verde-Sutil-Interativa: #81CFBD; 
+  --Borda-Verde-Forte: #4EBAA5;
 
   /*Cores Puras - Solid*/
 
-  --Solid-Normal: #009C85;
-  --Solid-Hover: #009C85; 
+  --Solid-Verde-Normal: #009C85;
+  --Solid-Verde-Hover: #009C85; 
 
   /*Texto*/
 
-  --Text-Baixo-Contraste: #009C85; 
-  --Text-Alto-Contraste: #0E3D34; 
+  --Text-Verde-Baixo-Contraste: #009C85; 
+  --Text-Verde-Alto-Contraste: #0E3D34; 
 
 
 /*Gray Scale: #8B8D98*/ 
 
   /*BG*/
 
-  --BG-Verde-1: #FCFCFD;
-  --BG-Verde-2: #F9F9FB;
+  --BG-Gray-1: #FCFCFD;
+  --BG-Gray-2: #F9F9FB;
 
   /*Componentes Interativos*/
 
-  --BG-Component-Normal: #EFF0F3; 
-  --BG-Component-Hover: #E7E8EC; 
-  --BG-Component-Pressed-Selected: #E0E1E6; 
+  --BG-Gray-Component-Normal: #EFF0F3; 
+  --BG-Gray-Component-Hover: #E7E8EC; 
+  --BG-Gray-Component-Pressed-Selected: #E0E1E6; 
 
   /*Bordas e Separadores*/
 
-  --Borda-Sutil: #D8D9E0; 
-  --Borda-Sutil-Interativa: #CDCED7; 
-  --Borda-Forte: #B9BBC6;
+  --Borda-Gray-Sutil: #D8D9E0; 
+  --Borda-Gray-Sutil-Interativa: #CDCED7; 
+  --Borda-Gray-Forte: #B9BBC6;
 
   /*Cores Puras - Solid*/
 
-  --Solid-Normal: #8B8D98;
-  --Solid-Hover: #80828D; 
+  --Solid-Gray-Normal: #8B8D98;
+  --Solid-Gray-Hover: #80828D; 
 
   /*Texto*/
 
-  --Text-Baixo-Contraste: #62636C; 
-  --Text-Alto-Contraste: #1E1F24;  
+  --Text-Gray-Baixo-Contraste: #62636C; 
+  --Text-Gray-Alto-Contraste: #1E1F24;  
 
 
 /*Semantic Colors*/ 
@@ -147,7 +147,7 @@
 --border-radius-md: 12px; 
 --border-radius-pill: 1000000px; 
 
-/* PADDING */
+/* PADDING GERAL */
 
 --padding-2xs: 2px;
 --padding-xs: 4px; 
