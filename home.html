@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Raíz/css/styles.css">
+    <link rel="stylesheet" href="/Raíz/css/root.css">
+    <link rel="stylesheet" href="Navegação/Assets/css/nav.css">
+    <link rel="stylesheet" href="Páginas/Home/Assets/Button-Pocurar_Oferecer/button.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <title>RideShare - Home</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h2>Vai pra<br> Onde? <img src="Navegação/Assets/img/Pin.svg"></h2>
+            
+            <hr class="linha">
+        </div>
+    </header>
+    <main>
+        <div class="buttons-container">
+            <button id="btn-carona" class="btn active">Carona</button>
+            <button id="btn-motorista" class="btn">Motorista</button>
+        </div>
+        
+        <div id="carona-content" class="content">
+            <input type="text" id="input-carona-partida" placeholder="De">
+            <input type="text" id="input-carona-destino" placeholder="Para">
+            <button id="btn-procurar" class="btn">Procurar</button>
+        </div>
+        
+        <div id="motorista-content" class="content hidden">
+            <input type="text" id="input-motorista" placeholder="Para">
+            <button id="btn-oferecer" class="btn">Oferecer</button>
+        </div>
+        <div class="carona-proxima">
+            <h2>Caronas próximas a você </h2>
+            <card></card>
+        </div>
+    </main>
+    <footer class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#"><img src="Navegação/Assets/img/Home_Contorno.svg"></a></li>
+                <li><a href="#"><img src="Navegação/Assets/img/Mapa_Contorno.svg"></a></li>
+                <li><a href="#"><img src="Navegação/Assets/img/Perfil_Contorno.svg"></a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/button.js"></script>
+</body>
+</html>

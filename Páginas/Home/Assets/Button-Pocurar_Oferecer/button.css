@@ -1,0 +1,93 @@
+/* Estilos para os botões */
+.buttons-container {
+    text-align: center;
+    margin-bottom: 20px; /* Adiciona espaço entre os botões e os conteúdos */
+    margin-top: 2.25rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-right: 0.938rem; /* Adiciona espaço entre os botões */
+    padding: 0.625rem;
+    font-size: var(--Subtitulo-size);
+    font-weight: var(--titulo-weight-5);
+    border: 1px solid #4EBAA5; /*--Borda-Forte: #4EBAA5*/
+    color: var(--Text-Alto-Contraste);
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 8.125rem;
+    height: 3rem;
+}
+
+.btn.active {
+    background-color: #009C85; /* Cor mais escura para o botão ativo --Solid-Normal: #009C85; */
+    color: var(--BG-Purple-1);
+}
+
+/* Estilos para os campos de entrada */
+input[type="text"] {
+    width: calc(100% - 20px); /* Define a largura dos inputs */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+#carona-content {
+    width: 21.438rem;
+    height: 15.938rem;
+    background-color: #F5EEFF; /*--BG-Component-Normal: #F5EEFF */
+    text-align: center;
+    padding-top: 1.625rem;
+    margin-top: 1.938rem;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#input-carona-partida, 
+#input-carona-destino{
+    width: 16.5rem;
+    height: 3.125rem;
+    margin-bottom: 2.5rem;
+}
+
+#motorista-content {
+    width: 21.438rem;
+    height: 10.625rem;
+    background-color: #F5EEFF; /*--BG-Component-Normal: #F5EEFF */
+    text-align: center;
+    padding-top: 1.625rem;
+    margin-top: 1.938rem;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#input-motorista {
+    
+    width: 17.438rem;
+    height: 3.125rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+#btn-procurar,
+#btn-oferecer{
+    width: 21.375rem;
+    height: 3.125rem;
+    background-color:#6000AC;
+    /*--Solid-Normal: #6000AC*/
+    color: var(--BG-Purple-1);
+    border: none;
+}
+
+/* Estilos para o conteúdo dos botões */
+
+.content.active {
+    display: block; /* Mostra o conteúdo quando ativo */
+}
+
+.hidden {
+    display: none; /* Oculta os elementos com a classe 'hidden' */
+}

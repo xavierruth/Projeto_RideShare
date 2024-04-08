@@ -1,0 +1,27 @@
+.navbar {
+    background-color:  #DAC4FF; /* Cor de fundo da barra de navegação var(--Borda-Sutil:  #DAC4FF; )*/
+    position: fixed; /* Fixa a barra de navegação na parte inferior da tela */
+    left:0;
+    bottom: 0; /* Alinha a barra de navegação na parte inferior da tela */
+    width: 100%; /* Largura total da barra de navegação */
+    height: 5rem;
+}
+
+.navbar nav ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    margin: 0;
+    text-align: center; /* Alinha os itens de navegação ao centro */
+    padding-top: 1.5rem ;
+    margin-right: 1.5rem;
+}
+
+.navbar nav ul li {
+    display: inline; /* Exibe os itens de navegação em linha */
+    margin:2.5rem; /* Espaçamento entre os itens de navegação */
+    
+}
+
+.navbar nav ul li a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: white; /* Cor do texto dos links */
+}
