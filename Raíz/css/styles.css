@@ -37,7 +37,7 @@ body {
 }
 
 .linha{
-    border-color:  #009C85; /*var(--Solid-Normal: #009C85)*/
+    border-color: var(--Solid-Verde-Normal); /*var(--Solid-Normal: #009C85)*/
     height: 0.188rem;
     width: 8.375rem;
 }
