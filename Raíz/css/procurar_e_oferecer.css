@@ -1,0 +1,33 @@
+/* estilizando procurar carona e oferecer */
+
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header .procurar_title{
+    width: 200px;
+   
+    text-align: center;
+    position: relative;
+}
+
+
+.header .back img{
+    position: absolute;
+    top: 30px;
+    left: -70px;
+  
+
+}
+
+.back img{
+
+width: 40px;
+height: 40px;
+
+}
