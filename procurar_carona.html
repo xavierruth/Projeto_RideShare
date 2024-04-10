@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="Páginas/Home/Assets/css/home.css">
     <link rel="stylesheet" href="Páginas/Home/Assets/Button-Pocurar_Oferecer/button.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
-    <title>RideShare - Home</title>
+    <title>RideShare - Procurar Carona</title>
 </head>
 <body>
     <header>
@@ -27,119 +27,160 @@
     
         <div id="motorista" class="carona-proxima"  >
 
-            <div class="cards">
-               <div class="img-card">
-                    <img src="./Navegação/Assets/img/modelo1.svg" alt="foto de perfil motorista próximo">
-               </div>
-               <div class="conteudo-card">
-                     <h3> Felipe Oliveira </h3>
-                     <p> Distância: 30 metros</p>
-                     <p>KGM-2399 - Fiat Uno </p>
-                     <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
-               </div>
-               
-               <div class="contato">
-                    <div class="contato-group-img">
-                        <a id="telefone" href= "https://web.whatsapp.com/send?phone=+5581994197635" target="_blank"> 
-                            <img class="contato-img" src="./Navegação/Assets/img/contato.svg" alt="Contato">
-                            <p>Contato</p>
-                        </a>   
-                    </div>
-               </div>
-            </div>
+            <div class="cards-section">
 
-            
-            <div class="cards">
-               <div class="img-card">
-                    <img src="./Navegação/Assets/img/modelo4.svg" alt="foto de perfil motorista próximo">
-               </div>
-               <div class="conteudo-card">
-                     <h3> Joana Andrade </h3>
-                     <p>Distância: 45 metros</p>
-                     <p>KFF-2433 - Hyuindai HB20  </p>
-                     <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
-               </div>
-               
-               <div class="contato">
-                     <div class="contato-group-img">
-                        <a id="telefone" href= "https://web.whatsapp.com/send?phone=+558189179489" target="_blank"> 
-                            <img class="contato-img" src="./Navegação/Assets/img/contato.svg" alt="Contato">
-                            <p>Contato</p>
-                        </a>   
-                     </div>
-               </div>
-            </div>
+                <div class="situacao-div">
+                    <button class="situation active" id="situation"> Disponivel </button>
+                </div> 
 
-                  
-            <div class="cards">
-                <div class="img-card">
-                     <img src="./Navegação/Assets/img/modelo5.svg" alt="foto de perfil motorista próximo">
+                <div class="content-group-card">
+                    <div class="img-card">
+                        <img src="./Navegação/Assets/img/modelo1.svg" alt="foto de perfil motorista próximo">
+                   </div>
+                   <div class="conteudo-card">
+                         <h3> Felipe Oliveira </h3>
+                         <p> Distância: 5 min de você</p>
+                         <p>KGM-2399 - Fiat Uno </p>
+                         <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
+                   </div>
+                   
                 </div>
-                <div class="conteudo-card">
-                      <h3> Gabriela Feijó </h3>
-                      <p>Distância: 48 metros</p>
-                      <p>KRE-1080 - Volkswagen Crossfox  </p>
-                      <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b> Refinaria Abreu e Lima</b> </p>
-                </div>
-                
-                <div class="contato">
-                    <div class="contato-group-img">
-                        <a id="telefone" href= "https://web.whatsapp.com/send?phone=+558197131787" target="_blank"> 
-                            <img class="contato-img" src="./Navegação/Assets/img/contato.svg" alt="Contato">
-                            <p>Contato</p>
-                        </a>   
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="cards">
-                <div class="img-card">
-                     <img src="./Navegação/Assets/img/modelo6.svg" alt="foto de perfil motorista próximo">
-                </div>
-                <div class="conteudo-card">
-                      <h3> Marcos Ferreira </h3>
-                      <p> Distância: 95 metros</p>
-                      <p>KGM-2399 - Fiat Pálio </p>
-                      <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
-                </div>
-                
-                <div class="contato">
-                     <div class="contato-group-img">
-                         <a id="telefone" href= "https://web.whatsapp.com/send?phone=+5581994197635" target="_blank"> 
-                             <img class="contato-img" src="./Navegação/Assets/img/contato.svg" alt="Contato">
-                             <p>Contato</p>
-                         </a>   
-                     </div>
-                </div>
-             </div>
- 
              
-             <div class="cards">
-                <div class="img-card">
-                     <img src="./Navegação/Assets/img/modelo7.svg" alt="foto de perfil motorista próximo">
-                </div>
-                <div class="conteudo-card">
-                      <h3> Rafaela Menezes </h3>
-                      <p>Distância: 100 metros</p>
-                      <p>KGM-2399 - Nissan March </p>
-                      <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
-                </div>
+               <div class="contato">
+                    <div class="contato-div">
+                        <button class="localization" id="map"> Localização </button>
+                    </div>          
                 
-                <div class="contato">
-                      <div class="contato-group-img">
-                         <a id="telefone" href= "https://web.whatsapp.com/send?phone=+558189179489" target="_blank"> 
-                             <img class="contato-img" src="./Navegação/Assets/img/contato.svg" alt="Contato">
-                             <p>Contato</p>
-                         </a>   
-                      </div>
+                    <div class="contato-div">
+                        <button class="mensagem" id="modal"> Mensagem </button>
+                    </div>      
                 </div>
-             </div>     
-            
-            
-        </div>
+            </div>
 
-    </main>
+            <div class="cards-section">
+
+                <div class="situacao-div">
+                    <button class="situation active" id="situation"> Disponivel </button>
+                </div> 
+
+                <div class="content-group-card">
+                    <div class="img-card">
+                        <img src="./Navegação/Assets/img/modelo7.svg" alt="foto de perfil motorista próximo">
+                   </div>
+                   <div class="conteudo-card">
+                         <h3> Laura Porto </h3>
+                         <p> Distância:  min de você</p>
+                         <p>KXM-2367 - Nissan March </p>
+                         <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
+                   </div>
+                   
+                </div>
+             
+               <div class="contato">
+                    <div class="contato-div">
+                        <button class="localization" id="map"> Localização </button>
+                    </div>          
+                
+                    <div class="contato-div">
+                        <button class="mensagem" id="modal"> Mensagem </button>
+                    </div>      
+                </div>
+            </div>
+            
+            <div class="cards-section">
+
+                <div class="situacao-div">
+                    <button class="situation active" id="situation"> Disponivel </button>
+                </div> 
+
+                <div class="content-group-card">
+                    <div class="img-card">
+                        <img src="./Navegação/Assets/img/modelo6.svg" alt="foto de perfil motorista próximo">
+                   </div>
+                   <div class="conteudo-card">
+                         <h3> João Guilherme </h3>
+                         <p> Distância: 9 min de você</p>
+                         <p>KBR-4431 - Hyuindai HB20 </p>
+                         <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
+                   </div>
+                   
+                </div>
+             
+               <div class="contato">
+                    <div class="contato-div">
+                        <button class="localization" id="map"> Localização </button>
+                    </div>          
+                
+                    <div class="contato-div">
+                        <button class="mensagem" id="modal"> Mensagem </button>
+                    </div>      
+                </div>
+            </div>
+
+            
+            <div class="cards-section">
+
+                <div class="situacao-div">
+                    <button class="situation active" id="situation"> Disponivel </button>
+                </div> 
+
+                <div class="content-group-card">
+                    <div class="img-card">
+                        <img src="./Navegação/Assets/img/modelo5.svg" alt="foto de perfil motorista próximo">
+                   </div>
+                   <div class="conteudo-card">
+                         <h3> Fernanda Feijó </h3>
+                         <p> Distância: 9 min de você</p>
+                         <p>KBB-2110 - Renault Sandero </p>
+                         <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
+                   </div>
+                   
+                </div>
+             
+               <div class="contato">
+                    <div class="contato-div">
+                        <button class="localization" id="map"> Localização </button>
+                    </div>          
+                
+                    <div class="contato-div">
+                        <button class="mensagem" id="modal"> Mensagem </button>
+                    </div>      
+                </div>
+            </div>
+
+
+            
+            <div class="cards-section">
+
+                <div class="situacao-div">
+                    <button class="situation active" id="situation"> Disponivel </button>
+                </div> 
+
+                <div class="content-group-card">
+                    <div class="img-card">
+                        <img src="./Navegação/Assets/img/modelo4.svg" alt="foto de perfil motorista próximo">
+                   </div>
+                   <div class="conteudo-card">
+                         <h3> Bruna Maia </h3>
+                         <p> Distância: 11 min de você</p>
+                         <p>KDW-1377 - Renault Kwid </p>
+                         <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
+                   </div>
+                   
+                </div>
+             
+               <div class="contato">
+                    <div class="contato-div">
+                        <button class="localization" id="map"> Localização </button>
+                    </div>          
+                
+                    <div class="contato-div">
+                        <button class="mensagem" id="modal"> Mensagem </button>
+                    </div>      
+                </div>
+            </div>
+
+        </div>
     
     <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/button.js"></script>
 </body>

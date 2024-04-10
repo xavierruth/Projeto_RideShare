@@ -57,35 +57,101 @@ body {
 
 
 /* CARDS */
-.cards{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--Card-Card-gap, 20px);
-  margin-top: 40px;
-  height: var(--Card-Card-Height, 109px);
-  border-radius: var(--border-radius-xs, 5px);
-  background: var(--Interactive-Components--Primary-Color-3 , #F5EEFF);
-  width: 300px;
-  padding: 20px 8px;
-  margin: 30px auto;
+
+.main_content{
+    margin-bottom: 150px;
+}
+
+.cards-section{
+    margin-top: 40px;
+    height: var(--Card-Card-Height);
+    border-radius: var(--border-radius-xs);
+    background: var(--Interactive-Components--Primary-Color-3 , #F5EEFF);
+    width: 340px;
+    height: 100%;
+    margin: 30px auto 58px;
+    padding: 20px auto;
+ 
 }
 
 
-.conteudo-card h3{
+.situacao-div{
+    position: relative;
+}
+
+
+
+.situation{
+    border: none;
+    position: absolute;
+    left: 25px;
+    top: -15px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: var(--Success-400-Light_Hover);
+}
+
+.content-group-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px ;
+}
+
+
+.contato{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    padding-bottom: 18px;
+    
+}
+
+.contato button{
+    padding: 10px;
     font-size: .8rem;
+} 
+
+.contato .localization{
+    right: 18px;
+    border-radius: var(--border-radius-xs);
+    background-color: var(--Text-PURPLE-Baixo-Contraste);
+    border: 1px solid var(--Solid-PURPLE-Normal);
+    color: #F5EEFF;
+    font-weight: 600;
+}
+
+
+    
+.contato .mensagem{
+    border-radius: var(--border-radius-xs);
+    left: 125px;
+    border: 1px solid var(--Solid-PURPLE-Normal);
+    font-weight: 600;
+    margin-right: 10px;
+    width: 100px;
+    
+}
+        
+
+.conteudo-card h3{
+    font-size: 1rem;
     line-height: 20px;
 }
 
 .conteudo-card p{
-    font-size: .65rem;
-    line-height: 20px;
+    font-size: .8rem;
+    line-height: 22px;
 }
+
 
 .contato-group-img .contato{
     width: 43px;
     height: 52px;
 }
+
 
 
 .contato-group-img p{
@@ -96,8 +162,10 @@ body {
 
 
 .img-card img{
-    width: 60px;
-    height: 60px;
+    width: 73px;
+    height: 73px;
     
 }
+
+
 
