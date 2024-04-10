@@ -15,10 +15,13 @@ body {
 
 
 .main_content{
+    margin-top: 200px;
     margin-bottom: 120px;
 }
 
 .header{
+    position: fixed;
+    top: 0;
     background-color: var(--BG-Verde-Component-Normal); /*--BG-Component-Normal: #DFF9F2*/
     width: 100%;
     height: 8.313rem;
