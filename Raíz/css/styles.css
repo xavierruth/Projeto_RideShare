@@ -111,27 +111,18 @@ body {
 
 .contato button{
     padding: 10px;
-    font-size: .8rem;
+    font-size: .9rem;
 } 
-
-.contato .localization{
-    right: 18px;
-    border-radius: var(--border-radius-xs);
-    background-color: var(--Text-PURPLE-Baixo-Contraste);
-    border: 1px solid var(--Solid-PURPLE-Normal);
-    color: #F5EEFF;
-    font-weight: 600;
-}
 
 
     
 .contato .mensagem{
     border-radius: var(--border-radius-xs);
     left: 125px;
-    border: 1px solid var(--Solid-PURPLE-Normal);
+    border: 2px solid var(--Solid-PURPLE-Normal);
     font-weight: 600;
-    margin-right: 10px;
-    width: 100px;
+    margin-right: 30px;
+    width: 180px;
     
 }
         

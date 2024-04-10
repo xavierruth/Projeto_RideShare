@@ -16,6 +16,7 @@ document.getElementById('btn-motorista').addEventListener('click', function() {
     // Remove a classe 'active' do botão carona e adiciona ao botão motorista
     document.getElementById('btn-carona').classList.remove('active');
     document.getElementById('btn-motorista').classList.add('active');
+   
 });
 
 // Adiciona event listener para o botão de selecionar carona
