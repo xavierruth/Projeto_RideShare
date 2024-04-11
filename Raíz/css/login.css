@@ -1,0 +1,112 @@
+.login-header{
+    text-align: center;
+}
+
+.login-input{
+    margin: 0 16px;
+}
+.subtitulo-login{
+    text-align: center;
+    font-size: var(--Subtitulo-size);
+    font-weight: var(--titulo-weight-5);
+    color: var(--Text-PURPLE-Baixo-Contraste);
+}
+.legenda-login{
+    text-align: center;
+    font-size: var(--legenda-size);
+    font-weight: var(--titulo-weight);
+    color: var(--Text-PURPLE-Baixo-Contraste);
+    margin: 35px;
+}
+.legenda-login-2{
+    text-align: center;
+    font-size: var(--legenda-size);
+    font-weight: var(--titulo-weight);
+    color: var(--Text-Gray-Alto-Contraste);
+    margin: 30px;
+}
+.legenda-login-2 a{
+    color: var(--Text-PURPLE-Baixo-Contraste);
+    font-weight: bold;
+    
+}
+
+.form-group{
+    margin-bottom: 12px;
+}
+
+.form-group-2{
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--legenda-size) ;
+    font-weight: var(--titulo-weight);
+    color: var(--Text-Gray-Alto-Contraste);
+}
+
+.checkboxes{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.esqueceu-senha {
+    text-align: center;
+}
+
+.form-group label{
+    font-size: var(--paragrafo-size) ;
+    font-weight: var(--titulo-weight-4);
+    color: var(--Text-Gray-Alto-Contraste);
+    padding: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--Borda-Gray-Sutil-Interativa);
+    background-color: var(--BG-Gray-1);
+    border-radius: 5px;
+    width: 21.375rem;
+    height: 3.125rem;
+    color: var(--Solid-Gray-Normal);
+}
+
+#btn-login{
+    width: 21.375rem;
+    height: 3.125rem;
+    background-color:var(--Solid-PURPLE-Normal);
+    color: var(--BG-Purple-1);
+    border: none;
+    border-radius: 5px;
+    font-size: var(--paragrafo-size);
+    font-weight: var(--titulo-weight-4);
+    margin-top: 30px;
+}
+
+.login-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-buttons a{
+    gap: 20px;
+}
+
+.facebook-button, .google-button, .apple-button {
+    display: flex;
+    align-items: center;
+    width: 310px;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color:var(--Text-Gray-Alto-Contraste);
+    border: 1px solid var(--Borda-PURPLE-Forte);
+    font-weight: var(--titulo-weight);
+    font-size: var(--paragrafo-size);
+}

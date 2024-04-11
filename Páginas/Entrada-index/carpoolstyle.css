@@ -1,0 +1,22 @@
+svg#freepik_stories-carpool:not(.animated) .animable {opacity: 0;}
+svg#freepik_stories-carpool.animated #freepik--speech-bubble-2--inject-3 {
+    animation: 1.5s Infinite  linear floating;animation-delay: 0s;
+}
+    svg#freepik_stories-carpool.animated #freepik--speech-bubble-1--inject-3 {
+    animation: 1.5s Infinite  linear floating;animation-delay: 0s;
+    }            
+    @keyframes floating {                
+      0% {                    opacity: 1;                    transform: translateY(0px);                
+      }                
+      50% {                    transform: translateY(-10px);                
+      }                
+      100% {                    opacity: 1;                    transform: translateY(0px);                
+      }           
+    }        
+ .animator-hidden { 
+    display: none; 
+}
+
+.animated{
+  z-index: 999;
+}

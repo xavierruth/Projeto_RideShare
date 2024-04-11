@@ -158,6 +158,28 @@
 --padding-2xl: 32px;
 --padding-3xl: 40px;
 
+/*INPUT*/
+
+--Input-Carona-Width: 16.5rem; 
+--Input-Height: 3.125rem; 
+--Input-Moto-Width: 17.438rem; 
+--Input-gap: 0.625rem;
+
+/*BUTTON*/  
+
+--Button-Maior-Width: 21.438rem; 
+--Button-Maior-Height: 3.125rem; 
+--Button-Menor-Width: 8.125rem; 
+--Button-Menor-Height: 3rem;
+
+/*CARD*/
+
+--Card-Width: 21.438rem;
+--Card-Height: 6.813rem; 
+--Card-gap: 1.563rem; 
+--Card-button-W: 2.688rem; 
+--Card-button-H: 3.25rem; 
+
     
 /* Tipografia */
 

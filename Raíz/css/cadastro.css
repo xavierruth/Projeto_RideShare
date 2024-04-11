@@ -90,7 +90,7 @@ select {
 }
 #uf,
 #bairro{
-    margin-right: 8px;
+    margin-right: 24px;
 }
 
 #bairro,
@@ -145,7 +145,8 @@ select {
     
 }
 
-#btn-cadastro{
+#btn-cadastro,
+#btn-cadastro2{
     width: 21.375rem;
     height: 3.125rem;
     background-color:var(--Solid-PURPLE-Normal);
