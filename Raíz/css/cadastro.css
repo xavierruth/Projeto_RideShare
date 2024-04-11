@@ -1,0 +1,157 @@
+.header{
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+
+.header h2{
+    width: 300px;
+    font-size: var(--titulo-secao-size);
+    font-weight: var(--titulo-weight-6);
+    text-align: center;
+}
+
+.header .back img{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+}
+
+.back img{
+
+width: 39px;
+height: 55px;
+
+}
+
+.cadastro_corpo{
+    margin-top: 150px;
+}
+
+.passo{
+    background-color: var(--BG-PURPLE-Component-Hover);
+    width: 78px;
+    height: 34px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: var(--legenda-size);
+    font-weight: var(--titulo-weight);
+    margin-left: 270px;
+}
+.dados-titulo{
+    margin-left: 16px;
+    margin-bottom: 13px;
+    font-size: var(--paragrafo-size);
+    font-weight: var(--titulo-weight-4);
+
+}
+
+.cadastro-form {
+    margin: 0 auto;
+    padding: 10px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Inputs cadastro */
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--Borda-Gray-Sutil-Interativa);
+    background-color: var(--BG-Gray-Component-Normal);
+    border-radius: 5px;
+    width: 21.375rem;
+    height: 3.125rem;
+    color: var(--Solid-Gray-Normal);
+}
+
+/* Inputs endereço modificaçoes */
+.endereco-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#numero,
+#uf{
+    width: 100px;
+}
+#uf,
+#bairro{
+    margin-right: 8px;
+}
+
+#bairro,
+#cidade{
+    width: 228px; 
+}
+
+
+.etapa-cadastro{
+    margin:60px 0;
+    position: relative;;
+}
+.linha-cadastro{
+    position: relative;
+    height: 10px;
+    width: 21.438rem; 
+    border-radius: 20px;
+    background: linear-gradient(to right, transparent -50%, var(--Solid-PURPLE-Normal),var(--Solid-Gray-Normal) 70%);
+}
+
+.circulo{
+    background-color: var(--Solid-PURPLE-Normal);
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* barra de cadastro2 */
+
+.linha-cadastro2{
+    position: relative;
+    height: 10px;
+    width: 21.438rem; 
+    border-radius: 20px;
+    background: var(--Solid-PURPLE-Normal);
+}
+
+.circulo2{
+    background-color: var(--Solid-PURPLE-Normal);
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    position:absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(50%, -50%);
+     /* Ajuste a posição horizontal conforme necessário */
+    
+}
+
+#btn-cadastro{
+    width: 21.375rem;
+    height: 3.125rem;
+    background-color:var(--Solid-PURPLE-Normal);
+    color: var(--BG-Purple-1);
+    border: none;
+    border-radius: 5px;
+    font-size: var(--paragrafo-size);
+    font-weight: var(--titulo-weight-4);
+}

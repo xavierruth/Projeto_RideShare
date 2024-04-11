@@ -1,17 +1,18 @@
 /* estilizando procurar carona e oferecer */
 
 
-
 .header{
+    position: fixed;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 9999;
 }
 
 
 .header .procurar_title{
     width: 200px;
-   
     text-align: center;
     position: relative;
 }
@@ -30,4 +31,8 @@
 width: 40px;
 height: 40px;
 
+}
+
+.carona-proxima{
+    margin-top: 11rem;
 }

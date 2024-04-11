@@ -5,6 +5,7 @@
     bottom: 0; /* Alinha a barra de navegação na parte inferior da tela */
     width: 100%; /* Largura total da barra de navegação */
     height: 6rem;
+    z-index: 99999;
 }
 
 .navbar nav ul {

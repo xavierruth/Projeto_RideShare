@@ -15,10 +15,13 @@ body {
 
 
 .main_content{
+    margin-top: 200px;
     margin-bottom: 120px;
 }
 
 .header{
+    position: fixed;
+    top: 0;
     background-color: var(--BG-Verde-Component-Normal); /*--BG-Component-Normal: #DFF9F2*/
     width: 100%;
     height: 8.313rem;
@@ -57,35 +60,93 @@ body {
 
 
 /* CARDS */
-.cards{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--Card-Card-gap, 20px);
-  margin-top: 40px;
-  height: var(--Card-Card-Height, 109px);
-  border-radius: var(--border-radius-xs, 5px);
-  background: var(--Interactive-Components--Primary-Color-3 , #F5EEFF);
-  width: 300px;
-  padding: 20px 8px;
-  margin: 30px auto;
+
+.main_content{
+    margin-bottom: 150px;
+    
+}
+
+.cards-section{
+    margin-top: 40px;
+    height: var(--Card-Card-Height);
+    border-radius: var(--border-radius-xs);
+    background: var(--Interactive-Components--Primary-Color-3 , #F5EEFF);
+    width: 340px;
+    height: 100%;
+    margin: 30px auto 58px;
+    padding: 20px auto;
+ 
 }
 
 
+.situacao-div{
+    position: relative;
+}
+
+
+
+.situation{
+    border: none;
+    position: absolute;
+    left: 25px;
+    top: -15px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: var(--Success-400-Light_Hover);
+}
+
+.content-group-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px ;
+}
+
+
+.contato{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    padding-bottom: 18px;
+    
+}
+
+.contato button{
+    padding: 10px;
+    font-size: .9rem;
+} 
+
+
+    
+.contato .mensagem{
+    border-radius: var(--border-radius-xs);
+    left: 125px;
+    border: 2px solid var(--Solid-PURPLE-Normal);
+    font-weight: 600;
+    margin-right: 30px;
+    width: 180px;
+    
+}
+        
+
 .conteudo-card h3{
-    font-size: .8rem;
+    font-size: 1rem;
     line-height: 20px;
 }
 
 .conteudo-card p{
-    font-size: .65rem;
-    line-height: 20px;
+    font-size: .8rem;
+    line-height: 22px;
 }
+
 
 .contato-group-img .contato{
     width: 43px;
     height: 52px;
 }
+
 
 
 .contato-group-img p{
@@ -96,8 +157,187 @@ body {
 
 
 .img-card img{
-    width: 60px;
-    height: 60px;
+    width: 73px;
+    height: 73px;
     
 }
 
+
+
+/* --------------------------- */
+dialog::backdrop{
+    background-color: #00000099;
+  }
+
+  #modal{
+    border:1px solid var(--text-color-soft); 
+    background:var(--BG-Purple-1);
+    padding: 10px;
+    border-radius: 8px;
+    left: 0px;
+    top: 180px;
+    width: 345px;
+    position: fixed;
+    
+  }
+  
+  
+  #modal2{
+    border:1px solid var(--text-color-soft); 
+    background:var(--BG-Purple-1);
+    padding: 10px;
+    border-radius: 8px;
+    left: 0px;
+    top: 180px;
+    width: 345px;
+    position: fixed;
+    
+  }
+
+  dialog .title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--Solid-Verde-Hover);
+    color: var(--Text-Alto-Contraste);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+
+  .title h3{
+    padding: 10px;
+    font-family: var(--titulo-size);
+  }
+
+
+
+   .formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* gap: 5px; */
+      
+   }
+
+   .formulario label{
+    font-size: .9rem;
+
+   }
+
+
+   .formulario label ~ input {
+    width: 100%;
+    background: none;
+    font-size: .98rem;
+    padding: 15px 45px 15px 20px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+   /* Estilização do placeholder */
+  .formulario input::placeholder {
+    color: var(--text-color-soft);
+  }
+
+
+  /* estilização de foco */
+  .formulario input:focus {
+    border: 2px solid var(--Solid-Verde-Normal);
+  }
+  
+  
+
+textarea{
+    width: 100%;
+    background: none;
+    font-size: .98rem;
+    padding: 15px 45px 15px 20px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.3); 
+    border-radius: 5px;
+    margin-bottom: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+
+}
+
+
+.formulario textarea::placeholder {
+    color: var(--text-color-soft);
+    font-family: "Poppins", sans-serif;
+  }
+ 
+
+.formulario textarea:focus {
+    border: 2px solid var(--Solid-Verde-Normal);
+  }
+  
+  
+  .buttonDiv{
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content:center;
+    gap: 50px;
+  }
+
+  .button-contact{
+    padding: 20px;
+    width: 180px;
+    border: none;
+    border-radius: 5px;
+    font-weight: var(--titulo-weight-7);
+    background-color: var(--Solid-Verde-Hover);
+  }
+
+
+  .back-contact{
+    background-color: var(--BG-Purple-1);
+    border: 2px solid var(--Solid-Verde-Hover);
+  }
+
+
+
+
+
+
+/*  
+
+
+
+  .buttonDiv{
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content:center;
+    padding: 5px 0px 10px 0px;
+  }
+
+ button#closeButton{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border:none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--detail-color);
+    font-family: var(--titulos);
+    font-weight: 600;
+  }
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+ 

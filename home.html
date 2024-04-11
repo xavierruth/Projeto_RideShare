@@ -37,76 +37,189 @@
             <input type="text" id="input-carona-destino" value="Para:  Refinaria Abreu e Lima" readonly>
             <button id="btn-oferecer" class="btn">Oferecer</button>
         </div>
+
+
+
         <div id="busco-passageiro" class="carona-proxima"  >
-            <h2> Caronas próximas a você </h2>
-            
-            <div class="cards">
-               <div class="img-card">
-                    <img src="./Navegação/Assets/img/modelo1.svg" alt="foto de perfil motorista próximo">
-               </div>
-               <div class="conteudo-card">
-                     <h3> Felipe Oliveira </h3>
-                     <p> Distância: 30 metros</p>
-                     <p>KGM-2399 - Fiat Uno </p>
-                     <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
-               </div>
-               
-               <div class="contato">
-                    <div class="contato-group-img">
-                        <a id="telefone" href= "https://web.whatsapp.com/send?phone=+5581994197635" target="_blank"> 
-                            <img class="contato-img" src="./Navegação/Assets/img/contato.svg" alt="Contato">
-                            <p>Contato</p>
-                        </a>   
+                <h2> Caronas próximas a você </h2>
+                
+                <div class="cards-section">
+
+                    <div class="situacao-div">
+                        <button class="situation active" id="situation"> Disponivel </button>
+                    </div> 
+
+                    <div class="content-group-card">
+                        <div class="img-card">
+                            <img src="./Navegação/Assets/img/modelo1.svg" alt="foto de perfil motorista próximo">
                     </div>
-               </div>
-            </div>
+                    <div class="conteudo-card">
+                            <h3> Felipe Oliveira </h3>
+                            <p> Distância: 5 min de você</p>
+                            <p>KGM-2399 - Fiat Uno </p>
+                            <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
+                    </div>
+                    
+                    </div>
+                
+                    <div class="contato">
+
+                        <div class="btnDiv">
+                            
+                            <button id="abrirModal" class="btn mensagem"> Mensagem </button>
+                        
+                            <dialog id="modal">
+                                <div class="title">
+                                    <h3> Fale com Felipe Oliveira</h3>
+                                </div>
+                        
+                                <form class="formulario">
+                                    <label for="nome">Nome: *</label> 
+                                    <input type="text" name="nome" id="nome" placeholder="Escreva seu nome aqui" required>
+
+                                    <label for="mensagem">Mensagem: *</label> 
+                                    <textarea name="mensagem" id="mensagem" placeholder="Escreva aqui sua mensagem..." required></textarea>
+                                    
+                                    
+                                    
+                                    <div class="buttonDiv">
+                                
+                                        <button id="closeButton" class="button-contact back-contact">Voltar</button> 
+        
+                                        <button id="sendButton" class="button-contact" onclick="submitForm()"> Enviar</button>
+                                    
+                                    </div>
+                                </form>
+                            
+                        
+                            </dialog>
+                        
+                        </div>   
+
+                        
+                    </div>  
+                </div>
+            
+                <div class="cards-section">
+
+                    <div class="situacao-div">
+                        <button class="situation active" id="situation"> Disponivel </button>
+                    </div> 
+
+                    <div class="content-group-card">
+                        <div class="img-card">
+                            <img src="./Navegação/Assets/img/modelo7.svg" alt="foto de perfil motorista próximo">
+                    </div>
+                    <div class="conteudo-card">
+                            <h3> Laura Porto </h3>
+                            <p> Distância: 8 min de você</p>
+                            <p>KXM-2367 - Nissan March </p>
+                            <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
+                    </div>
+                    
+                    </div>
+                
+                <div class="contato">
+                    
+                    
+                    
+                    <div class="btnDiv">
+                            
+                        <button id="abrirModal2" class="btn mensagem"> Mensagem </button>
+                    
+                        <dialog id="modal2">
+                            <div class="title">
+                                <h3>Fale com Laura Porto</h3>
+                            </div>
+                    
+                        
+                
+                            <form class="formulario">
+                            
+                            <div class="form-div">
+                                <label  for="nome"> Nome: *</label> 
+                                <input type="text" name="nome" id="nome2" placeholder="Escreva seu nome aqui" required>
+                            </div>  
+                            
+                            <div class="form-div">
+                                <label for="mensagem">Mensagem: *</label> 
+                                <textarea name="mensagem" id="mensagem2" placeholder="Escreva aqui sua mensagem..." required></textarea>
+                            </div>
+                            
+
+                            <div class="buttonDiv">
+                                <button id="closeButton2" class="button-contact">Voltar</button> 
+                                <button id="sendButton2" class="button-contact"> Enviar</button>
+                        
+                            </div>
+                    
+                            </form>
+                            
+                        
+                        </dialog>
+                    
+                    </div>   
+
+                        
+                    </div>
+                </div>
             
         </div>
 
         <div id="busco-motorista" class="carona-proxima">
             
-            <div class="cards">
-               <div class="img-card">
-                    <img src="./Navegação/Assets/img/modelo2.svg" alt="foto de perfil motorista próximo">
-               </div>
-               <div class="conteudo-card">
-                     <h3> Maria Oliveira </h3>
-                     <p>Distância: 30 metros</p>
-                     <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
-               </div>
-               
+            <div class="cards-section">
+
+                <div class="situacao-div">
+                    <button class="situation active" id="situation"> Disponivel </button>
+                </div> 
+
+                <div class="content-group-card">
+                    <div class="img-card">
+                        <img src="./Navegação/Assets/img/modelo2.svg" alt="foto de perfil motorista próximo">
+                   </div>
+                   <div class="conteudo-card">
+                         <h3> Aline Campello </h3>
+                         <p> Distância: 5 min de você</p>
+                         <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
+                   </div>
+                   
+                </div>
+             
                <div class="contato">
-                     <div class="contato-group-img">
-                        <a id="telefone" href= "https://web.whatsapp.com/send?phone=+558189179489" target="_blank"> 
-                            <img class="contato-img" src="./Navegação/Assets/img/contato.svg" alt="Contato">
-                            <p >Contato</p>
-                        </a>   
-                     </div>
-               </div>
+                  
+                    <div class="contato-div">
+                        <!-- <button class="mensagem" id="modal"> Mensagem </button> -->
+                    </div>      
+                </div>
             </div>
 
+            <div class="cards-section">
 
-                  
-            <div class="cards">
-                <div class="img-card">
-                     <img src="./Navegação/Assets/img/modelo3.svg" alt="foto de perfil motorista próximo">
+                <div class="situacao-div">
+                    <button class="situation active" id="situation"> Disponivel </button>
+                </div> 
+
+                <div class="content-group-card">
+                    <div class="img-card">
+                        <img src="./Navegação/Assets/img/modelo3.svg" alt="foto de perfil motorista próximo">
+                   </div>
+                   <div class="conteudo-card">
+                         <h3> Mário Barros </h3>
+                         <p> Distância: 6 min de você</p>
+                         <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
+                   </div>
+                   
                 </div>
-                <div class="conteudo-card">
-                      <h3> Mario Barreto </h3>
-                      <p>Distância: 20 metros</p>
-                      <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b> Refinaria Abreu e Lima</b> </p>
+             
+               <div class="contato">
+               
+                    <div class="contato-div">
+                        <!-- <button class="mensagem" id="modal"> Mensagem </button> -->
+                    </div>      
                 </div>
-                
-                <div class="contato">
-                    <div class="contato-group-img">
-                        <a id="telefone" href= "https://web.whatsapp.com/send?phone=+558197131787" target="_blank"> 
-                            <img class="contato-img" src="./Navegação/Assets/img/contato.svg" alt="Contato">
-                            <p>Contato</p>
-                        </a>   
-                    </div>
-                </div>
-             </div>
-            
+            </div>
+
         </div>
 
     </main>
@@ -116,15 +229,26 @@
                 <li><a href="#"><img src="Navegação/Assets/img/Home_Contorno.svg"></a>
                     <span>Início</span>
                 </li>
-                <li><a href="#"><img src="Navegação/Assets/img/Mapa_SContorno.svg"></a> 
+                <li><a href="#"><img src="Navegação/Assets/img/Mapa_Contorno.svg"></a> 
                     <span>Mapa</span>
                 </li>
-                <li><a href="#"><img src="Navegação/Assets/img/Perfil_SContorno.svg"></a>
+                <li id="mapa1" class="hidden" >
+                    <a href="/mapa_motorista.html" class="active"><img src="Navegação/Assets/img/olhar_Contorno.svg"></a>
+                    <span>Olhar</span>
+                </li>
+                 
+                <!-- <li id="mapa2">
+                    <a href="/mapa_carona.html" ><img src="Navegação/Assets/img/olhar_Contorno.svg"></a>
+                    <span>Olharaa</span>
+                </li> -->
+                
+                <li><a href="#"><img src="Navegação/Assets/img/Perfil_Contorno.svg"></a>
                     <span>Perfil</span>
                 </li>
             </ul>
         </nav>
     </footer>
     <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/button.js"></script>
+    <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/popup.js"></script>
 </body>
 </html>
