@@ -41,61 +41,128 @@
 
 
         <div id="busco-passageiro" class="carona-proxima"  >
-            <h2> Caronas próximas a você </h2>
-            
-            <div class="cards-section">
-
-                <div class="situacao-div">
-                    <button class="situation active" id="situation"> Disponivel </button>
-                </div> 
-
-                <div class="content-group-card">
-                    <div class="img-card">
-                        <img src="./Navegação/Assets/img/modelo1.svg" alt="foto de perfil motorista próximo">
-                   </div>
-                   <div class="conteudo-card">
-                         <h3> Felipe Oliveira </h3>
-                         <p> Distância: 5 min de você</p>
-                         <p>KGM-2399 - Fiat Uno </p>
-                         <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
-                   </div>
-                   
-                </div>
-             
-               <div class="contato">       
+                <h2> Caronas próximas a você </h2>
                 
-                    <div class="contato-div">
-                        <button class="mensagem" id="modal"> Mensagem </button>
-                    </div>      
+                <div class="cards-section">
+
+                    <div class="situacao-div">
+                        <button class="situation active" id="situation"> Disponivel </button>
+                    </div> 
+
+                    <div class="content-group-card">
+                        <div class="img-card">
+                            <img src="./Navegação/Assets/img/modelo1.svg" alt="foto de perfil motorista próximo">
+                    </div>
+                    <div class="conteudo-card">
+                            <h3> Felipe Oliveira </h3>
+                            <p> Distância: 5 min de você</p>
+                            <p>KGM-2399 - Fiat Uno </p>
+                            <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
+                    </div>
+                    
+                    </div>
+                
+                    <div class="contato">
+
+                        <div class="btnDiv">
+                            
+                            <button id="abrirModal" class="btn mensagem"> Mensagem </button>
+                        
+                            <dialog id="modal">
+                                <div class="title">
+                                    <h3> Fale com Felipe Oliveira</h3>
+                                </div>
+                        
+                                <form class="formulario">
+                                    <label for="nome">Nome: *</label> 
+                                    <input type="text" name="nome" id="nome" placeholder="Escreva seu nome aqui" required>
+
+                                    <label for="mensagem">Mensagem: *</label> 
+                                    <textarea name="mensagem" id="mensagem" placeholder="Escreva aqui sua mensagem..." required></textarea>
+                                    
+                                    
+                                    
+                                    <div class="buttonDiv">
+                                
+                                        <button id="closeButton" class="button-contact back-contact">Voltar</button> 
+        
+                                        <button id="sendButton" class="button-contact" onclick="submitForm()"> Enviar</button>
+                                    
+                                    </div>
+                                </form>
+                            
+                        
+                            </dialog>
+                        
+                        </div>   
+
+                        
+                    </div>  
                 </div>
-            </div>
-
-            <div class="cards-section">
-
-                <div class="situacao-div">
-                    <button class="situation active" id="situation"> Disponivel </button>
-                </div> 
-
-                <div class="content-group-card">
-                    <div class="img-card">
-                        <img src="./Navegação/Assets/img/modelo7.svg" alt="foto de perfil motorista próximo">
-                   </div>
-                   <div class="conteudo-card">
-                         <h3> Laura Porto </h3>
-                         <p> Distância: 8 min de você</p>
-                         <p>KXM-2367 - Nissan March </p>
-                         <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
-                   </div>
-                   
-                </div>
-             
-               <div class="contato">
             
-                    <div class="contato-div">
-                        <button class="mensagem" id="modal"> Mensagem </button>
-                    </div>      
+                <div class="cards-section">
+
+                    <div class="situacao-div">
+                        <button class="situation active" id="situation"> Disponivel </button>
+                    </div> 
+
+                    <div class="content-group-card">
+                        <div class="img-card">
+                            <img src="./Navegação/Assets/img/modelo7.svg" alt="foto de perfil motorista próximo">
+                    </div>
+                    <div class="conteudo-card">
+                            <h3> Laura Porto </h3>
+                            <p> Distância: 8 min de você</p>
+                            <p>KXM-2367 - Nissan March </p>
+                            <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
+                    </div>
+                    
+                    </div>
+                
+                <div class="contato">
+                    
+                    
+                    
+                    <div class="btnDiv">
+                            
+                        <button id="abrirModal2" class="btn mensagem"> Mensagem </button>
+                    
+                        <dialog id="modal2">
+                            <div class="title">
+                                <h3>Fale com Laura Porto</h3>
+                            </div>
+                    
+                        
+                
+                            <form class="formulario">
+                            
+                            <div class="form-div">
+                                <label  for="nome"> Nome: *</label> 
+                                <input type="text" name="nome" id="nome2" placeholder="Escreva seu nome aqui" required>
+                            </div>  
+                            
+                            <div class="form-div">
+                                <label for="mensagem">Mensagem: *</label> 
+                                <textarea name="mensagem" id="mensagem2" placeholder="Escreva aqui sua mensagem..." required></textarea>
+                            </div>
+                            
+
+                            <div class="buttonDiv">
+                                <button id="closeButton2" class="button-contact">Voltar</button> 
+                                <button id="sendButton2" class="button-contact"> Enviar</button>
+                        
+                            </div>
+                    
+                            </form>
+                            
+                        
+                        </dialog>
+                    
+                    </div>   
+
+                        
+                    </div>
                 </div>
-            </div>
             
         </div>
 
@@ -122,7 +189,7 @@
                <div class="contato">
                   
                     <div class="contato-div">
-                        <button class="mensagem" id="modal"> Mensagem </button>
+                        <!-- <button class="mensagem" id="modal"> Mensagem </button> -->
                     </div>      
                 </div>
             </div>
@@ -148,7 +215,7 @@
                <div class="contato">
                
                     <div class="contato-div">
-                        <button class="mensagem" id="modal"> Mensagem </button>
+                        <!-- <button class="mensagem" id="modal"> Mensagem </button> -->
                     </div>      
                 </div>
             </div>
@@ -182,5 +249,6 @@
         </nav>
     </footer>
     <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/button.js"></script>
+    <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/popup.js"></script>
 </body>
 </html>
