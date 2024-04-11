@@ -59,7 +59,7 @@ body {
 }
 
 
-/* CARDS */
+/* ESTILIZAÇÃO DOS CARDS */
 
 .main_content{
     margin-bottom: 150px;
@@ -164,12 +164,13 @@ body {
 
 
 
-/* --------------------------- */
+/* ----POPUPS---- */
+
 dialog::backdrop{
     background-color: #00000099;
   }
 
-  #modal{
+  #modal, #modal2, #modal3, #modal4, #modal5, #modal6{
     border:1px solid var(--text-color-soft); 
     background:var(--BG-Purple-1);
     padding: 10px;
@@ -181,18 +182,7 @@ dialog::backdrop{
     
   }
   
-  
-  #modal2{
-    border:1px solid var(--text-color-soft); 
-    background:var(--BG-Purple-1);
-    padding: 10px;
-    border-radius: 8px;
-    left: 0px;
-    top: 180px;
-    width: 345px;
-    position: fixed;
-    
-  }
+
 
   dialog .title{
     width: 100%;
@@ -216,13 +206,16 @@ dialog::backdrop{
    .formulario{
     display: flex;
     flex-direction: column;
-    align-items: start;
-    /* gap: 5px; */
+    gap: 5px; 
+    width: 100%;
       
    }
 
    .formulario label{
     font-size: .9rem;
+    margin-top: 10px;
+    display: flex;
+    align-items: start ;
 
    }
 
@@ -300,41 +293,6 @@ textarea{
     background-color: var(--BG-Purple-1);
     border: 2px solid var(--Solid-Verde-Hover);
   }
-
-
-
-
-
-
-/*  
-
-
-
-  .buttonDiv{
-    display: flex;
-    width: 100%;
-    position: relative;
-    justify-content:center;
-    padding: 5px 0px 10px 0px;
-  }
-
- button#closeButton{
-    padding: 10px 20px;
-    border-radius: 5px;
-    border:none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: var(--detail-color);
-    font-family: var(--titulos);
-    font-weight: 600;
-  }
-
-
-
-
-*/
-
-
-
 
 
 

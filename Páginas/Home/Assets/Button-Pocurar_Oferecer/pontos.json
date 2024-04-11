@@ -1,0 +1,56 @@
+[
+
+{
+    "id": 1,
+    "nome": "Felipe Oliveira",
+    "distancia": "5 min de você", 
+    "Placa":"KGM-2399 - Fiat Uno",
+    "latitude":-8.05613,
+    "longitude":-34.89451
+},
+
+
+{
+    "id": 2,
+    "nome": "Laura Porto",
+    "distancia": "8 min de você", 
+    "Placa":"KXM-2367 - Nissan March",
+    "latitude":-8.02985,
+    "longitude":-34.89253
+},
+
+
+
+{
+    "id": 3,
+    "nome": "João Guilherme",
+    "distancia": "9 min de você", 
+    "Placa":"KBR-4431 - Hyuindai HB20",
+    "latitude":-8.07202,
+    "longitude":-34.9099
+},
+
+
+
+{
+    "id": 4,
+    "nome": "Fernanda Feijó",
+    "distancia": "9 min de você", 
+    "Placa":"KBB-2110 - Renault Sandero",
+    "latitude":-8.07701,
+    "longitude":-34.93097
+},
+
+
+
+{
+    "id": 5,
+    "nome": "Bruna Maia",
+    "distancia": " 11 min de você", 
+    "Placa":"KDW-1377 - Renault Kwid",
+    "latitude":-8.04709,
+    "longitude":-34.95526
+}
+
+
+]

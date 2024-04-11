@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,247 +9,353 @@
     <link rel="stylesheet" href="Navegação/Assets/css/nav.css">
     <link rel="stylesheet" href="Páginas/Home/Assets/css/home.css">
     <link rel="stylesheet" href="Páginas/Home/Assets/Button-Pocurar_Oferecer/button.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
     <title>RideShare - Home</title>
 </head>
+
 <body>
+
+    <!-- Inicio do header -->
     <header>
         <div class="header">
-           <!-- <h2>Vai pra<br> Onde? <img src="Navegação/Assets/img/Pin.svg"></h2>
-            
-            <hr class="linha"> -->
             <img src="Navegação/Assets/img/logo_Vai_Para_Onde.svg" id="vai">
         </div>
     </header>
-    
-    <main class="main_content">
-        <div class="buttons-container">
-            <button id="btn-carona" class="btn active">Carona</button>
-            <button id="btn-motorista" class="btn">Motorista</button>
-        </div>
-        
-        <div id="carona-content" class="content">
-            <input type="text" id="input-carona-partida" placeholder="De:">
-            <input type="text" id="input-carona-destino" value="Para:  Refinaria Abreu e Lima" readonly>
-            <button id="btn-procurar" class="btn">Procurar</button>
-        </div>
-        
-        <div id="motorista-content" class="content hidden">
-            <input type="text" id="input-carona-destino" value="Para:  Refinaria Abreu e Lima" readonly>
-            <button id="btn-oferecer" class="btn">Oferecer</button>
-        </div>
 
+    <!-- Final do header -->
 
+    <!-- inicio do conteúdo principal -->
 
-        <div id="busco-passageiro" class="carona-proxima"  >
-                <h2> Caronas próximas a você </h2>
-                
-                <div class="cards-section">
+        <main class="main_content">
 
-                    <div class="situacao-div">
-                        <button class="situation active" id="situation"> Disponivel </button>
-                    </div> 
+            <!-- inicio da área de busca -->
+            <div class="buttons-container">
+                <button id="btn-carona" class="btn active">Carona</button>
+                <button id="btn-motorista" class="btn">Motorista</button>
+            </div>
 
-                    <div class="content-group-card">
-                        <div class="img-card">
-                            <img src="./Navegação/Assets/img/modelo1.svg" alt="foto de perfil motorista próximo">
-                    </div>
-                    <div class="conteudo-card">
-                            <h3> Felipe Oliveira </h3>
-                            <p> Distância: 5 min de você</p>
-                            <p>KGM-2399 - Fiat Uno </p>
-                            <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
-                    </div>
+            <div id="carona-content" class="content">
+                <input type="text" id="input-carona-partida" placeholder="De:">
+                <input type="text" id="input-carona-destino" value="Para:  Refinaria Abreu e Lima" readonly>
+                <button id="btn-procurar" class="btn">Procurar</button>
+            </div>
+
+            <div id="motorista-content" class="content hidden">
+                <input type="text" id="input-carona-destino" value="Para:  Refinaria Abreu e Lima" readonly>
+                <button id="btn-oferecer" class="btn">Oferecer</button>
+            </div>
+            <!-- Fim da área de busca -->
+             
+            <!-- Inicio dos cards: Motoristas próximos (indicação) -->
+
+                <div id="busco-passageiro" class="carona-proxima">
                     
-                    </div>
-                
-                    <div class="contato">
+                    <h2> Caronas próximas a você </h2>
 
-                        <div class="btnDiv">
-                            
-                            <button id="abrirModal" class="btn mensagem"> Mensagem </button>
-                        
-                            <dialog id="modal">
-                                <div class="title">
-                                    <h3> Fale com Felipe Oliveira</h3>
-                                </div>
-                        
-                                <form class="formulario">
-                                    <label for="nome">Nome: *</label> 
-                                    <input type="text" name="nome" id="nome" placeholder="Escreva seu nome aqui" required>
+                    <!-- inicio do Card 1 -->
+                    <div class="cards-section"> 
 
-                                    <label for="mensagem">Mensagem: *</label> 
-                                    <textarea name="mensagem" id="mensagem" placeholder="Escreva aqui sua mensagem..." required></textarea>
-                                    
-                                    
-                                    
-                                    <div class="buttonDiv">
-                                
-                                        <button id="closeButton" class="button-contact back-contact">Voltar</button> 
-        
-                                        <button id="sendButton" class="button-contact" onclick="submitForm()"> Enviar</button>
-                                    
+                        <div class="situacao-div">
+                            <button class="situation active" id="situation"> Disponivel </button>
+                        </div>
+
+                        <div class="content-group-card">
+                            <div class="img-card">
+                                <img src="./Navegação/Assets/img/modelo1.svg" alt="foto de perfil motorista próximo">
+                            </div>
+                            <div class="conteudo-card">
+                                <h3> Felipe Oliveira </h3>
+                                <p> Distância: 5 min de você</p>
+                                <p>KGM-2399 - Fiat Uno </p>
+                                <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b></p>
+                            </div>
+
+                        </div>
+
+                        <div class="contato">
+
+                            <div class="btnDiv">
+
+                                <button id="abrirModal" class="btn mensagem"> Mensagem </button>
+
+                                <dialog id="modal">
+                                    <div class="title">
+                                        <h3> Fale com Felipe Oliveira</h3>
                                     </div>
-                                </form>
-                            
-                        
-                            </dialog>
-                        
-                        </div>   
 
-                        
-                    </div>  
-                </div>
-            
-                <div class="cards-section">
+                                    <form class="formulario" method="post">
+                                        <label for="nome">Nome: *</label>
+                                        <input type="text" name="nome" id="nome" placeholder="Escreva seu nome aqui" required>
 
-                    <div class="situacao-div">
-                        <button class="situation active" id="situation"> Disponivel </button>
-                    </div> 
+                                        <label for="mensagem">Mensagem: *</label>
+                                        <textarea name="mensagem" id="mensagem" placeholder="Escreva aqui sua mensagem..."
+                                            required></textarea>
 
-                    <div class="content-group-card">
-                        <div class="img-card">
-                            <img src="./Navegação/Assets/img/modelo7.svg" alt="foto de perfil motorista próximo">
-                    </div>
-                    <div class="conteudo-card">
-                            <h3> Laura Porto </h3>
-                            <p> Distância: 8 min de você</p>
-                            <p>KXM-2367 - Nissan March </p>
-                            <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
-                    </div>
-                    
-                    </div>
-                
-                <div class="contato">
-                    
-                    
-                    
-                    <div class="btnDiv">
-                            
-                        <button id="abrirModal2" class="btn mensagem"> Mensagem </button>
-                    
-                        <dialog id="modal2">
-                            <div class="title">
-                                <h3>Fale com Laura Porto</h3>
+
+
+                                        <div class="buttonDiv">
+
+                                            <button id="closeButton" class="button-contact back-contact">Voltar</button>
+
+                                            <button id="sendButton" class="button-contact" onclick="submitForm()">
+                                                Enviar</button>
+
+                                        </div>
+                                    </form>
+
+                                </dialog>
+
                             </div>
-                    
-                        
-                
-                            <form class="formulario">
-                            
-                            <div class="form-div">
-                                <label  for="nome"> Nome: *</label> 
-                                <input type="text" name="nome" id="nome2" placeholder="Escreva seu nome aqui" required>
-                            </div>  
-                            
-                            <div class="form-div">
-                                <label for="mensagem">Mensagem: *</label> 
-                                <textarea name="mensagem" id="mensagem2" placeholder="Escreva aqui sua mensagem..." required></textarea>
-                            </div>
-                            
-
-                            <div class="buttonDiv">
-                                <button id="closeButton2" class="button-contact">Voltar</button> 
-                                <button id="sendButton2" class="button-contact"> Enviar</button>
-                        
-                            </div>
-                    
-                            </form>
-                            
-                        
-                        </dialog>
-                    
-                    </div>   
-
-                        
+                        </div>
                     </div>
+                    
+                    <!-- final do Card 1 -->
+                    
+
+                    <!-- inicio do Card 2 -->
+                    <div class="cards-section">
+
+                        <div class="situacao-div">
+                            <button class="situation active" id="situation"> Disponivel </button>
+                        </div>
+
+                        <div class="content-group-card">
+                            <div class="img-card">
+                                <img src="./Navegação/Assets/img/modelo7.svg" alt="foto de perfil motorista próximo">
+                            </div>
+                            <div class="conteudo-card">
+                                <h3> Laura Porto </h3>
+                                <p> Distância: 8 min de você</p>
+                                <p>KXM-2367 - Nissan March </p>
+                                <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu
+                                        e Lima</b> </p>
+                            </div>
+
+                        </div>
+
+                        <div class="contato">
+
+
+
+                            <div class="btnDiv">
+
+                                <button id="abrirModal2" class="btn mensagem"> Mensagem </button>
+
+                                <dialog id="modal2">
+                                    <div class="title">
+                                        <h3>Fale com Laura Porto</h3>
+                                    </div>
+
+
+
+                                    <form class="formulario" method="post">
+
+                                        <div class="form-div">
+                                            <label for="nome"> Nome: *</label>
+                                            <input type="text" name="nome" id="nome2" placeholder="Escreva seu nome aqui"
+                                                required>
+                                        </div>
+
+                                        <div class="form-div">
+                                            <label for="mensagem">Mensagem: *</label>
+                                            <textarea name="mensagem" id="mensagem2" placeholder="Escreva aqui sua mensagem..."
+                                                required></textarea>
+                                        </div>
+
+
+                                        <div class="buttonDiv">
+                                            <button id="closeButton2" class="button-contact  back-contact">Voltar</button>
+                                            <button id="sendButton2" class="button-contact" onclick="submitForm2()">
+                                                Enviar</button>
+
+                                        </div>
+
+                                    </form>
+
+
+                                </dialog>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!-- final do Card 2 -->
                 </div>
-            
-        </div>
-
-        <div id="busco-motorista" class="carona-proxima">
-            
-            <div class="cards-section">
-
-                <div class="situacao-div">
-                    <button class="situation active" id="situation"> Disponivel </button>
-                </div> 
-
-                <div class="content-group-card">
-                    <div class="img-card">
-                        <img src="./Navegação/Assets/img/modelo2.svg" alt="foto de perfil motorista próximo">
-                   </div>
-                   <div class="conteudo-card">
-                         <h3> Aline Campello </h3>
-                         <p> Distância: 5 min de você</p>
-                         <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
-                   </div>
-                   
-                </div>
-             
-               <div class="contato">
-                  
-                    <div class="contato-div">
-                        <!-- <button class="mensagem" id="modal"> Mensagem </button> -->
-                    </div>      
-                </div>
-            </div>
-
-            <div class="cards-section">
-
-                <div class="situacao-div">
-                    <button class="situation active" id="situation"> Disponivel </button>
-                </div> 
-
-                <div class="content-group-card">
-                    <div class="img-card">
-                        <img src="./Navegação/Assets/img/modelo3.svg" alt="foto de perfil motorista próximo">
-                   </div>
-                   <div class="conteudo-card">
-                         <h3> Mário Barros </h3>
-                         <p> Distância: 6 min de você</p>
-                         <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
-                   </div>
-                   
-                </div>
-             
-               <div class="contato">
-               
-                    <div class="contato-div">
-                        <!-- <button class="mensagem" id="modal"> Mensagem </button> -->
-                    </div>      
-                </div>
-            </div>
-
-        </div>
-
-    </main>
-    <footer class="navbar">
-        <nav>
-            <ul>
-                <li><a href="#"><img src="Navegação/Assets/img/Home_Contorno.svg"></a>
-                    <span>Início</span>
-                </li>
-                <li><a href="#"><img src="Navegação/Assets/img/Mapa_Contorno.svg"></a> 
-                    <span>Mapa</span>
-                </li>
-                <li id="mapa1" class="hidden" >
-                    <a href="/mapa_motorista.html" class="active"><img src="Navegação/Assets/img/olhar_Contorno.svg"></a>
-                    <span>Olhar</span>
-                </li>
-                 
-                <!-- <li id="mapa2">
-                    <a href="/mapa_carona.html" ><img src="Navegação/Assets/img/olhar_Contorno.svg"></a>
-                    <span>Olharaa</span>
-                </li> -->
                 
-                <li><a href="#"><img src="Navegação/Assets/img/Perfil_Contorno.svg"></a>
-                    <span>Perfil</span>
-                </li>
-            </ul>
-        </nav>
-    </footer>
-    <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/button.js"></script>
-    <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/popup.js"></script>
-</body>
+                    
+                <!-- fim dos cards: Motoristas próximos (indicação) -->
+
+
+                <!-- Inicio dos cards: passageiros próximos (indicação) -->
+                
+                <div id="busco-motorista" class="carona-proxima">
+
+                    <!-- Inicio do Card 1 -->
+
+                    <div class="cards-section">
+
+                        <div class="situacao-div">
+                            <button class="situation active" id="situation"> Disponivel </button>
+                        </div>
+
+                        <div class="content-group-card">
+                            <div class="img-card">
+                                <img src="./Navegação/Assets/img/modelo2.svg" alt="foto de perfil motorista próximo">
+                            </div>
+                            <div class="conteudo-card">
+                                <h3> Aline Campello </h3>
+                                <p> Distância: 5 min de você</p>
+                                <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu
+                                        e Lima</b> </p>
+                            </div>
+
+                        </div>
+
+                        <div class="contato">
+
+                            <div class="btnDiv">
+
+                                <button id="abrirModal3" class="btn mensagem"> Mensagem </button>
+
+                                <dialog id="modal3">
+                                    <div class="title">
+                                        <h3>Fale com Aline Campello</h3>
+                                    </div>
+
+                                    <form class="formulario" method="post">
+
+                                        <div class="form-div">
+                                            <label for="nome"> Nome: *</label>
+                                            <input type="text" name="nome" id="nome3" placeholder="Escreva seu nome aqui"
+                                                required>
+                                        </div>
+
+                                        <div class="form-div">
+                                            <label for="mensagem">Mensagem: *</label>
+                                            <textarea name="mensagem" id="mensagem3" placeholder="Escreva aqui sua mensagem..."
+                                                required></textarea>
+                                        </div>
+
+
+                                        <div class="buttonDiv">
+                                            <button id="closeButton3" class="button-contact back-contact">Voltar</button>
+                                            <button id="sendButton3" class="button-contact" onclick="submitForm3()">
+                                                Enviar</button>
+
+                                        </div>
+
+                                    </form>
+
+                                </dialog>
+
+                            </div>
+                        </div>
+                    </div>
+
+                        <!-- finaldo Card 1 -->
+
+
+                        <!-- Inicio do Card 2 -->
+
+                    <div class="cards-section">
+
+                        <div class="situacao-div">
+                            <button class="situation active" id="situation"> Disponivel </button>
+                        </div>
+
+                        <div class="content-group-card">
+                            <div class="img-card">
+                                <img src="./Navegação/Assets/img/modelo3.svg" alt="foto de perfil motorista próximo">
+                            </div>
+                            <div class="conteudo-card">
+                                <h3> Mário Barros </h3>
+                                <p> Distância: 6 min de você</p>
+                                <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu
+                                        e Lima</b> </p>
+                            </div>
+
+                        </div>
+
+                        <div class="contato">
+
+                            <div class="btnDiv">
+
+                                <button id="abrirModal4" class="btn mensagem"> Mensagem </button>
+
+                                <dialog id="modal4">
+                                    <div class="title">
+                                        <h3>Fale com Mário Barros</h3>
+                                    </div>
+
+                                    <form class="formulario" method="post">
+
+                                        <div class="form-div">
+                                            <label for="nome"> Nome: *</label>
+                                            <input type="text" name="nome" id="nome4" placeholder="Escreva seu nome aqui"
+                                                required>
+                                        </div>
+
+                                        <div class="form-div">
+                                            <label for="mensagem">Mensagem: *</label>
+                                            <textarea name="mensagem" id="mensagem4" placeholder="Escreva aqui sua mensagem..."
+                                                required></textarea>
+                                        </div>
+
+
+                                        <div class="buttonDiv">
+                                            <button id="closeButton4" class="button-contact back-contact">Voltar</button>
+                                            <button id="sendButton4" class="button-contact" onclick="submitForm4()">
+                                                Enviar</button>
+
+                                        </div>
+
+                                    </form>
+
+                                </dialog>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Final do Card 2 -->
+                </div>
+
+    
+
+        </main>
+
+        <!-- Final do conteúdo principal -->
+
+
+        <!-- Inicio da area de navegação -->
+        <footer class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="Navegação/Assets/img/Home_Contorno.svg"></a>
+                        <span>Início</span>
+                    </li>
+                    <li><a href="#"><img src="Navegação/Assets/img/Mapa_Contorno.svg"></a>
+                        <span>Mapa</span>
+                    </li>
+                    <li id="mapa1" class="hidden">
+                        <a href="/mapa.html" class="active"><img src="Navegação/Assets/img/olhar_Contorno.svg"></a>
+                        <span>Olhar</span>
+                    </li>
+
+                    <li><a href="#"><img src="Navegação/Assets/img/Perfil_Contorno.svg"></a>
+                        <span>Perfil</span>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+        <!-- Final da area de navegação -->
+
+        <!-- Scripts JS -->
+        <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/button.js"></script>
+        <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/popup.js"></script>
+        <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/pontos.json"></script>
+    </body>
+
 </html>
