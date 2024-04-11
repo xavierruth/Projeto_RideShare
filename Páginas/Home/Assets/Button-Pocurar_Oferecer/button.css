@@ -25,16 +25,6 @@
     color: var(--BG-Purple-1);
 }
 
-/* Estilos para os campos de entrada */
-input[type="text"] {
-    width: calc(100% - 20px); /* Define a largura dos inputs */
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-}
-
 #carona-content {
     width: 21.438rem;
     height: 15.938rem;
@@ -51,6 +41,10 @@ input[type="text"] {
     width: 16.5rem;
     height: 3.125rem;
     margin-bottom: 2.5rem;
+    padding: 10px;
+    border: 1px solid var(--Borda-Gray-Sutil);
+    background-color: var( --BG-Gray-1);
+    color: var(--Solid-Gray-Normal);
 }
 
 #motorista-content {
