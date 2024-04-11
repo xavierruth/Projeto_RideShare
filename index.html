@@ -3,6 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta name="author" content="Carlos Campos, Beatriz Nader, Lucas Teixeira, Ruth Xavier">
+        <meta name="theme-color" content="#FDFCFF"/>
+        <meta name="background_color" content="#DFF9F2">
+        <meta name="description" content="RideShare - Compartilhamento de Viagens">
+
+        <link rel="manifest" href="./manifest.json">
+
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="msapplication-TileImage" content="./Raíz/icons/Icon-180">
+        <meta name="msapplication-TileColor" content="#141414">
+
+        
+        <link rel="shortcut icon" sizes="180x180" href="./Raíz/icons/Icon-180.png">
+        <link rel="shortcut icon" sizes="120x120" href="./Raíz/icons/Icon-120.png">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#141414">
+    <meta name="apple-mobile-web-app-title" content="RideShare">
+    <link rel="apple-touch-icon" href="./Raíz/icons/Icon-180.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./Raíz/icons/Icon-114.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./Raíz/icons/Icon-180.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./Raíz/icons/Icon-120.png">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+
     <link rel="stylesheet" href="/Raíz/css/styles.css">
     <link rel="stylesheet" href="/Raíz/css/root.css">
     <link rel="stylesheet" href="Raíz/css/index.css">
@@ -42,4 +70,17 @@
 
 <script type="text/javascript">document.addEventListener('DOMContentLoaded', function () {window.setTimeout(document.querySelector('svg').classList.add('animated'),1000);})</script> 
 <script src="Raíz/js/scripts.js"></script>
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(function(registration) {
+                    console.log('Service worker registrado com sucesso:', registration);
+                })
+                .catch(function(error) {
+                    console.log('Erro ao registrar o service worker:', error);
+                });
+        });
+    }
+</script>
 </html>

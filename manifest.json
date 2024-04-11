@@ -3,150 +3,150 @@
     "short_name": "RideShare",
     "icons": [
         {
-            "src": "./Raíz/icons/icon-512.png", 
+            "src": "./Raíz/icons/Icon-512.png", 
             "sizes": "512x512", 
             "type": "image/png", 
             "purpose": "any"
         },
         {
-            "src": "./Raíz/icons/icon-1024.png", 
+            "src": "./Raíz/icons/Icon-1024.png", 
             "sizes": "1024x1024", 
             "type": "image/png" 
         },
         {
-            "src": "./Raíz/icons/icon-256.png", 
+            "src": "./Raíz/icons/Icon-256.png", 
             "sizes": "256x256", 
             "type": "image/png" 
         },
         {
-            "src": "./Raíz/icons/icon-196.png", 
+            "src": "./Raíz/icons/Icon-196.png", 
             "sizes": "196x1964", 
             "type": "image/png" 
         },
         {
-            "src": "./Raíz/icons/icon-180.png", 
+            "src": "./Raíz/Icons/Icon-180.png", 
             "sizes": "180x180", 
             "type": "image/png" 
         },
         {
-            "src": "./Raíz/icons/icon-172.png", 
+            "src": "./Raíz/icons/Icon-172.png", 
             "sizes": "172x172", 
             "type": "image/png" 
         },
         {
-            "src": "./Raíz/icons/icon-167.png", 
+            "src": "./Raíz/icons/Icon-167.png", 
             "sizes": "167x167", 
             "type": "image/png" 
         },
         {
-            "src": "./Raíz/icons/icon-152.png", 
+            "src": "./Raíz/icons/Icon-152.png", 
             "sizes": "152x152", 
             "type": "image/png" 
         },
         {
-            "src": "./Raíz/icons/icon-144.png", 
+            "src": "./Raíz/icons/Icon-144.png", 
             "sizes": "144x144", 
             "type": "image/png" 
         },
         {
-            "src": "./Raíz/icons/icon-128.png", 
+            "src": "./Raíz/icons/Icon-128.png", 
             "sizes": "128x128", 
             "type": "image/png" 
         },
         {
-            "src": "./Raíz/icons/icon-120.png", 
+            "src": "./Raíz/icons/Icon-120.png", 
             "sizes": "120x120", 
             "type": "image/png" 
         },
         {
-            "src": "./Raíz/icons/icon-114.png", 
+            "src": "./Raíz/icons/Icon-114.png", 
             "sizes": "114x114", 
             "type": "image/png" 
         },
         {
-            "src": "./Raíz/icons/icon-100.png", 
+            "src": "./Raíz/icons/Icon-100.png", 
             "sizes": "100x100", 
             "type": "image/png" 
         },
         {
-            "src": "./Raíz/icons/icon-88.png", 
+            "src": "./Raíz/icons/Icon-88.png", 
             "sizes": "88x88", 
             "type": "image/png" 
         },
         {
-            "src": "./Raíz/icons/icon-87.png", 
+            "src": "./Raíz/icons/Icon-87.png", 
             "sizes": "87x87", 
             "type": "image/png" 
         },
         {
-            "src": "./Raíz/icons/icon-80.png", 
+            "src": "./Raíz/icons/Icon-80.png", 
             "sizes": "80x80", 
             "type": "image/png" 
         },
         {
-            "src": "./Raíz/icons/icon-76.png", 
+            "src": "./Raíz/icons/Icon-76.png", 
             "sizes": "76x76", 
             "type": "image/png" 
         },
         {
-            "src": "./Raíz/icons/icon-72.png", 
+            "src": "./Raíz/icons/Icon-72.png", 
             "sizes": "72x72", 
             "type": "image/png" 
         },
         {
-            "src": "./Raíz/icons/icon-64.png", 
+            "src": "./Raíz/icons/Icon-64.png", 
             "sizes": "64x64", 
             "type": "image/png" 
         },
         {
-            "src": "./Raíz/icons/icon-60.png", 
+            "src": "./Raíz/icons/Icon-60.png", 
             "sizes": "60x60", 
             "type": "image/png" 
         },
         {
-            "src": "./Raíz/icons/icon-58.png", 
+            "src": "./Raíz/icons/Icon-58.png", 
             "sizes": "58x58", 
             "type": "image/png" 
         },
         {
-            "src": "./Raíz/icons/icon-57.png", 
+            "src": "./Raíz/icons/Icon-57.png", 
             "sizes": "57x57", 
             "type": "image/png" 
         },
         {
-            "src": "./Raíz/icons/icon-55.png", 
+            "src": "./Raíz/icons/Icon-55.png", 
             "sizes": "55x55", 
             "type": "image/png" 
         },
         {
-            "src": "./Raíz/icons/icon-50.png", 
+            "src": "./Raíz/icons/Icon-50.png", 
             "sizes": "50x50", 
             "type": "image/png" 
         },
         {
-            "src": "./Raíz/icons/icon-48.png", 
+            "src": "./Raíz/icons/Icon-48.png", 
             "sizes": "48x48", 
             "type": "image/png" 
         },
         {
-            "src": "./Raíz/icons/icon-40.png", 
+            "src": "./Raíz/icons/Icon-40.png", 
             "sizes": "40x40", 
             "type": "image/png" 
         },
         {
-            "src": "./Raíz/icons/icon-39.png", 
+            "src": "./Raíz/icons/Icon-39.png", 
             "sizes": "39x39", 
             "type": "image/png" 
         },
         {
-            "src": "./Raíz/icons/icon-29.png", 
+            "src": "./Raíz/icons/Icon-29.png", 
             "sizes": "29x29", 
             "type": "image/png" 
         }
     ],
     "screenshots":[
         {
-            "src":"./Raíz/icons/icon-1024.png",
+            "src":"./Raíz/icons/Icon-1024.png",
             "sizes": "1024x1024",
             "type": "image/gif",
             "label": "Wonder Widgets"
@@ -163,7 +163,7 @@
     "background_color": "#141414",
     "icons":[
         {
-            "src": "./Raíz/icons/icon-120.png",
+            "src": "./Raíz/icons/Icon-120.png",
             "sizes": "120x120",
             "type":"image/png"
         }
