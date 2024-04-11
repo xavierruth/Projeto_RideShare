@@ -28,6 +28,9 @@ self.addEventListener('install', event => {
       './Navegação/Assets/img/Perfil_SContorno.svg',
       './Navegação/Assets/img/Pin.svg',
       './Navegação/Assets/img/seta_voltar.svg',
+      './Navegação/Assets/img/rideshare_index.svg',
+      './Navegação/Assets/img/rideshare_login.svg',
+      './Navegação/Assets/img/seta_voltar.svg',
       './Raíz/icons/icon-29.png',
       './Raíz/icons/icon-32.png', 
       './Raíz/icons/icon-40.png',
@@ -55,7 +58,7 @@ self.addEventListener('install', event => {
       './Raíz/icons/icon-196.png',
       './Raíz/icons/icon-256.png',
       './Raíz/icons/icon-512.png',
-      './Raíz/icons/icon-1024.png',  
+      './Raíz/icons/icon-1024.png', 
 
     ]))
   );
