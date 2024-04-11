@@ -16,3 +16,7 @@ svg#freepik_stories-carpool.animated #freepik--speech-bubble-2--inject-3 {
  .animator-hidden { 
     display: none; 
 }
+
+.animated{
+  z-index: 999;
+}
