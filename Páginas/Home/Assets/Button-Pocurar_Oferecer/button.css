@@ -28,7 +28,7 @@
 #carona-content {
     width: 21.438rem;
     height: 15.938rem;
-    background-color: #F5EEFF; /*--BG-Component-Normal: #F5EEFF */
+    background-color: var(--BG-PURPLE-Component-Normal);
     text-align: center;
     padding-top: 1.625rem;
     margin-top: 1.938rem;
@@ -44,13 +44,13 @@
     padding: 10px;
     border: 1px solid var(--Borda-Gray-Sutil);
     background-color: var( --BG-Gray-1);
-    color: var(--Solid-Gray-Normal);
+    color: var(--Text-Gray-Baixo-Contraste);
 }
 
 #motorista-content {
     width: 21.438rem;
     height: 10.625rem;
-    background-color: #F5EEFF; /*--BG-Component-Normal: #F5EEFF */
+    background-color:  var(--BG-PURPLE-Component-Normal);
     text-align: center;
     padding-top: 1.625rem;
     margin-top: 1.938rem;

@@ -1,5 +1,5 @@
 .header{
-    position: fixed;
+    position: relative;
     top: 0;
     display: flex;
     align-items: center;
@@ -30,7 +30,7 @@ height: 55px;
 }
 
 .cadastro_corpo{
-    margin-top: 150px;
+    margin-top: 10px;
 }
 
 .passo{
@@ -71,11 +71,11 @@ select {
     width: 100%;
     padding: 10px;
     border: 1px solid var(--Borda-Gray-Sutil-Interativa);
-    background-color: var(--BG-Gray-Component-Normal);
+    background-color: var(--BG-Gray-1);
     border-radius: 5px;
     width: 21.375rem;
     height: 3.125rem;
-    color: var(--Solid-Gray-Normal);
+    color: var(--Text-Gray-Baixo-Contraste);
 }
 
 /* Inputs endereço modificaçoes */
@@ -90,7 +90,7 @@ select {
 }
 #uf,
 #bairro{
-    margin-right: 24px;
+    margin-right: 12px;
 }
 
 #bairro,
@@ -109,6 +109,9 @@ select {
     width: 21.438rem; 
     border-radius: 20px;
     background: linear-gradient(to right, transparent -50%, var(--Solid-PURPLE-Normal),var(--Solid-Gray-Normal) 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .circulo{
@@ -130,6 +133,9 @@ select {
     width: 21.438rem; 
     border-radius: 20px;
     background: var(--Solid-PURPLE-Normal);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .circulo2{
@@ -140,9 +146,20 @@ select {
     position:absolute;
     top: 50%;
     left: 85%;
-    transform: translate(50%, -50%);
+    transform: translate(65%, -50%);
      /* Ajuste a posição horizontal conforme necessário */
     
+}
+
+.checkboxes{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--legenda-size);
+}
+.checkboxes a{
+    color: var(--Text-PURPLE-Baixo-Contraste);
+    text-decoration: underline;
 }
 
 #btn-cadastro,
@@ -155,4 +172,5 @@ select {
     border-radius: 5px;
     font-size: var(--paragrafo-size);
     font-weight: var(--titulo-weight-4);
+
 }

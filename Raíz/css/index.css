@@ -1,9 +1,9 @@
 body{
-    background-color: var(--BG-Verde-Component-Normal);
+    background-color: var(--BG-Purple-1);
     height: 100%;
 }
 .header-index{
-    margin-top: 55px;
+    margin-top: 50px;
     margin-left: 16px;
     height: 15vh;
 }
@@ -46,18 +46,22 @@ body{
 #btn-cadastrar{
     width: 21.375rem;
     height: 3.125rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     border-radius: 5px;
 }
 
 #btn-entrar{
-    background-color: var(--BG-Verde-Component-Hover);
-    color: var(--Text-Verde-Baixo-Contraste);
+    background-color: var(--BG-Purple-1);
+    color: var(--Text-PURPLE-Baixo-Contraste);
     border: none;
+    font-size: var(--paragrafo-size);
+    font-weight: var(--titulo-weight-5);
 }
 
 #btn-cadastrar{
-    color: var(--BG-Verde-Component-Normal);
+    color: var(--BG-Purple-1);
     background-color: transparent;
-    border: 1px solid var(--BG-Verde-Component-Normal);
+    border: none;
+    font-size: var(--paragrafo-size);
+    font-weight: var(--titulo-weight-5);
 }

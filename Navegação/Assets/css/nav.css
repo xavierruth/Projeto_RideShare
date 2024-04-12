@@ -4,7 +4,7 @@
     left: 0;
     bottom: 0; /* Alinha a barra de navegação na parte inferior da tela */
     width: 100%; /* Largura total da barra de navegação */
-    height: 6rem;
+    height: 5rem;
     z-index: 99999;
 }
 
@@ -12,12 +12,12 @@
     list-style-type: none; /* Remove os marcadores de lista */
     margin: 0;
     text-align: center; /* Alinha os itens de navegação ao centro */
-    padding-top: 1.5rem ;
+    padding-top: 0.5rem ;
 }
 
 .navbar nav ul li {
     display: inline-block; /* Exibe os itens de navegação em linha */
-    margin:0 2.5rem; /* Espaçamento entre os itens de navegação */
+    margin:0 1rem; /* Espaçamento entre os itens de navegação */
     
 }
 
