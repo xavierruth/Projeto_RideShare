@@ -25,7 +25,7 @@ function error(error){ //autorização negada
     console.log(error);
 }
 
-var watchID= navigator.geolocation.watchPosition(success, error, {
+var watchID= navigator.geolocation.getCurrentPosition(success, error, {
     enableHighAccuracy:true,
     timeout:5000
 }); 
@@ -42,9 +42,10 @@ fetch('/Páginas/Home/Assets/Button-Pocurar_Oferecer/pontos.json') //integraçã
             const nome = motorista.nome;
             const distancia = motorista.distancia;
             const placa = motorista.Placa;
+            const imagem = motorista.imagem;
           
              L.marker([motorista.latitude, motorista.longitude]).addTo(map) //passo as latitudes e longitudes para criação dos pontos
-            .bindPopup(`<h3>${nome}</h3><p><strong>Distância:</strong> ${distancia}</p><p><strong>Placa:</strong> ${placa}</p>`); //informação dos popups dos motoristas
+            .bindPopup(`<img src="${imagem}" alt="Imagem do motorista"<br><h3>${nome}</h3><p><strong>Distância:</strong> ${distancia}</p><p><strong>Placa:</strong> ${placa}</p>`); //informação dos popups dos motoristas
         });
     }) 
     .catch(error => console.error('Erro ao carregar as localizações:', error)); //mensagem de erro 
