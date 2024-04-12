@@ -74,20 +74,13 @@ body {
     width: 340px;
     height: 100%;
     margin: 30px auto 58px;
-    padding: 20px auto;
+    padding: 20px auto
  
 }
 
 
-.situacao-div{
-    position: relative;
-}
-
-
-
 .situation{
-    border: none;
-    position: absolute;
+    border: none; 
     left: 25px;
     top: -15px;
     padding: 8px 10px;
@@ -175,7 +168,7 @@ dialog::backdrop{
     background:var(--BG-Purple-1);
     padding: 10px;
     border-radius: 8px;
-    left: 0px;
+    left: 20px;
     top: 180px;
     width: 345px;
     position: fixed;

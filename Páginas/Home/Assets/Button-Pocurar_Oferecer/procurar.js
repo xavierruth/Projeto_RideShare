@@ -32,6 +32,4 @@ addEventListeners('3', '+558199504711');
 addEventListeners('4', '+558197131787'); 
 addEventListeners('5', '+558197131787'); 
 addEventListeners('6', '+558197131787'); 
-addEventListeners('7', '+558197131787'); 
-addEventListeners('8', '+558197131787'); 
 

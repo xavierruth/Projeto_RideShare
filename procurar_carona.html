@@ -15,7 +15,7 @@
     
     <body>
    
-   
+          <!-- inicio do header -->
         <header>
             <div class="header">
             
@@ -27,9 +27,12 @@
             
             </div>
         </header>
-        
+        <!-- final do header -->
+
+        <!-- Inicio da sessao principal motoristas próximos -->
             <div id="motorista" class="carona-proxima"  >
 
+                <!-- Inicio do card 1  -->
                 <div class="cards-section">
 
                     <div class="situacao-div">
@@ -49,133 +52,309 @@
                     
                     </div>
                 
-                <div class="contato">
-                    
-                        <div class="contato-div">
-                            <!-- <button class="mensagem" id="modal"> Mensagem </button> -->
-                        </div>      
-                    </div>
-                </div>
+                    <div class="contato">
 
-            
+                        <div class="btnDiv">
+    
+                            <button id="abrirModal" class="btn mensagem"> Mensagem </button>
+    
+                            <dialog id="modal">
+                                <div class="title">
+                                    <h3>Fale com Felipe Oliveira</h3>
+                                </div>
+    
+                                <form class="formulario" method="post">
+    
+                                    <div class="form-div">
+                                        <label for="nome"> Nome: *</label>
+                                        <input type="text" name="nome" id="nome" placeholder="Escreva seu nome aqui" required>
+                                    </div>
+    
+                                    <div class="form-div">
+                                        <label for="mensagem">Mensagem: *</label>
+                                        <textarea name="mensagem" id="mensagem" placeholder="Escreva aqui sua mensagem..."
+                                            required></textarea>
+                                    </div>
+    
+    
+                                    <div class="buttonDiv">
+                                        <button id="closeButton" class="button-contact  back-contact">Voltar</button>
+                                        <button id="sendButton" class="button-contact" onclick="submitForm()"> Enviar</button>
+    
+                                    </div>
+    
+                                </form>
+    
+    
+                            </dialog>
+    
+                        </div>
+    
+    
+                    </div>
+
+                </div>
+                 <!-- final do card 1  -->
+
+
+                <!-- Inicio do card 2  -->
                 <div class="cards-section">
 
-                    <div class="situacao-div">
-                        <button class="situation active" id="situation"> Disponivel </button>
-                    </div> 
+                        <div class="situacao-div">
+                            <button class="situation active" id="situation"> Disponivel </button>
+                        </div> 
 
-                    <div class="content-group-card">
-                        <div class="img-card">
-                            <img src="./Navegação/Assets/img/modelo7.svg" alt="foto de perfil motorista próximo">
-                    </div>
-                    <div class="conteudo-card">
-                            <h3> Laura Porto </h3>
-                            <p> Distância:  min de você</p>
-                            <p>KXM-2367 - Nissan March </p>
-                            <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
-                    </div>
-                    
-                    </div>
-                
-                <div class="contato">
+                        <div class="content-group-card">
+                            <div class="img-card">
+                                <img src="./Navegação/Assets/img/modelo7.svg" alt="foto de perfil motorista próximo">
+                        </div>
+                        <div class="conteudo-card">
+                                <h3> Laura Porto </h3>
+                                <p> Distância:  min de você</p>
+                                <p>KXM-2367 - Nissan March </p>
+                                <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
+                        </div>
                         
+                        </div>
                     
-                        <div class="contato-div">
-                            <!-- <button class="mensagem" id="modal"> Mensagem </button> -->
-                        </div>      
-                    </div>
-                </div>
-                
-                
-                <div class="cards-section">
+                        <div class="contato">
 
-                    <div class="situacao-div">
-                        <button class="situation active" id="situation"> Disponivel </button>
-                    </div> 
-
-                    <div class="content-group-card">
-                        <div class="img-card">
-                            <img src="./Navegação/Assets/img/modelo6.svg" alt="foto de perfil motorista próximo">
-                    </div>
-                    <div class="conteudo-card">
-                            <h3> João Guilherme </h3>
-                            <p> Distância: 9 min de você</p>
-                            <p>KBR-4431 - Hyuindai HB20 </p>
-                            <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
-                    </div>
-                    
-                    </div>
-                
-                <div class="contato">
-                            
-                    
-                        <div class="contato-div">
-                            <!-- <button class="mensagem" id="modal"> Mensagem </button> -->
-                        </div>      
-                    </div>
-                </div>
-
-                
-                <div class="cards-section">
-
-                    <div class="situacao-div">
-                        <button class="situation active" id="situation"> Disponivel </button>
-                    </div> 
-
-                    <div class="content-group-card">
-                        <div class="img-card">
-                            <img src="./Navegação/Assets/img/modelo5.svg" alt="foto de perfil motorista próximo">
-                    </div>
-                    <div class="conteudo-card">
-                            <h3> Fernanda Feijó </h3>
-                            <p> Distância: 9 min de você</p>
-                            <p>KBB-2110 - Renault Sandero </p>
-                            <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
-                    </div>
-                    
-                    </div>
-                
-                <div class="contato">
-                            
-                    
-                        <div class="contato-div">
-                            <!-- <button class="mensagem" id="modal"> Mensagem </button> -->
-                        </div>      
-                    </div>
-                </div>
-
-                
-                <div class="cards-section">
-
-                    <div class="situacao-div">
-                        <button class="situation active" id="situation"> Disponivel </button>
-                    </div> 
-
-                    <div class="content-group-card">
-                        <div class="img-card">
-                            <img src="./Navegação/Assets/img/modelo4.svg" alt="foto de perfil motorista próximo">
-                    </div>
-                    <div class="conteudo-card">
-                            <h3> Bruna Maia </h3>
-                            <p> Distância: 11 min de você</p>
-                            <p>KDW-1377 - Renault Kwid </p>
-                            <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
-                    </div>
-                    
-                    </div>
-                
-                <div class="contato">
-                            
-                    
-                        <div class="contato-div">
-                            <!-- <button class="mensagem" id="modal"> Mensagem </button> -->
-                        </div>      
-                    </div>
-                </div>
-
-            </div>
+                            <div class="btnDiv">
         
+                                <button id="abrirModal2" class="btn mensagem"> Mensagem </button>
+        
+                                <dialog id="modal2">
+                                    <div class="title">
+                                        <h3>Fale com Laura Porto</h3>
+                                    </div>
+        
+                                    <form class="formulario" method="post">
+        
+                                        <div class="form-div">
+                                            <label for="nome"> Nome: *</label>
+                                            <input type="text" name="nome" id="nome2" placeholder="Escreva seu nome aqui" required>
+                                        </div>
+        
+                                        <div class="form-div">
+                                            <label for="mensagem">Mensagem: *</label>
+                                            <textarea name="mensagem" id="mensagem2" placeholder="Escreva aqui sua mensagem..."
+                                                required></textarea>
+                                        </div>
+        
+        
+                                        <div class="buttonDiv">
+                                            <button id="closeButton2" class="button-contact  back-contact">Voltar</button>
+                                            <button id="sendButton2" class="button-contact" onclick="submitForm2()"> Enviar</button>
+        
+                                        </div>
+        
+                                    </form>
+        
+        
+                                </dialog>
+        
+                            </div>
+        
+        
+                        </div>
+                </div>
+                <!-- final do card 2 -->
+                
+                <!-- Inicio do card 3  -->
+                <div class="cards-section">
+
+                        <div class="situacao-div">
+                            <button class="situation active" id="situation"> Disponivel </button>
+                        </div> 
+
+                        <div class="content-group-card">
+                            <div class="img-card">
+                                <img src="./Navegação/Assets/img/modelo6.svg" alt="foto de perfil motorista próximo">
+                        </div>
+                        <div class="conteudo-card">
+                                <h3> João Guilherme </h3>
+                                <p> Distância: 9 min de você</p>
+                                <p>KBR-4431 - Hyuindai HB20 </p>
+                                <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
+                        </div>
+                        
+                        </div>
+                    
+                        <div class="contato">
+
+                            <div class="btnDiv">
+        
+                                <button id="abrirModal3" class="btn mensagem"> Mensagem </button>
+        
+                                <dialog id="modal3">
+                                    <div class="title">
+                                        <h3>Fale com João Guilherme</h3>
+                                    </div>
+        
+                                    <form class="formulario" method="post">
+        
+                                        <div class="form-div">
+                                            <label for="nome"> Nome: *</label>
+                                            <input type="text" name="nome" id="nome3" placeholder="Escreva seu nome aqui" required>
+                                        </div>
+        
+                                        <div class="form-div">
+                                            <label for="mensagem">Mensagem: *</label>
+                                            <textarea name="mensagem" id="mensagem3" placeholder="Escreva aqui sua mensagem..."
+                                                required></textarea>
+                                        </div>
+        
+        
+                                        <div class="buttonDiv">
+                                            <button id="closeButton3" class="button-contact  back-contact">Voltar</button>
+                                            <button id="sendButton3" class="button-contact" onclick="submitForm3()"> Enviar</button>
+        
+                                        </div>
+        
+                                    </form>
+        
+        
+                                </dialog>
+        
+                            </div>
+        
+        
+                        </div>
+                </div>
+                  <!-- final do card 3  -->
+                
+                  <!-- Inicio do card 4  -->
+                <div class="cards-section">
+
+                        <div class="situacao-div">
+                            <button class="situation active" id="situation"> Disponivel </button>
+                        </div> 
+
+                        <div class="content-group-card">
+                            <div class="img-card">
+                                <img src="./Navegação/Assets/img/modelo5.svg" alt="foto de perfil motorista próximo">
+                        </div>
+                        <div class="conteudo-card">
+                                <h3> Fernanda Feijó </h3>
+                                <p> Distância: 9 min de você</p>
+                                <p>KBB-2110 - Renault Sandero </p>
+                                <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
+                        </div>
+                        
+                        </div>
+                    
+                        <div class="contato">
+
+                            <div class="btnDiv">
+        
+                                <button id="abrirModal4" class="btn mensagem"> Mensagem </button>
+        
+                                <dialog id="modal4">
+                                    <div class="title">
+                                        <h3>Fale com Fernanda Feijó</h3>
+                                    </div>
+        
+                                    <form class="formulario" method="post">
+        
+                                        <div class="form-div">
+                                            <label for="nome"> Nome: *</label>
+                                            <input type="text" name="nome" id="nome4" placeholder="Escreva seu nome aqui" required>
+                                        </div>
+        
+                                        <div class="form-div">
+                                            <label for="mensagem">Mensagem: *</label>
+                                            <textarea name="mensagem" id="mensagem4" placeholder="Escreva aqui sua mensagem..."
+                                                required></textarea>
+                                        </div>
+        
+        
+                                        <div class="buttonDiv">
+                                            <button id="closeButton4" class="button-contact  back-contact">Voltar</button>
+                                            <button id="sendButton4" class="button-contact" onclick="submitForm4()"> Enviar</button>
+        
+                                        </div>
+        
+                                    </form>
+        
+        
+                                </dialog>
+        
+                            </div>
+        
+        
+                        </div>
+                </div>
+                  <!-- final do card 4  -->
+                
+                  <!-- Inicio do card 5  -->
+                <div class="cards-section">
+
+                        <div class="situacao-div">
+                            <button class="situation active" id="situation"> Disponivel </button>
+                        </div> 
+
+                        <div class="content-group-card">
+                            <div class="img-card">
+                                <img src="./Navegação/Assets/img/modelo4.svg" alt="foto de perfil motorista próximo">
+                        </div>
+                        <div class="conteudo-card">
+                                <h3> Bruna Maia </h3>
+                                <p> Distância: 11 min de você</p>
+                                <p>KDW-1377 - Renault Kwid </p>
+                                <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
+                        </div>
+                        
+                        </div>
+                    
+                        <div class="contato">
+
+                            <div class="btnDiv">
+        
+                                <button id="abrirModal5" class="btn mensagem"> Mensagem </button>
+        
+                                <dialog id="modal5">
+                                    <div class="title">
+                                        <h3>Fale com Bruna Maia</h3>
+                                    </div>
+        
+                                    <form class="formulario" method="post">
+        
+                                        <div class="form-div">
+                                            <label for="nome"> Nome: *</label>
+                                            <input type="text" name="nome" id="nome5" placeholder="Escreva seu nome aqui" required>
+                                        </div>
+        
+                                        <div class="form-div">
+                                            <label for="mensagem">Mensagem: *</label>
+                                            <textarea name="mensagem" id="mensagem5" placeholder="Escreva aqui sua mensagem..."
+                                                required></textarea>
+                                        </div>
+        
+        
+                                        <div class="buttonDiv">
+                                            <button id="closeButton5" class="button-contact  back-contact">Voltar</button>
+                                            <button id="sendButton5" class="button-contact" onclick="submitForm5()"> Enviar</button>
+        
+                                        </div>
+        
+                                    </form>
+        
+        
+                                </dialog>
+        
+                            </div>
+        
+        
+                        </div>
+                </div>
+                  <!-- final do card 5  -->
+                
+            </div>
+            <!-- Final da sessao principal motoristas próximos -->
+
+            <!--Script JS  -->
         <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/button.js"></script>
+        <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/oferecer.js"></script>
     
     
     
