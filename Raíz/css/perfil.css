@@ -1,0 +1,27 @@
+.main-perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.area-foto{
+    position: relative;
+}
+
+.img-foto{
+    width: 150px;
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover;
+
+}
+
+.img-camera{
+    position: absolute;
+    background-color: var(--Solid-PURPLE-Normal);
+    padding: 8px;
+    border-radius: 50%;
+    bottom: -6px;
+    right: -1px ;
+}

@@ -24,3 +24,17 @@
        margin: 0 auto;
    }
 
+.profile-photo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+   .profile-photo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+   }

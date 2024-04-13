@@ -1,35 +1,19 @@
-var map; //inicia a loc do usuario default
-// var violetIcon;
-var greenIcon; // corrigido o nome da variável
-
-
-
-// violetIcon = L.icon({
-//     iconUrl: './Navegação/Assets/img/modelo5.svg',
-
-
-//     iconSize:     [38, 95], // size of the icon
-//     shadowSize:   [50, 64], // size of the shadow
-//     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-//     shadowAnchor: [4, 62],  // the same for the shadow
-//     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
-// });
-
+var map;
+var violetIcon;
 
 violetIcon = L.icon({
     iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-violet.png',
     shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
-
     iconSize: [25, 41],
     iconAnchor: [12, 41],
     popupAnchor: [1, -34],
     shadowSize: [41, 41]
 });
 
-function success(position) { //quando o usuario permitir acesso
-    console.log(position.coords.latitude, position.coords.longitude); //para ver a coordernada
+function success(position) {
+    console.log(position.coords.latitude, position.coords.longitude);
 
-    if (map === undefined) { //ponto atual do mapa
+    if (map === undefined) {
         map = L.map('map').setView([position.coords.latitude, position.coords.longitude], 14);
     } else {
         map.remove();
@@ -38,16 +22,38 @@ function success(position) { //quando o usuario permitir acesso
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map); //mapa gerado e adicionado e suas contribuições
+    }).addTo(map);
 
+    // Verificar se há foto de perfil salva
+    const storedPhoto = localStorage.getItem('perfilPhoto');
+    const iconUrl = storedPhoto ? storedPhoto : './Navegação/Assets/img/fotoVazio.svg';
+
+    // Criar o ícone do perfil do usuário
+    const profileIcon = L.icon({
+        iconUrl: iconUrl,
+        iconSize: [50, 50],
+        iconAnchor: [25, 50],
+        popupAnchor: [0, -50]
+    });
+
+    // Conteúdo do popup com a foto do perfil ou imagem vazia
+    const markerPopupContent = `
+        <div class="popup-content">
+            <div class="profile-photo-container">
+                <img class="profile-photo" src="${iconUrl}" alt="Sua foto de perfil">
+            </div>
+            <h3>Sua Localização atual</h3>
+        </div>`;
+
+    // Adicionar marcador com o pin roxo
     L.marker([position.coords.latitude, position.coords.longitude], {
-            icon: violetIcon
-        }).addTo(map)
-        .bindPopup("<h3>Sua Localização atual </h3>")
-        .openPopup();
+        icon: violetIcon
+    }).addTo(map)
+    .bindPopup(markerPopupContent)
+    .openPopup();
 }
 
-function error(error) { //autorização negada
+function error(error) {
     console.log(error);
 }
 

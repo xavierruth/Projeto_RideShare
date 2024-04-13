@@ -21,7 +21,9 @@ body {
 
 .header{
     position: relative;
-    top: 0;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
     background-color: var(--Solid-PURPLE-Normal); 
     color: var(--BG-Purple-1);
     width: 100%;
@@ -39,12 +41,22 @@ body {
     margin-left: -86px;
 }
 
-#avatar{
-    width: 66px;
-    height: 66px;
-    border-radius: 50%;
-    transform: translate(-10% ,-35%);
+.foto-div{
+    
 }
+
+
+.photo{
+    margin-right: 20px ;
+    width: 80px !important;
+    height: 80px !important; 
+    border-radius: 50%; 
+    object-fit: cover;
+
+
+    
+}
+
 
 .header h2{
     font-size: var(--titulo-size);
