@@ -6,3 +6,21 @@
      border-radius: 5px;
    
    }
+
+   .cardMap{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; 
+    background-color: var(--Borda-PURPLE-Sutil);
+   
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+   }
+
+
+   .imgMotorista, .nomeMotorista{
+       margin: 0 auto;
+   }
+

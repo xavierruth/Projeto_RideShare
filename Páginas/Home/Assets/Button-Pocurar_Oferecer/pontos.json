@@ -6,6 +6,7 @@
     "nome": "Felipe Oliveira",
     "distancia": "5 min de você", 
     "Placa":"KGM-2399 - Fiat Uno",
+    "cor":"./Navegação/Assets/img/carro-cinza.svg",
     "latitude":-8.05613,
     "longitude":-34.89451
 },
@@ -15,9 +16,9 @@
     "id": 2,
     "imagem":"./Navegação/Assets/img/modelo7.svg",
     "nome": "Laura Porto",
-    "imagem":"./Navegação/Assets/img/modelo7.svg",
     "distancia": "8 min de você", 
     "Placa":"KXM-2367 - Nissan March",
+    "cor":"./Navegação/Assets/img/carro-branco.svg",
     "latitude":-8.02985,
     "longitude":-34.89253
 },
@@ -30,6 +31,7 @@
     "nome": "João Guilherme",
     "distancia": "9 min de você", 
     "Placa":"KBR-4431 - Hyuindai HB20",
+    "cor":"./Navegação/Assets/img/carro-cinza.svg",
     "latitude":-8.07202,
     "longitude":-34.9099
 },
@@ -42,6 +44,7 @@
     "nome": "Fernanda Feijó",
     "distancia": "9 min de você", 
     "Placa":"KBB-2110 - Renault Sandero",
+    "cor":"./Navegação/Assets/img/carro-vermelho.svg",
     "latitude":-8.07701,
     "longitude":-34.93097
 },
@@ -54,6 +57,7 @@
     "nome": "Bruna Maia",
     "distancia": " 11 min de você", 
     "Placa":"KDW-1377 - Renault Kwid",
+    "cor":"./Navegação/Assets/img/carro-preto.svg",
     "latitude":-8.04709,
     "longitude":-34.95526
 }
