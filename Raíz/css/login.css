@@ -64,6 +64,7 @@
 input[type="text"],
 input[type="password"],
 select {
+    position: relative;
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -110,3 +111,18 @@ select {
     font-weight: var(--titulo-weight);
     font-size: var(--paragrafo-size);
 }
+
+
+/* acrescentado */
+.senha-group{
+    position: relative;
+}
+
+ .senha-group i {
+    position: absolute;
+    right: 20px;
+    top: 70%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: var(--Solid-Gray-Normal);
+  }

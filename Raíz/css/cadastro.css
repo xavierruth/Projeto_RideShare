@@ -174,3 +174,19 @@ select {
     font-weight: var(--titulo-weight-4);
 
 }
+
+
+/* eyes password */
+
+.senha-group{
+    position: relative;
+}
+
+ .senha-group i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: var(--Solid-Gray-Normal);
+  }

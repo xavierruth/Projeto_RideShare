@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="Páginas/Home/Assets/Button-Pocurar_Oferecer/button.css">
     <link rel="stylesheet" href="Páginas/Entrada-index/carpoolstyle.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>RideShare - Login</title>
 </head>
 <body>
@@ -31,10 +32,11 @@
                 <input type="text" id="matricula" name="matricula" 
                 placeholder="Digite o seu nome" required>
             </div>
-            <div class="form-group">
+            <div class="form-group senha-group">
                 <label for="senha">Senha</label>
                 <br>
-                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                <input type="password" class="senha" id="senha" name="senha" placeholder="Digite sua senha" required>
+                <i id="btnSenha" class="fa-solid fa-eye" onclick="showing()"></i>
             </div>
             <div class="form-group-2">
                 <div class="checkboxes">
@@ -70,6 +72,9 @@
 
     </main>
 
-    <script type="text/javascript">document.addEventListener('DOMContentLoaded', function () {window.setTimeout(document.querySelector('svg').classList.add('animated'),1000);})</script>
+    <script src="./Páginas/Home/Assets/Button-Pocurar_Oferecer/passwordView.js"></script>
+    <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {window.setTimeout(document.querySelector('svg').classList.add('animated'),1000);})
+    </script>
 </body>
 </html>
