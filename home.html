@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="Páginas/Home/Assets/css/home.css">
     <link rel="stylesheet" href="Páginas/Home/Assets/Button-Pocurar_Oferecer/button.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
     <title>RideShare - Home</title>
 </head>
 
@@ -55,6 +56,7 @@
                 <div id="busco-passageiro" class="carona-proxima">
                     
                     <h2> Caronas próximas a você </h2>
+                     
 
                     <!-- inicio do Card 1 -->
                     <div class="cards-section"> 
@@ -69,8 +71,11 @@
                             </div>
                             <div class="conteudo-card">
                                 <h3> Felipe Oliveira </h3>
-                                <p> Distância: 5 min de você</p>
+                                <p>Distância:<span id="distance"></span> km</p>
+                                <p>Tempo de Chegada:<span id="arrivalTime"></span> minutos</p>
                                 <p>KGM-2399 - Fiat Uno </p>
+                                <p hidden id="destination-lat"> -8.05613 </p>
+                                <p hidden id="destination-lng"> -34.89451"></p>
                                 <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b></p>
                             </div>
 
@@ -129,8 +134,11 @@
                             </div>
                             <div class="conteudo-card">
                                 <h3> Laura Porto </h3>
-                                <p> Distância: 8 min de você</p>
+                                <p>Distância:<span id="distance"></span> km</p>
+                                <p>Tempo de Chegada:<span id="arrivalTime"></span> minutos</p>
                                 <p>KXM-2367 - Nissan March </p>
+                                <p hidden id="destination-lat1">-8.02985</p>
+                                <p hidden id="destination-lng1">-34.89253></p>
                                 <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu
                                         e Lima</b> </p>
                             </div>
@@ -209,11 +217,13 @@
                             </div>
                             <div class="conteudo-card">
                                 <h3> Aline Campello </h3>
-                                <p> Distância: 5 min de você</p>
-                                <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu
-                                        e Lima</b> </p>
+                                <p>Distância:<span id="distance"></span> km</p>
+                                <p>Tempo de Chegada:<span id="arrivalTime"></span> minutos</p>
+                                <p hidden id="destination-lat2">-8.05013</p>
+                                <p hidden id="destination-lng2">-34.90792</p>   
+                                <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
                             </div>
-
+                           
                         </div>
 
                         <div class="contato">
@@ -274,11 +284,13 @@
                             </div>
                             <div class="conteudo-card">
                                 <h3> Mário Barros </h3>
-                                <p> Distância: 6 min de você</p>
-                                <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu
-                                        e Lima</b> </p>
+                                <p>Distância:<span id="distance"></span> km</p>
+                                <p>Tempo de Chegada:<span id="arrivalTime"></span> minutos</p>
+                                <p hidden id="destination-lat3"> -8.02209 </p>
+                                <p hidden id="destination-lng3"> -34.9268 </p>
+                                <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
                             </div>
-
+                            
                         </div>
 
                         <div class="contato">
@@ -332,6 +344,9 @@
         <!-- Final do conteúdo principal -->
 
 
+          
+
+
         <!-- Inicio da area de navegação -->
         <footer class="navbar">
             <nav>
@@ -359,6 +374,10 @@
         <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/button.js"></script>
         <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/popup.js"></script>
         <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/pontos.json"></script>
+        <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/"></script>
+        <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/ditanciaMotorista.js"></script>
+        <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/locHome.js"></script>
+ 
         
         <script>
             // Carrega a foto do armazenamento local, se existir
@@ -367,6 +386,8 @@
                 document.querySelector('.img-foto').src = storedPhoto;
             }
         </script>
+
+
      
     </body>
 

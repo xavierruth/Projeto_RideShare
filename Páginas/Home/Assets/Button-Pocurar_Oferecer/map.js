@@ -1,5 +1,7 @@
 var map;
 var violetIcon;
+var userLatitude; // Variável global para armazenar a latitude do usuário
+var userLongitude; // Variável global para armazenar a longitude do usuário
 
 violetIcon = L.icon({
     iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-violet.png',
@@ -12,12 +14,18 @@ violetIcon = L.icon({
 
 function success(position) {
     console.log(position.coords.latitude, position.coords.longitude);
+    userLatitude = position.coords.latitude; // Atribuir a latitude para a variável global
+    userLongitude = position.coords.longitude; // Atribuir a longitude para a variável global
+
+    // Armazenar a latitude e longitude em localStorage
+    localStorage.setItem('userLatitude', userLatitude);
+    localStorage.setItem('userLongitude', userLongitude);
 
     if (map === undefined) {
-        map = L.map('map').setView([position.coords.latitude, position.coords.longitude], 14);
+        map = L.map('map').setView([userLatitude, userLongitude], 14);
     } else {
         map.remove();
-        map = L.map('map').setView([position.coords.latitude, position.coords.longitude], 14);
+        map = L.map('map').setView([userLatitude, userLongitude], 14);
     }
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -46,7 +54,7 @@ function success(position) {
         </div>`;
 
     // Adicionar marcador com o pin roxo
-    L.marker([position.coords.latitude, position.coords.longitude], {
+    L.marker([userLatitude, userLongitude], {
         icon: violetIcon
     }).addTo(map)
     .bindPopup(markerPopupContent)
