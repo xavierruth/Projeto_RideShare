@@ -27,3 +27,5 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Localização do usuário não encontrada.');
     }
 });
+
+

@@ -40,13 +40,23 @@
             </div>
 
             <div id="carona-content" class="content">
-                <input type="text" id="input-carona-partida" placeholder="De:">
-                <input type="text" id="input-carona-destino" value="Para:  Refinaria Abreu e Lima" readonly>
+               <div>
+                    <label for="input-carona-partida">De:</label>
+                    <input type="text" id="input-carona-partida" placeholder="Endereço">
+               </div>
+               
+               <div>
+                    <label for="input-carona-destino">Para:</label>
+                    <input type="text" id="input-carona-destino" value="Refinaria Abreu e Lima" readonly>
+               </div>
+               
+               
                 <button id="btn-procurar" class="btn">Procurar</button>
             </div>
 
             <div id="motorista-content" class="content hidden">
-                <input type="text" id="input-carona-destino" value="Para:  Refinaria Abreu e Lima" readonly>
+                <label for="input-carona-destino"> Para:</label>
+                <input type="text" id="input-carona-destino" value="Refinaria Abreu e Lima" readonly>
                 <button id="btn-oferecer" class="btn">Oferecer</button>
             </div>
             <!-- Fim da área de busca -->
@@ -279,7 +289,7 @@
                         </div>
 
                         <div class="content-group-card">
-                            <div class="img-card">
+                            <div  class="img-card">
                                 <img src="./Navegação/Assets/img/modelo3.svg" alt="foto de perfil motorista próximo">
                             </div>
                             <div class="conteudo-card">
@@ -337,14 +347,9 @@
                     <!-- Final do Card 2 -->
                 </div>
 
-    
-
         </main>
 
         <!-- Final do conteúdo principal -->
-
-
-          
 
 
         <!-- Inicio da area de navegação -->
