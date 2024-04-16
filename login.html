@@ -25,33 +25,27 @@
     <main class="login-input">
         <p class="subtitulo-login">Login</p>
         <br>
-        <form class="login-form" action="home.html" name="loginform" method="post"> <!-- acrescentei para poder aparecer o nome-->
-            <div class="form-group">
-                <label for="username">Username</label>
-                <br>
-                <input type="text" id="username" name="username" 
-                placeholder="Digite o seu nome" required>
-            </div>
-            <div class="form-group senha-group">
-                <label for="senha">Senha</label>
-                <br>
-                <input type="password" class="senha" id="senha" name="senha" placeholder="Digite sua senha" required>
-                <i id="btnSenha" class="fa-solid fa-eye" onclick="showing()"></i>
-            </div>
-            <div class="form-group-2">
-                <div class="checkboxes">
-                    <input type="checkbox" id="lembrar-senha" name="lembrar-senha">
-                    <label for="lembrar-senha">Lembrar senha?</label>
-                </div>
-                <div class="esqueceu-senha">
-                    <a href="#">Esqueceu a senha?</a>
-                </div>
-            </div>
-            <!-- button direciona através do action na tag form-->
-
-            <!-- para fazer a ação de aparecer o nome-->
-          <button id="btn-login" type="submit">Login </button>
-        </form>
+      <form class="login-form" id="loginForm" action="javascript:void(0);" name="loginform" method="post">
+    <div class="form-group">
+        <label for="username">Username</label><br>
+        <input type="text" id="username" name="username" placeholder="Digite o seu nome" required>
+    </div>
+    <div class="form-group senha-group">
+        <label for="senha">Senha</label><br>
+        <input type="password" class="senha" id="senha" name="senha" placeholder="Digite sua senha" required>
+        <i id="btnSenha" class="fa-solid fa-eye" onclick="showing()"></i>
+    </div>
+    <div class="form-group-2">
+        <div class="checkboxes">
+            <input type="checkbox" id="lembrar-senha" name="lembrar-senha">
+            <label for="lembrar-senha">Lembrar senha?</label>
+        </div>
+        <div class="esqueceu-senha">
+            <a href="#">Esqueceu a senha?</a>
+        </div>
+    </div>
+    <button id="btn-login" type="submit">Login</button>
+</form>
 
 
         <!-- Inicío do form de login -->
