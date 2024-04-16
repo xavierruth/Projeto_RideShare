@@ -26,10 +26,20 @@ function addEventListeners(prefix, numeroWhatsApp) {
 }
 
 // Chamadas para adicionar ouvintes de evento para cada conjunto de elementos
-addEventListeners('', '+5581994197635'); 
+addEventListeners('',  '+5581994197635'); 
 addEventListeners('2', '+5581989179489');
 addEventListeners('3', '+558199504711'); 
 addEventListeners('4', '+558197131787'); 
+addEventListeners('5', '+5581994197635'); 
+addEventListeners('6', '+5581989179489');
+addEventListeners('7', '+558199504711'); 
+addEventListeners('8', '+558197131787'); 
+addEventListeners('9', '+5581994197635'); 
+addEventListeners('10', '+5581989179489');
+addEventListeners('11', '+558199504711'); 
+
+
+
 
 
 

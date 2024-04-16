@@ -17,7 +17,7 @@
 
 .navbar nav ul li {
     display: inline-block; /* Exibe os itens de navegação em linha */
-    margin:0 1rem; /* Espaçamento entre os itens de navegação */
+    margin:0 2rem; /* Espaçamento entre os itens de navegação */
     
 }
 

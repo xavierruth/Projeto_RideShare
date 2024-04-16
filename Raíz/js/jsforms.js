@@ -16,16 +16,16 @@ function submitProfileForm() {
     const newUsername = document.getElementById('new-username').value;
 
     // Verificar se o novo nome de usuário não está vazio
-    // if (newUsername.trim() !== '') {
-    //     // Atualizar o nome de usuário
-    //     updateUsername(newUsername);
-
-    //     // Exibir uma mensagem de sucesso (opcional)
-    //     alert('Nome de usuário atualizado com sucesso!');
-    // } else {
+     
+    if (newUsername.trim() !== '') {
+    //     Atualizar o nome de usuário
+    updateUsername(newUsername);
+     // Exibir uma mensagem de sucesso (opcional)
+        
+    } else {
         // Exibir uma mensagem de erro se o campo estiver vazio
         alert('Por favor, insira um novo nome de usuário.');
-    // }
+    }
 
     // Impedir o envio do formulário
     return false;

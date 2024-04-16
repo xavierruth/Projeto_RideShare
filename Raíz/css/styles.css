@@ -197,7 +197,7 @@ dialog::backdrop{
     background-color: #00000099;
   }
 
-  #modal, #modal2, #modal3, #modal4, #modal5, #modal6, #abrirModalPerfil{
+  #modal, #modal2, #modal3, #modal4, #modal5, #modal6,#modal7,#modal8, #modal9, #modal10, #modal11, #abrirModalPerfil{
     border:1px solid var(--text-color-soft); 
     background:var(--BG-Purple-1);
     padding: 10px;
@@ -322,10 +322,15 @@ textarea{
   }
 
 
-  .welcome{ /* nome do usuário*/
-justify-content: flex-start;
-margin-left: 3.125rem;
-      }
+.welcome{ /* nome do usuário*/
+display: flex;    
+text-align: center;
+justify-content: center;
+width: 100%;
+margin: 0 auto;
+
+
+}
 
 #bemvinde{
     color: var(--Text-PURPLE-Baixo-Contraste);
