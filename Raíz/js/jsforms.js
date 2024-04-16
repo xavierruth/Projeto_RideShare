@@ -6,7 +6,7 @@ function login() {
         // Armazenar o username no localStorage
         localStorage.setItem('username', username);
         // Redirecionar para a página home.html
-        window.location.href = "./home.html";
+        window.location.href = "home.html";
     } else {
         alert("Por favor, preencha seu usuário e senha.");
     }
