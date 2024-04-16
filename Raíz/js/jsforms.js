@@ -33,16 +33,16 @@ function submitProfileForm() {
 
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("btn-login").addEventListener("click", function(event) {
-        event.preventDefault(); // Evita o envio do formulário padrão
+        event.preventDefault(); // Prevent default form submission
 
-        var username = document.getElementById("username").value;
+        var username = document.getElementById("username").value; // Corrected ID for username field
         var senha = document.getElementById("senha").value;
 
         if (username && senha) {
-            // Armazenar o username no localStorage
+            // Store the username in localStorage
             localStorage.setItem('username', username);
-            // Redirecionar para a página home.html
-          
+            // Redirect to the home page
+            window.location.href = "home.html";
         } else {
             alert("Por favor, preencha seu usuário e senha.");
         }

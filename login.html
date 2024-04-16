@@ -25,18 +25,17 @@
     <main class="login-input">
         <p class="subtitulo-login">Login</p>
         <br>
-     <form class="login-form" action="home.html" name="loginform"> <!-- acrescentei para poder aparecer o nome-->
+        <form class="login-form" action="home.html">
             <div class="form-group">
                 <label for="username">Username</label>
                 <br>
                 <input type="text" id="username" name="username" 
                 placeholder="Digite o seu nome" required>
             </div>
-            <div class="form-group senha-group">
+            <div class="form-group">
                 <label for="senha">Senha</label>
                 <br>
-                <input type="password" class="senha" id="senha" name="senha" placeholder="Digite sua senha" required>
-                <i id="btnSenha" class="fa-solid fa-eye" onclick="showing()"></i>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
             </div>
             <div class="form-group-2">
                 <div class="checkboxes">
@@ -44,16 +43,12 @@
                     <label for="lembrar-senha">Lembrar senha?</label>
                 </div>
                 <div class="esqueceu-senha">
-                    <a href="#">Esqueceu a senha?</a>
+                    <a href="">Esqueceu a senha?</a>
                 </div>
             </div>
             <!-- button direciona através do action na tag form-->
-
-            <!-- para fazer a ação de aparecer o nome-->
-          <button id="btn-login" type="submit">Login </button>
+            <button id="btn-login" type="submit">Login</button>
         </form>
-
-
 
         <!-- Inicío do form de login -->
             <p class= "legenda-login">Ou</p>
