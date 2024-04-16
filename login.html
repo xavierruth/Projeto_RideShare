@@ -25,7 +25,7 @@
     <main class="login-input">
         <p class="subtitulo-login">Login</p>
         <br>
-        <form class="login-form" action="home.html" name="loginform" method="post"> <!-- acrescentei para poder aparecer o nome-->
+        <form class="login-form" action="home.html" name="loginform" method="post" onsubmit="return login()"> <!-- acrescentei para poder aparecer o nome-->
             <div class="form-group">
                 <label for="username">Username</label>
                 <br>
@@ -44,11 +44,15 @@
                     <label for="lembrar-senha">Lembrar senha?</label>
                 </div>
                 <div class="esqueceu-senha">
-                    <a href="">Esqueceu a senha?</a>
+                    <a href="#">Esqueceu a senha?</a>
                 </div>
             </div>
             <!-- button direciona através do action na tag form-->
-            <button id="btn-login" type="submit" value="Entrar" onclick="login()">Login</button> <!-- para fazer a ação de aparecer o nome-->
+
+            <!-- para fazer a ação de aparecer o nome-->
+
+            <button id="btn-login" type="submit" value="Entrar">Login</button> <!-- tirando isso onclick="login() aqui-->
+
         </form>
         <!-- Inicío do form de login -->
             <p class="legenda-login">Ou</p>

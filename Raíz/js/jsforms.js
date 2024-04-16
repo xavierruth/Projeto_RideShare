@@ -59,18 +59,3 @@ function submitProfileForm() {
     return false;
 }
 
-// Adicione esta função ao seu arquivo de scripts jsforms.js
-function submitProfileForm() {
-    var newUsername = document.getElementById("new-username").value;
-
-    // Simulando o envio do formulário (você pode adicionar sua lógica de envio aqui)
-    // Por exemplo, enviar uma solicitação AJAX para o servidor para atualizar o nome de usuário
-
-    // Exibindo a mensagem de confirmação
-    var successMessage = document.getElementById("success-message");
-    successMessage.classList.remove("hidden");
-
-    // Impedindo o envio do formulário para evitar que a página seja recarregada
-    return false;
-}
-
