@@ -31,19 +31,23 @@ function submitProfileForm() {
     return false;
 }
 
-function login() {
-    var username = document.getElementById("username").value;
-    var senha = document.getElementById("senha").value;
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("btn-login").addEventListener("click", function(event) {
+        event.preventDefault(); // Evita o envio do formulário padrão
 
-    if (username && senha) {
-        // Armazenar o username no localStorage
-        localStorage.setItem('username', username);
-        // Redirecionar para a página home.html
-        window.location.href = "home.html";
-    } else {
-        alert("Por favor, preencha seu usuário e senha.");
-    }
-}
+        var username = document.getElementById("username").value;
+        var senha = document.getElementById("senha").value;
+
+        if (username && senha) {
+            // Armazenar o username no localStorage
+            localStorage.setItem('username', username);
+            // Redirecionar para a página home.html
+            window.location.href = "home.html";
+        } else {
+            alert("Por favor, preencha seu usuário e senha.");
+        }
+    });
+});
 
 // //alterar nome do usuário
 window.onload = function() {
