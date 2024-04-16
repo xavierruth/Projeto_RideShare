@@ -1,31 +1,3 @@
-function login() {
-    var username = document.getElementById("username").value;
-    var senha = document.getElementById("senha").value;
-
-    if (username && senha) {
-        // Armazenar o username no localStorage
-        localStorage.setItem('username', username);
-        // Redirecionar para a página home.html
-        window.location.href = "home.html";
-    } else {
-        alert("Por favor, preencha seu usuário e senha.");
-    }
-}
-
-
-//alterar nome do usuário
-window.onload = function() {
-    var username = localStorage.getItem('username');
-    if (username) {
-        var welcomeMessageElement = document.getElementById("welcome-message");
-        if (welcomeMessageElement) { // Verifica se o elemento foi encontrado
-            welcomeMessageElement.innerText = username;
-        } else {
-            console.error("Elemento 'welcome-message' não encontrado.");
-        }
-    }
-};
-
 // Função para atualizar o nome de usuário no localStorage e na página
 function updateUsername(newUsername) {
     // Atualiza o nome de usuário no localStorage
@@ -59,3 +31,29 @@ function submitProfileForm() {
     return false;
 }
 
+function login() {
+    var username = document.getElementById("username").value;
+    var senha = document.getElementById("senha").value;
+
+    if (username && senha) {
+        // Armazenar o username no localStorage
+        localStorage.setItem('username', username);
+        // Redirecionar para a página home.html
+        window.location.href = "home.html";
+    } else {
+        alert("Por favor, preencha seu usuário e senha.");
+    }
+}
+
+//alterar nome do usuário
+window.onload = function() {
+    var username = localStorage.getItem('username');
+    if (username) {
+        var welcomeMessageElement = document.getElementById("welcome-message");
+        if (welcomeMessageElement) { // Verifica se o elemento foi encontrado
+            welcomeMessageElement.innerText = username;
+        } else {
+            console.error("Elemento 'welcome-message' não encontrado.");
+        }
+    }
+};
