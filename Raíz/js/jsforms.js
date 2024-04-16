@@ -46,14 +46,14 @@ function login() {
 }
 
 // //alterar nome do usuário
-// window.onload = function() {
-//     var username = localStorage.getItem('username');
-//     if (username) {
-//         var welcomeMessageElement = document.getElementById("welcome-message");
-//         if (welcomeMessageElement) { // Verifica se o elemento foi encontrado
-//             welcomeMessageElement.innerText = username;
-//         } else {
-//             console.error("Elemento 'welcome-message' não encontrado.");
-//         }
-//     }
-// };
+window.onload = function() {
+  var username = localStorage.getItem('username');
+   if (username) {
+  var welcomeMessageElement = document.getElementById("welcome-message");
+   if (welcomeMessageElement) { // Verifica se o elemento foi encontrado
+          welcomeMessageElement.innerText = username;
+       } else {
+           console.error("Elemento 'welcome-message' não encontrado.");
+        }
+    }
+ };
