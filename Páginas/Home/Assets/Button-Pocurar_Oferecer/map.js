@@ -12,6 +12,25 @@ violetIcon = L.icon({
     shadowSize: [41, 41]
 });
 
+// Função para calcular a distância entre dois pontos de latitude e longitude em quilômetros
+function calcularDistancia(lat1, lon1, lat2, lon2) {
+    const R = 6371; // Raio da Terra em quilômetros
+    const dLat = toRad(lat2 - lat1);
+    const dLon = toRad(lon2 - lon1);
+    const a =
+        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+        Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
+        Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    const distance = R * c;
+    return distance;
+}
+
+// Função auxiliar para converter graus em radianos
+function toRad(degrees) {
+    return degrees * Math.PI / 180;
+}
+
 function success(position) {
     console.log(position.coords.latitude, position.coords.longitude);
     userLatitude = position.coords.latitude; 
@@ -60,14 +79,23 @@ function success(position) {
         .then(response => response.json())
         .then(data => {
             data.forEach(function(motorista) {
-                const nome = motorista.nome;
-                const distancia = motorista.distancia;
-                const placa = motorista.Placa;
-                const cor= motorista.cor;
-                const imagem = motorista.imagem;
+                const pointLatitude = motorista.latitude;
+                const pointLongitude = motorista.longitude;
+
+                // Calcula a distância entre o usuário e o ponto
+                let distancia = calcularDistancia(userLatitude, userLongitude, pointLatitude, pointLongitude);
+
+                // Calcula o tempo de chegada em minutos
+                const tempoChegadaMinutos = (distancia / 40) * 60; // Assumindo velocidade média de 40km/h
+
+                // Aqui você pode fazer o que quiser com a distância e o tempo de chegada
+                // Por exemplo, você pode adicionar esses valores aos marcadores no mapa
+
+                console.log(`Distância até ${motorista.nome}: ${distancia.toFixed(2)} km`);
+                console.log(`Tempo de chegada até ${motorista.nome}: ${Math.round(tempoChegadaMinutos)} min`);
 
                 const motoristaIcon = L.icon({
-                    iconUrl: imagem,
+                    iconUrl: motorista.imagem,
                     iconSize: [50, 95],
                     shadowSize: [50, 64],
                     iconAnchor: [22, 94],
@@ -78,12 +106,12 @@ function success(position) {
                 L.marker([motorista.latitude, motorista.longitude], {
                     icon: motoristaIcon
                 }).addTo(map)
-                .bindPopup(`<div class = "cardMap"><img class=imgMotorista src="${imagem}" alt="Imagem do motorista"><br>
-                <h3 class=nomeMotorista>${nome}</h3><br>
-                <p><strong>Distância:</strong><br> ${distancia}</p>
-                <p><strong>Placa:</strong><br>${placa}</p>
-                <p><strong>Cor do carro:</strong><br><br>
-                <img src="${cor}" alt="cor do carro"></p><div>`); 
+                .bindPopup(`<div class="cardMap"><img class="imgMotorista" src="${motorista.imagem}" alt="Imagem do motorista"><br>
+                <h3 class="nomeMotorista">${motorista.nome}</h3><br>
+                <p><strong>Distância:</strong><br> ${distancia.toFixed(2)} km</p>
+                <p><strong>Tempo de chegada:</strong><br> ${Math.round(tempoChegadaMinutos)} min</p>
+                <p><strong>Placa:</strong><br>${motorista.Placa}</p>
+                <p><strong>Cor do carro:</strong><br><img src="${motorista.cor}" alt="Cor do carro"></p></div>`); 
             });
         })
         .catch(error => console.error('Erro ao carregar as localizações:', error)); 

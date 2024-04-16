@@ -30,7 +30,7 @@
 /* Estilos para o formulário de edição de perfil */
 #profile-form {
     max-width: 90%; /* Alterado para ocupar até 90% da largura do contêiner pai */
-    margin: 0 auto;
+    text-align: center;
     padding: 20px;
 
     border-radius: 5px;
@@ -75,9 +75,46 @@
 }
 
 
-#profile-form button:hover {
-    background-color: var(--Solid-PURPLE-Hover);
+.buttonDivPerfil #closeBtn{
+    background-color: var(--Solid-Verde-Hover);
+    color: black;
+    font-weight: 600;
+    
 }
+
+
+/* #profile-form button:hover {
+    background-color: var(--Solid-PURPLE-Hover);
+} */
+
+
+
+dialog::backdrop{
+    background-color: #00000099;
+  }
+
+
+
+  dialog .titlePerfil{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    color: var(--Text-Alto-Contraste);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+
+  .titlePerfil h2{
+    padding: 10px;
+    font-size: 1.10rem;
+    font-family: var(--titulo-size);
+  }
+
+
 
 /* Mídia queries para tornar o formulário ainda mais responsivo */
 @media only screen and (max-width: 600px) {
@@ -93,3 +130,5 @@
         margin-bottom: 10px; /* Reduzido ainda mais o espaçamento inferior */
     }
 }
+
+

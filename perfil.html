@@ -38,7 +38,22 @@
     <form id="profile-form" onsubmit="return submitProfileForm()">
          <label for="new-username">Novo Nome de Usuário:</label>
              <input type="text" id="new-username" name="new-username" placeholder="digite seu novo nome de usuário..." id="place" required>
-            <button type="submit">Salvar</button>
+            <div class="btnDivPerfil">
+                <button id="modalButton" class="btn-perfil" type="submit" >Salvar</button>
+                  <dialog id="abrirModalPerfil" >
+                    <div class="titlePerfil">
+                        <h2> Nome do usuário <br> 
+                            atualizado com sucesso
+                        </h2>
+                        <div class="buttonDivPerfil">
+                            <button id="closeBtn">Voltar</button> 
+                        </div>
+
+                    </div>
+
+                  </dialog>
+            </div>
+     
 
             <!-- Mensagem de confirmação -->
     <div id="success-message" class="success-message hidden">Nome de usuário alterado com sucesso!</div>
@@ -70,5 +85,6 @@
         <!-- Final da area de navegação -->
         <script src="./Raíz/js/jsforms.js"></script>
        <script src="./Páginas/Home/Assets/Button-Pocurar_Oferecer/fotoPerfil.js"></script>
+       <script src="./Páginas/Home/Assets/Button-Pocurar_Oferecer/popupsPerfil.js"> </script>
 </body>
 </html>

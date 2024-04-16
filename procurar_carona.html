@@ -44,10 +44,13 @@
                             <img src="./Navegação/Assets/img/modelo1.svg" alt="foto de perfil motorista próximo">
                     </div>
                     <div class="conteudo-card">
-                            <h3> Felipe Oliveira </h3>
-                            <p> Distância: 5 min de você</p>
-                            <p>KGM-2399 - Fiat Uno </p>
-                            <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
+                        <h3> Felipe Oliveira </h3>
+                        <p>Distância: <span id="distance"></span> </p>
+                        <p>Tempo de Chegada:<span id="arrivalTime"></span></p>
+                        <p>KGM-2399 - Fiat Uno </p>
+                        <p hidden id="destination-lat"> -8.05613 </p>
+                        <p hidden id="destination-lng"> -34.89451"</p>
+                        <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b></p>
                     </div>
                     
                     </div>
@@ -109,10 +112,13 @@
                                 <img src="./Navegação/Assets/img/modelo7.svg" alt="foto de perfil motorista próximo">
                         </div>
                         <div class="conteudo-card">
-                                <h3> Laura Porto </h3>
-                                <p> Distância:  min de você</p>
-                                <p>KXM-2367 - Nissan March </p>
-                                <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
+                            <h3> Laura Porto </h3>
+                            <p>Distância: <span id="distance"></span> </p>
+                            <p>Tempo de Chegada: <span id="arrivalTime"></span></p>
+                            <p>KXM-2367 - Nissan March </p>
+                            <p hidden id="destination-lat">-8.02781</p>
+                            <p hidden id="destination-lng">-34.91897</p>
+                            <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
                         </div>
                         
                         </div>
@@ -173,8 +179,11 @@
                         </div>
                         <div class="conteudo-card">
                                 <h3> João Guilherme </h3>
-                                <p> Distância: 9 min de você</p>
+                                <p>Distância: <span id="distance"></span> </p>
+                                <p>Tempo de Chegada: <span id="arrivalTime"></span></p>
                                 <p>KBR-4431 - Hyuindai HB20 </p>
+                                <p hidden id="destination-lat">-8.07202</p>
+                                <p hidden id="destination-lng">-34.9099</p>
                                 <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
                         </div>
                         
@@ -236,8 +245,11 @@
                         </div>
                         <div class="conteudo-card">
                                 <h3> Fernanda Feijó </h3>
-                                <p> Distância: 9 min de você</p>
+                                <p>Distância: <span id="distance"></span> </p>
+                                <p>Tempo de Chegada: <span id="arrivalTime"></span></p>
                                 <p>KBB-2110 - Renault Sandero </p>
+                                <p hidden id="destination-lat">-8.07701</p>
+                                <p hidden id="destination-lng">-34.93097</p>
                                 <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
                         </div>
                         
@@ -299,8 +311,11 @@
                         </div>
                         <div class="conteudo-card">
                                 <h3> Bruna Maia </h3>
-                                <p> Distância: 11 min de você</p>
+                                <p>Distância: <span id="distance"></span> </p>
+                                <p>Tempo de Chegada: <span id="arrivalTime"></span></p>
                                 <p>KDW-1377 - Renault Kwid </p>
+                                <p hidden id="destination-lat">-8.04709</p>
+                                <p hidden id="destination-lng">-34.95526</p>
                                 <p><img src="./Navegação/Assets/img/Pin.svg" alt="icone Pin de localização"> <b>Refinaria Abreu e Lima</b> </p>
                         </div>
                         
@@ -355,6 +370,7 @@
             <!--Script JS  -->
         <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/button.js"></script>
         <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/oferecer.js"></script>
+        <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/distanciaMotorista.js"></script>
     
     
     
