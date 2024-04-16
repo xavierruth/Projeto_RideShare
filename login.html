@@ -25,11 +25,11 @@
     <main class="login-input">
         <p class="subtitulo-login">Login</p>
         <br>
-        <form class="login-form" action="home.html">
+        <form class="login-form" action="home.html" name="loginform" method="post"> <!-- acrescentei para poder aparecer o nome-->
             <div class="form-group">
                 <label for="username">Username</label>
                 <br>
-                <input type="text" id="matricula" name="matricula" 
+                <input type="text" id="username" name="username" 
                 placeholder="Digite o seu nome" required>
             </div>
             <div class="form-group senha-group">
@@ -48,7 +48,7 @@
                 </div>
             </div>
             <!-- button direciona através do action na tag form-->
-            <button id="btn-login" type="submit">Login</button>
+            <button id="btn-login" type="submit" value="Entrar" onclick="login()">Login</button> <!-- para fazer a ação de aparecer o nome-->
         </form>
         <!-- Inicío do form de login -->
             <p class="legenda-login">Ou</p>
@@ -73,6 +73,8 @@
     </main>
 
     <script src="./Páginas/Home/Assets/Button-Pocurar_Oferecer/passwordView.js"></script>
+    
+    <script src="./Raíz/js/jsforms.js"></script>  
     <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function () {window.setTimeout(document.querySelector('svg').classList.add('animated'),1000);})
     </script>

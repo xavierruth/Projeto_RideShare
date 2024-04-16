@@ -308,6 +308,21 @@ textarea{
   }
 
 
+  .welcome{ /* nome do usuário*/
+justify-content: flex-start;
+margin-left: 3.125rem;
+      }
+
+#bemvinde{
+    color: var(--Text-PURPLE-Baixo-Contraste);
+}
+
+#welcome-message{
+    font-size: var(--Subtitulo-size);
+    color: var(--Text-PURPLE-Alto-Constraste);
+}
+
+
 
 
 

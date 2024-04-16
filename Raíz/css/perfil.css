@@ -1,27 +1,95 @@
-.main-perfil{
+.main-perfil {
     display: flex;
+    flex-direction: column; /* Adicionado para empilhar os elementos verticalmente em telas menores */
     align-items: center;
     justify-content: center;
     margin-top: 40px;
 }
 
-.area-foto{
+.area-foto {
     position: relative;
+    margin-bottom: 20px; /* Adicionado espaçamento inferior para separar a foto do formulário */
 }
 
-.img-foto{
+.img-foto {
     width: 150px;
-    height: 150px; 
-    border-radius: 50%; 
+    height: 150px;
+    border-radius: 50%;
     object-fit: cover;
-
 }
 
-.img-camera{
+.img-camera {
     position: absolute;
     background-color: var(--Solid-PURPLE-Normal);
     padding: 8px;
     border-radius: 50%;
     bottom: -6px;
-    right: -1px ;
+    right: -1px;
+}
+
+/* Estilos para o formulário de edição de perfil */
+#profile-form {
+    max-width: 90%; /* Alterado para ocupar até 90% da largura do contêiner pai */
+    margin: 0 auto;
+    padding: 20px;
+
+    border-radius: 5px;
+    box-sizing: border-box; /* Adicionado para garantir que o padding não aumente a largura total */
+}
+
+#profile-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#profile-form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px; /* Reduzido o espaçamento inferior para uma melhor aparência em telas menores */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+#profile-form button {
+    width: 100%; /* Adicionado para ocupar 100% da largura do contêiner */
+    padding: 10px;
+    background-color: var( --Solid-PURPLE-Normal);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Adicione este estilo para a mensagem de confirmação */
+.success-message {
+    color: var(--Success-500-Normal);
+    margin-top: 10px;
+}
+
+/* Adicione esta classe para ocultar a mensagem de confirmação inicialmente */
+.hidden {
+    display: none;
+}
+
+
+#profile-form button:hover {
+    background-color: var(--Solid-PURPLE-Hover);
+}
+
+/* Mídia queries para tornar o formulário ainda mais responsivo */
+@media only screen and (max-width: 600px) {
+    .area-foto {
+        margin-bottom: 10px; /* Reduzido ainda mais o espaçamento inferior */
+    }
+
+    #profile-form {
+        padding: 15px; /* Reduzido o padding para telas menores */
+    }
+
+    #profile-form input[type="text"] {
+        margin-bottom: 10px; /* Reduzido ainda mais o espaçamento inferior */
+    }
 }
