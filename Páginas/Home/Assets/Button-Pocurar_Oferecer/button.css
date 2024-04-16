@@ -11,7 +11,7 @@
     padding: 0.625rem;
     font-size: var(--Subtitulo-size);
     font-weight: var(--titulo-weight-5);
-    border: 1px solid #4EBAA5; /*--Borda-Forte: #4EBAA5*/
+    border: 1px solid var(--Solid-PURPLE-Normal); /*--Borda-Forte: #4EBAA5*/
     color: var(--Text-Alto-Contraste);
     background-color: white;
     border-radius: 5px;
@@ -21,7 +21,7 @@
 }
 
 .btn.active {
-    background-color: #009C85; /* Cor mais escura para o botão ativo --Solid-Normal: #009C85; */
+    background-color: var(--Solid-PURPLE-Normal); /* Cor mais escura para o botão ativo --Solid-Normal: #009C85; */
     color: var(--BG-Purple-1);
 }
 

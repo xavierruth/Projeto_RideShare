@@ -20,6 +20,8 @@ body {
     margin-bottom: 120px;
 }
 
+
+
 .header{
     position: relative;
     display: flex;
@@ -32,6 +34,7 @@ body {
     padding-top: 1.625rem;
     padding-left: 2rem;
     padding-top: 1.25rem;
+    margin-top: 0; /* sobre o fundo no celular */
 }
 
 
@@ -68,13 +71,12 @@ body {
 
 
 
-
-
-
 .header h2{
     font-size: var(--titulo-size);
     font-weight: var(--titulo-weight-7);
 }
+
+
 .header img{
     height: 2.188rem;
     width: 2.188rem;
@@ -108,7 +110,7 @@ body {
     width: 340px;
     height: 100%;
     margin: 30px auto 58px;
-    padding: 20px auto
+    padding: 20px auto;
  
 }
 
@@ -120,14 +122,15 @@ body {
     padding: 8px 10px;
     border-radius: 5px;
     font-weight: 600;
-    background-color: var(--Success-400-Light_Hover);
+    background-color: var(--Success-500-Normal);
+    color: #ffff;
 }
 
 .content-group-card{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 20px ;
+    padding: 20px;
 }
 
 
@@ -194,12 +197,12 @@ body {
 /* ----POPUPS---- */
 
 dialog::backdrop{
-    background-color: #00000099;
+    background-color: var(--Text-Gray-Baixo-Contraste);
   }
 
   #modal, #modal2, #modal3, #modal4, #modal5, #modal6,#modal7,#modal8, #modal9, #modal10, #modal11, #abrirModalPerfil{
-    border:1px solid var(--text-color-soft); 
-    background:var(--BG-Purple-1);
+    border:1px solid var(--Borda-PURPLE-Forte); 
+    background:var(--BG-Purple-2);
     padding: 10px;
     border-radius: 8px;
     left: 20px;
@@ -215,8 +218,8 @@ dialog::backdrop{
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: var(--Solid-Verde-Hover);
-    color: var(--Text-Alto-Contraste);
+    background-color: var(--Solid-PURPLE-Normal);
+    color: var(--BG-Purple-1);
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -242,7 +245,7 @@ dialog::backdrop{
     font-size: .9rem;
     margin-top: 10px;
     display: flex;
-    align-items: start ;
+    align-items: start;
 
    }
 
@@ -267,7 +270,7 @@ dialog::backdrop{
 
   /* estilização de foco */
   .formulario input:focus {
-    border: 2px solid var(--Solid-Verde-Normal);
+    border: 2px solid var(--Borda-PURPLE-Forte);
   }
   
   
@@ -278,7 +281,7 @@ textarea{
     font-size: .98rem;
     padding: 15px 45px 15px 20px;
     outline: none;
-    border: 1px solid rgba(0, 0, 0, 0.3); 
+    border: 1px solid var( --Text-Gray-Alto-Contraste); 
     border-radius: 5px;
     margin-bottom: 3px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -294,7 +297,7 @@ textarea{
  
 
 .formulario textarea:focus {
-    border: 2px solid var(--Solid-Verde-Normal);
+    border: 2px solid var(--Borda-PURPLE-Forte);
   }
   
   
@@ -306,29 +309,37 @@ textarea{
     gap: 50px;
   }
 
+  .btnDiv .mensagem{
+    background-color: var(--Solid-PURPLE-Normal);
+    color: var(--BG-Purple-1);
+    border: none; 
+}
+ 
+
   .button-contact{
     padding: 20px;
     width: 180px;
     border: none;
     border-radius: 5px;
     font-weight: var(--titulo-weight-7);
-    background-color: var(--Solid-Verde-Hover);
+    background-color: var(--Solid-PURPLE-Normal);
+    color: var(--BG-Purple-1);
   }
 
 
   .back-contact{
     background-color: var(--BG-Purple-1);
-    border: 2px solid var(--Solid-Verde-Hover);
+    border: 2px solid var(--Solid-PURPLE-Normal);
+    color: var(--Text-PURPLE-Alto-Constraste);
   }
 
 
 .welcome{ /* nome do usuário*/
 display: flex;    
-text-align: center;
+text-align:left;
 justify-content: center;
 width: 100%;
-margin: 0 auto;
-
+margin-left: 4rem;
 
 }
 
