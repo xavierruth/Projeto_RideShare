@@ -12,9 +12,9 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start; 
-    background-color: var(--Borda-PURPLE-Sutil);
-   
+    border: 3px solid var(--Borda-PURPLE-Sutil);
     border-radius: 5px;
+    gap: 10px;
     padding: 10px;
     font-family: 'Poppins', sans-serif;
    }

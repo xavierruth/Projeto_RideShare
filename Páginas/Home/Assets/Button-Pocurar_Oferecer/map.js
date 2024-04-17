@@ -107,11 +107,11 @@ function success(position) {
                     icon: motoristaIcon
                 }).addTo(map)
                 .bindPopup(`<div class="cardMap"><img class="imgMotorista" src="${motorista.imagem}" alt="Imagem do motorista"><br>
-                <h3 class="nomeMotorista">${motorista.nome}</h3><br>
-                <p><strong>Distância:</strong><br> ${distancia.toFixed(2)} km</p>
-                <p><strong>Tempo de chegada:</strong><br> ${Math.round(tempoChegadaMinutos)} min</p>
-                <p><strong>Placa:</strong><br>${motorista.Placa}</p>
-                <p><strong>Cor do carro:</strong><br><img src="${motorista.cor}" alt="Cor do carro"></p></div>`); 
+                <h3 class="nomeMotorista">${motorista.nome}</h3>
+                <p><strong>Distância:</strong> ${distancia.toFixed(2)} km</p>
+                <p><strong>Tempo de chegada:</strong> ${Math.round(tempoChegadaMinutos)} min</p>
+                <p><strong>Placa:</strong> ${motorista.Placa}</p>
+                <p><strong>Cor do carro:</strong><br><img src=" ${motorista.cor}" alt="Cor do carro"></p></div>`); 
             });
         })
         .catch(error => console.error('Erro ao carregar as localizações:', error)); 

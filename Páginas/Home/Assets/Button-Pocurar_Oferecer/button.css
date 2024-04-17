@@ -1,6 +1,8 @@
 /* Estilos para os botões */
 .buttons-container {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 20px; /* Adiciona espaço entre os botões e os conteúdos */
     margin-top: 2.25rem;
 }
@@ -16,17 +18,20 @@
     background-color: white;
     border-radius: 5px;
     cursor: pointer;
-    width: 8.125rem;
+    width: 40%;
     height: 3rem;
 }
 
 .btn.active {
     background-color: var(--Solid-PURPLE-Normal); /* Cor mais escura para o botão ativo --Solid-Normal: #009C85; */
     color: var(--BG-Purple-1);
+    
 }
 
+
+/* card de procurar carona */
 #carona-content {
-    width: 21.438rem;
+    width: 100%;
     height: 15.938rem;
     background-color: var(--BG-PURPLE-Component-Normal);
     text-align: center;
@@ -34,21 +39,12 @@
     margin-top: 1.938rem;
     margin: 0 auto;
     border-radius: 10px;
+ 
 }
 
-#input-carona-partida, 
-#input-carona-destino{
-    width: 16.5rem;
-    height: 3.125rem;
-    margin-bottom: 2.5rem;
-    padding: 10px;
-    border: 1px solid var(--Borda-Gray-Sutil);
-    background-color: var( --BG-Gray-1);
-    color: var(--Text-Gray-Baixo-Contraste);
-}
-
+/* card de oeferecer carona */
 #motorista-content {
-    width: 21.438rem;
+    width: 100%;
     height: 10.625rem;
     background-color:  var(--BG-PURPLE-Component-Normal);
     text-align: center;
@@ -57,6 +53,21 @@
     margin: 0 auto;
     border-radius: 10px;
 }
+
+
+#input-carona-partida, 
+#input-carona-destino{
+    width: 80%;
+    height: 3.125rem;
+    margin-bottom: 2.5rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--Borda-Gray-Sutil);
+    background-color: var( --BG-Gray-1);
+    color: var(--Text-Gray-Baixo-Contraste);
+}
+
+
 
 #input-motorista {
     
@@ -68,7 +79,7 @@
 
 #btn-procurar,
 #btn-oferecer{
-    width: 21.375rem;
+    width: 80%;
     height: 3.125rem;
     background-color:#6000AC;
     /*--Solid-Normal: #6000AC*/

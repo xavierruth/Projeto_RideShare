@@ -1,39 +1,54 @@
+/* stilização geral */
 body{
     background-color: var(--BG-Purple-1);
     height: 100%;
 }
+
+
+/* topo */
 .header-index{
     margin-top: 50px;
     margin-left: 16px;
     height: 15vh;
 }
-.titulo-index{
+
+
+/* titulo do topo */
+.header-index .titulo-index{
     font-size: var(--titulo-size);
     font-weight: var(--titulo-weight-7);
     color: var(--Solid-PURPLE-Normal);
+   
 }
+
+/* subtitulo do topo */
 .subtitulo-index{
     font-size: var(--Subtitulo-size);
     font-weight: var(--titulo-weight-5);
     color: var(--Text-PURPLE-Baixo-Contraste);
 }
 
+/* area principal do index */
 .container{
     display: flex;
     width: 100%;
     justify-content: center;
+   
 }
 
+/* logo do aplicativo */
 .rideshare-index{
     margin-top: 100px;
-    /* margin-left: 75px; */
     z-index: 999;
     justify-content: center;
 
 }
+
+/* efeito de onda */
 .background-main {
     position: relative;
     height: 80vh;
+   
 }
 
 .background-index{ 
@@ -43,19 +58,27 @@ body{
     width: 100%;
 }
 
+/* Imagem do index */
+.img-capa{
+    width: 90%;
+    margin: 0 5px;
+}
+
+/* div dos botoes do index */
 .buttons-index{
     text-align: center;
     margin-bottom: 20px;
     margin-top: 2.25rem;
-    z-index: 999;
+    z-index: 999;  
 }
 
+/* botoes */
 #btn-entrar,
 #btn-cadastrar{
-    width: 21.375rem;
+    width: 18.375rem;
     height: 3.125rem;
     margin-bottom: 20px;
-    border-radius: 5px;
+    border-radius: 5px;  
 }
 
 #btn-entrar{
@@ -69,7 +92,9 @@ body{
 #btn-cadastrar{
     color: var(--BG-Purple-1);
     background-color: transparent;
-    border: none;
+    border: 1px solid;
     font-size: var(--paragrafo-size);
     font-weight: var(--titulo-weight-5);
 }
+
+

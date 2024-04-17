@@ -1,3 +1,5 @@
+/* Estilizações gerais  */
+
 @import url("root.css");
 
 * {
@@ -15,16 +17,7 @@ body {
 }
 
 
-
-.main_content{
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 150px;
-    width: 100%;
- 
-}
-
-
+/* parte do topo da página */
 
 .header{
     position: relative;
@@ -38,83 +31,91 @@ body {
     padding-top: 1.625rem;
     padding-left: 2rem;
     padding-top: 1.25rem;
-    margin-top: 0; /* sobre o fundo no celular */
+    margin-top: 0; /* sobre o fundo no celular */  
 }
 
-
-
+/* foto de perfil no home */
 
 .photo{
-    margin-right: 20px ;
     width: 80px !important;
     height: 80px !important; 
     border-radius: 50%; 
-    object-fit: cover;   
+    object-fit: cover; 
+    margin-right: 20px; 
+   
 }
 
 
-.welcome{
-    display: flex;
+/* frase Olá */
+
+.welcome{ /* nome do usuário*/
+    display: flex;    
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 3rem;
+    
+}
+
+#bemvinde{
+    color: var(--Text-PURPLE-Baixo-Contraste);
+    width: 100%;
 }
 
 
 
+/* Parte principal do home */
+.main_content{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    width: 100%;
+    
+ 
+}
 
+
+/* logo -frase*/
 #vai{
-    width: 20.1rem;
+    width: 50%;
     height: 6.175rem;
     flex-shrink: 0;
-    margin-left: -86px;
+    margin-left: -20px;
+   
 }
 
 
-
-
-
+/* frase superior de boas vindas */
 .header h2{
     font-size: var(--titulo-size);
     font-weight: var(--titulo-weight-7);
+    
 }
-
-
-.header img{
-    height: 2.188rem;
-    width: 2.188rem;
-}
-
-.linha{
-    border-color: var(--Solid-Verde-Normal); /*var(--Solid-Normal: #009C85)*/
-    height: 0.188rem;
-    width: 8.375rem;
-}
-
-
 
 /* ESTILIZAÇÃO DOS CARDS */
 
+/* Titulo da sessão cards */
 .carona-proxima{
     text-align: center;
     margin-top:1.563rem;
+    font-size: .9rem;
 }
 
 
-
+/* estrutura do card */
 .cards-section{
     margin-top: 40px;
     height: var(--Card-Card-Height);
     border-radius: var(--border-radius-xs);
     background: var(--Interactive-Components--Primary-Color-3 , #F5EEFF);
-    width: 340px;
+    width: 90%;
     height: 100%;
     margin: 30px auto 58px;
     padding: 20px auto;
  
 }
 
-
+/* situação: disponivel */
 .situation{
     border: none; 
     left: 25px;
@@ -126,23 +127,26 @@ body {
     color: #ffff;
 }
 
+
+/* conteudo interno do card */
 .content-group-card{
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 20px;
-}
-
-
-.contato{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 15px;
-    padding-bottom: 18px;
     
 }
 
+/* div do botao mensagem */
+.contato{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 18px;    
+}
+
+/* botao mensagem */
 .contato button{
     padding: 10px;
     font-size: .9rem;
@@ -155,7 +159,6 @@ body {
     left: 125px;
     border: 2px solid var(--Solid-PURPLE-Normal);
     font-weight: 600;
-    margin-right: 30px;
     width: 180px;
     
 }
@@ -274,7 +277,7 @@ dialog::backdrop{
   }
   
   
-
+/* PopUp */
 textarea{
     width: 100%;
     background: none;
@@ -334,26 +337,29 @@ textarea{
   }
 
 
-.welcome{ /* nome do usuário*/
-display: flex;    
-text-align:left;
-justify-content: center;
-width: 100%;
-padding-left: 3rem;
 
-}
+  @media (min-width: 390px) {
+    
+   /* botao mensagem */
+   .contato button{
+    margin-right: 40px;
+} 
 
-#bemvinde{
-    color: var(--Text-PURPLE-Baixo-Contraste);
-}
 
-#welcome-message{
-    font-size: var(--Subtitulo-size);
-    color: var(--Text-PURPLE-Alto-Constraste);
 }
 
 
 
+@media (min-width: 450px) {
+
+      /* botao mensagem */
+.contato button{
+    margin-right: 50px;
+}
+       
+
+} 
 
 
- 
+
+

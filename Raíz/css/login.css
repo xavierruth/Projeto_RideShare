@@ -1,65 +1,50 @@
+
+/* parte superior imagem e titulo */
 .login-header{
     text-align: center;
+    margin: 10px 16px;
+    
 }
 
-.login-input{
-    margin: 0 16px;
+.img-capa{
+    width: 90%;
+    margin: 0 5px;
 }
-.subtitulo-login{
+
+
+/* conteudo principal */
+.login-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+
+/* titulo:login */
+.login-input .subtitulo-login{
     text-align: center;
     font-size: var(--Subtitulo-size);
     font-weight: var(--titulo-weight-5);
     color: var(--Text-PURPLE-Baixo-Contraste);
-}
-.legenda-login{
-    text-align: center;
-    font-size: var(--legenda-size);
-    font-weight: var(--titulo-weight);
-    color: var(--Text-PURPLE-Baixo-Contraste);
-    margin: 35px;
-}
-.legenda-login-2{
-    text-align: center;
-    font-size: var(--legenda-size);
-    font-weight: var(--titulo-weight);
-    color: var(--Text-Gray-Alto-Contraste);
-    margin: 30px;
-}
-.legenda-login-2 a{
-    color: var(--Text-PURPLE-Baixo-Contraste);
-    font-weight: bold;
-    
+  
 }
 
+/* Formulario */
 .form-group{
     margin-bottom: 12px;
+    
 }
-
-.form-group-2{
-    margin-bottom: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: var(--legenda-size) ;
-    font-weight: var(--titulo-weight);
-    color: var(--Text-Gray-Alto-Contraste);
-}
-
-.checkboxes{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.esqueceu-senha {
-    text-align: center;
-}
-
+/* Label */
 .form-group label{
     font-size: var(--paragrafo-size) ;
     font-weight: var(--titulo-weight-4);
     color: var(--Text-Gray-Alto-Contraste);
     padding: 10px;
 }
+
+
+/* inputs */
 
 input[type="text"],
 input[type="password"],
@@ -71,49 +56,14 @@ select {
     border: 1px solid var(--Borda-Gray-Sutil-Interativa);
     background-color: var(--BG-Gray-1);
     border-radius: 5px;
-    width: 21.375rem;
+    width: 18.375rem;
     height: 3.125rem;
     color: var(--Solid-Gray-Normal);
 }
 
-#btn-login{
-    width: 21.375rem;
-    height: 3.125rem;
-    background-color:var(--Solid-PURPLE-Normal);
-    color: var(--BG-Purple-1);
-    border: none;
-    border-radius: 5px;
-    font-size: var(--paragrafo-size);
-    font-weight: var(--titulo-weight-4);
-    margin-top: 30px;
-}
-
-.login-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.login-buttons a{
-    gap: 20px;
-}
-
-.facebook-button, .google-button, .apple-button {
-    display: flex;
-    align-items: center;
-    width: 310px;
-    height: 50px;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    color:var(--Text-Gray-Alto-Contraste);
-    border: 1px solid var(--Borda-PURPLE-Forte);
-    font-weight: var(--titulo-weight);
-    font-size: var(--paragrafo-size);
-}
 
 
-/* acrescentado */
+/* verificação de senha : icone visão */
 .senha-group{
     position: relative;
 }
@@ -126,3 +76,124 @@ select {
     font-size: 16px;
     color: var(--Solid-Gray-Normal);
   }
+
+
+
+
+/* lembrar senha / esqueceu senha */
+.form-group-2{
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--legenda-size) ;
+    font-weight: var(--titulo-weight);
+    color: var(--Text-Gray-Alto-Contraste); 
+}
+
+
+
+/* botão de login */
+#btn-login{
+    width: 18.375rem;
+    height: 3.125rem;
+    background-color:var(--Solid-PURPLE-Normal);
+    color: var(--BG-Purple-1);
+    border: none;
+    border-radius: 5px;
+    font-size: var(--paragrafo-size);
+    font-weight: var(--titulo-weight-4);
+    margin-top: 30px;
+}
+
+/* texto -ou- para entrada alternativa */
+.legenda-login{
+    text-align: center;
+    font-size: var(--legenda-size);
+    font-weight: var(--titulo-weight);
+    color: var(--Text-PURPLE-Baixo-Contraste);
+    margin: 35px;
+    font-size: .9rem;
+    
+}
+
+
+/* Botoes de entrada alternativa (facebook, google, apple) */
+.login-buttons-Alternative {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     
+}
+
+.login-buttons-Alternative a{
+    gap: 20px;
+}
+
+
+.facebook-button, .google-button, .apple-button {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color:var(--Text-Gray-Alto-Contraste);
+    border: 1px solid var(--Borda-PURPLE-Forte);
+    font-weight: var(--titulo-weight);
+    font-size: var(--paragrafo-size);
+}
+
+
+/* frase para Realizar cadastro */
+.legenda-login-2{
+    text-align: center;
+    font-size: var(--legenda-size);
+    font-weight: var(--titulo-weight);
+    color: var(--Text-Gray-Alto-Contraste);
+    margin: 30px;
+   
+}
+
+
+
+.legenda-login-2 a{
+    color: var(--Text-PURPLE-Baixo-Contraste);
+    font-weight: bold;
+  
+}
+
+
+
+
+
+/* Responsividade */
+
+
+@media (min-width: 450px) {
+
+/* inputs */
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 20.375rem;
+}
+
+
+/* botão de login */
+#btn-login{
+    width: 20.375rem;  
+}
+
+
+
+.facebook-button, .google-button, .apple-button {
+    width: 20.375rem;  
+}
+
+
+}
+

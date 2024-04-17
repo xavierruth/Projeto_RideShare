@@ -1,39 +1,43 @@
+
+/* inicio cadastro */
+
 .header{
-    position: relative;
     top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 9999;
+    width: 100%;
 }
 
-
+/* titulo do header */
 .header h2{
-    width: 300px;
     font-size: var(--titulo-secao-size);
     font-weight: var(--titulo-weight-6);
     text-align: center;
 }
 
+
+
+/* seta de voltar */
 .header .back img{
     position: absolute;
     top: 10px;
-    left: 10px;
-
+    left: 20px;
+    width: 39px;
+    height: 55px;
 }
 
-.back img{
 
-width: 39px;
-height: 55px;
-
-}
-
-.cadastro_corpo{
-    margin-top: 10px;
+/* Passos do cadastro */
+.passo-div{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 .passo{
+    
     background-color: var(--BG-PURPLE-Component-Hover);
     width: 78px;
     height: 34px;
@@ -41,25 +45,28 @@ height: 55px;
     border-radius: 10px;
     font-size: var(--legenda-size);
     font-weight: var(--titulo-weight);
-    margin-left: 270px;
 }
+
+
+
+/* Titulo do formulario: Dados pessoais */
+
 .dados-titulo{
-    margin-left: 16px;
     margin-bottom: 13px;
     font-size: var(--paragrafo-size);
     font-weight: var(--titulo-weight-4);
-
 }
 
+
+/* Formulario */
 .cadastro-form {
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 10px;
-    padding-left: 15px;
-    width: 100%;
 }
 
 .form-group {
     margin-bottom: 20px;
+    width: 100%;
 }
 
 /* Inputs cadastro */
@@ -68,45 +75,30 @@ input[type="text"],
 input[type="email"],
 input[type="password"],
 select {
-    width: 100%;
+    position: relative;
+    
     padding: 10px;
+    margin-top: 5px;
     border: 1px solid var(--Borda-Gray-Sutil-Interativa);
     background-color: var(--BG-Gray-1);
     border-radius: 5px;
-    width: 21.375rem;
+    width: 100%;
     height: 3.125rem;
-    color: var(--Text-Gray-Baixo-Contraste);
+    color: var(--Solid-Gray-Normal);
 }
 
-/* Inputs endereço modificaçoes */
-.endereco-row {
-    display: flex;
-    justify-content: space-between;
-}
-
-#numero,
-#uf{
-    width: 100px;
-}
-#uf,
-#bairro{
-    margin-right: 12px;
-}
-
-#bairro,
-#cidade{
-    width: 228px; 
-}
 
 
 .etapa-cadastro{
     margin:60px 0;
     position: relative;;
 }
-.linha-cadastro{
+
+
+/* .linha-cadastro{
     position: relative;
     height: 10px;
-    width: 21.438rem; 
+    width: 15.438rem; 
     border-radius: 20px;
     background: linear-gradient(to right, transparent -50%, var(--Solid-PURPLE-Normal),var(--Solid-Gray-Normal) 70%);
     top: 50%;
@@ -117,54 +109,18 @@ select {
 .circulo{
     background-color: var(--Solid-PURPLE-Normal);
     border-radius: 50px;
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     position:absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} */
 
-/* barra de cadastro2 */
 
-.linha-cadastro2{
-    position: relative;
-    height: 10px;
-    width: 21.438rem; 
-    border-radius: 20px;
-    background: var(--Solid-PURPLE-Normal);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-.circulo2{
-    background-color: var(--Solid-PURPLE-Normal);
-    border-radius: 50px;
-    height: 30px;
-    width: 30px;
-    position:absolute;
-    top: 50%;
-    left: 85%;
-    transform: translate(65%, -50%);
-     /* Ajuste a posição horizontal conforme necessário */
-    
-}
-
-.checkboxes{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: var(--legenda-size);
-}
-.checkboxes a{
-    color: var(--Text-PURPLE-Baixo-Contraste);
-    text-decoration: underline;
-}
-
-#btn-cadastro,
-#btn-cadastro2{
-    width: 21.375rem;
+#btn-cadastro{
+    margin-top: 60px;
+    width: 100%;
     height: 3.125rem;
     background-color:var(--Solid-PURPLE-Normal);
     color: var(--BG-Purple-1);
@@ -176,7 +132,39 @@ select {
 }
 
 
+
+/* ========== cadastro2 =========== */
+
+
+
+/* Inputs endereço modificaçoes */
+.endereco-row {
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+   
+}
+
+#numero,
+#uf{
+  width: 100%;
+}
+
+
+#uf,
+#bairro{
+    margin-right: 12px;
+}
+
+#bairro,
+#cidade{
+    width:100%; 
+
+}
+
+
 /* eyes password */
+
 
 .senha-group{
     position: relative;
@@ -190,3 +178,35 @@ select {
     font-size: 16px;
     color: var(--Solid-Gray-Normal);
   }
+
+
+
+
+/* Checkbox: termos de compromisso */
+.checkboxes{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--legenda-size);
+
+}
+.checkboxes a{
+    color: var(--Text-PURPLE-Baixo-Contraste);
+    text-decoration: underline;
+}
+
+/* botao de concluir cadastro */
+#btn-cadastro2{
+    margin-top: 60px;
+    width: 100%;
+    height: 3.125rem;
+    background-color:var(--Solid-PURPLE-Normal);
+    color: var(--BG-Purple-1);
+    border: none;
+    border-radius: 5px;
+    font-size: var(--paragrafo-size);
+    font-weight: var(--titulo-weight-4);
+
+}
+
+
