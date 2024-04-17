@@ -35,17 +35,3 @@ function showingConfirm(){
 
 
 
-
-/*
-
-  <div class="form-group senha-group">
-                <input type="password" id="senha" name="senha" placeholder="Senha" required>
-                <i id="btnSenha" class="fa-solid fa-eye" onclick="showing()"></i>
-            </div>
-            <div class="form-group senha-group">
-                <input type="password" id="confirma-senha" name="confirma-senha" placeholder="Confirme sua senha" required>
-                <i id="btnSenha2" class="fa-solid fa-eye" onclick="showingConfirm()"></i>
-            </div>
-
-
-*/

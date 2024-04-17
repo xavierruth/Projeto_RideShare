@@ -1,3 +1,5 @@
+
+
 .navbar {
     background-color: var(--Borda-PURPLE-Sutil); /* Cor de fundo da barra de navegação var(--Borda-Sutil:  #DAC4FF; )*/
     position: fixed; /* Fixa a barra de navegação na parte inferior da tela */
@@ -6,7 +8,11 @@
     width: 100%; /* Largura total da barra de navegação */
     height: 5rem;
     z-index: 99999;
+   
 }
+
+
+
 
 .navbar nav ul {
     list-style-type: none; /* Remove os marcadores de lista */
