@@ -2,14 +2,13 @@
 .buttons-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-bottom: 20px; /* Adiciona espaço entre os botões e os conteúdos */
     margin-top: 2.25rem;
 }
 
 .btn {
     display: inline-block;
-    margin-right: 0.938rem; /* Adiciona espaço entre os botões */
     padding: 0.625rem;
     font-size: var(--Subtitulo-size);
     font-weight: var(--titulo-weight-5);
@@ -54,6 +53,9 @@
     border-radius: 10px;
 }
 
+#input-carona-partida{
+    margin-left: 15px;
+}
 
 #input-carona-partida, 
 #input-carona-destino{
