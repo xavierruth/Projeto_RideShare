@@ -142,6 +142,11 @@ dialog::backdrop{
     margin-bottom: 20px;
   }
 
+  .config-content a p{
+    text-decoration: none;
+    color: var(--Text-Gray-Alto-Contraste)
+  }
+
   .perfil-paragrafo{
     font-size: var(--paragrafo-size);
     font-weight: var(--titulo-weight-5);
