@@ -330,6 +330,11 @@ textarea{
   }
 
 
+  .contato button{
+    margin-right: 20px;
+  }
+
+
   .back-contact{
     background-color: var(--BG-Purple-1);
     border: 2px solid var(--Solid-PURPLE-Normal);
