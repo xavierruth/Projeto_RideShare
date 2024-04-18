@@ -152,37 +152,11 @@
             "label": "Wonder Widgets"
         }
     ],
-    "start_url": "./index.html",  
+    "start_url": "index.html",  
     "display": "standalone",
-    "description": "RideShare - Compartilhamento de Viagens",
     "orientation": "portrait",
     "background_color": "#FDFCFF",
-    "theme_color": "#DFF9F2",
-    "prefer_related_applications": true,
-    "splash_screen": {
-    "background_color": "#141414",
-    "icons":[
-        {
-            "src": "./Raíz/icons/Icon-120.png",
-            "sizes": "120x120",
-            "type":"image/png"
-        }
-    ]
-}, 
-
-"id": "RideShare", 
-"lang": "pt", 
-"shortcuts": [
-    {
-        "name": "RideShare",
-        "url": "RideShare",
-        "description": "RideShare - Compartilhamento de Viagens"
-    }
-],
-
-"categories": [
+    "theme_color": "#DFF9F2" 
+ }
     
-    "trip"  
 
-    ]
-}
