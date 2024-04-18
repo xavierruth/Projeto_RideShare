@@ -144,7 +144,7 @@ dialog::backdrop{
 
   .config-content a p{
     text-decoration: none;
-    color: var(--Text-Gray-Alto-Contraste)
+    color: var(--Text-Gray-Alto-Contraste);
   }
 
   .perfil-paragrafo{
