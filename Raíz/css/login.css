@@ -12,6 +12,23 @@
 }
 
 
+/* titulo */
+/* logo do aplicativo */
+.rideshare-index{
+    z-index: 999;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 120%;
+    color: var(--Text-PURPLE-Baixo-Contraste);
+}
+
+.rideshare-index span{
+color: var(--Text-Verde-Baixo-Contraste);
+font-weight: 900;
+}
+
+
 /* conteudo principal */
 .login-input{
     display: flex;
