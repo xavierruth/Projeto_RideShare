@@ -1,19 +1,21 @@
 .main-perfil {
     display: flex;
+    margin-top: 40px;
     flex-direction: column; /* Adicionado para empilhar os elementos verticalmente em telas menores */
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
+    margin-bottom: 80px;
 }
 
 .area-foto {
     position: relative;
     margin-bottom: 20px; /* Adicionado espaçamento inferior para separar a foto do formulário */
+    
 }
 
 .img-foto {
-    width: 150px;
-    height: 150px;
+    width: 84px;
+    height: 84px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -21,11 +23,27 @@
 .img-camera {
     position: absolute;
     background-color: var(--Solid-PURPLE-Normal);
-    padding: 8px;
+    padding: 6px;
     border-radius: 50%;
-    bottom: -6px;
-    right: -1px;
+    left: 65%;
+    top: 65%
 }
+
+/* bolinha com icone da camera */
+#photo{
+    height: 30px;
+    width: 30px;
+}
+
+.welcome2{ /* nome do usuário*/
+    display: flex;    
+    flex-direction: column;
+    text-align: center;
+    padding-top: 10px;
+    width: 100%;
+}
+
+
 
 /* Estilos para o formulário de edição de perfil */
 #profile-form {
@@ -114,6 +132,66 @@ dialog::backdrop{
     font-family: var(--titulo-size);
   }
 
+  /* componente do perfil */
+  .perfil-content,
+  .config-content,
+  .notificacao-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .perfil-paragrafo{
+    font-size: var(--paragrafo-size);
+    font-weight: var(--titulo-weight-5);
+    line-height: 120%; 
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+  }
+
+  .icone-nome{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* linhas do perfil */
+  .perfil-line{
+    display: flex;
+    width: 343px;
+    align-items: center;
+    gap: 235px;
+    border-bottom: 0.5px solid var(--Borda-Gray-Forte);
+  }
+
+  .perfil-line2{
+    display: flex;
+    width: 343px;
+    align-items: center;
+    gap: 215px;
+    border-bottom: 0.5px solid var(--Borda-Gray-Forte);
+  }
+
+  .perfil-line3{
+    display: flex;
+    width: 343px;
+    padding: 1px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-bottom: 0.5px solid var(--Borda-Gray-Forte);
+  }
+
+  .perfil-line4{
+    display: flex;
+    width: 343px;
+    align-items: center;
+    gap: 180px;
+    border-bottom: 0.5px solid var(--Borda-Gray-Forte);
+  }
 
 
 /* Mídia queries para tornar o formulário ainda mais responsivo */

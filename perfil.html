@@ -26,6 +26,7 @@
 
 
       <main class="main-perfil">
+
         <div class="area-foto">
             <img class="img-foto" id="foto-preview" src="./Navegação/Assets/img/fotoVazio.svg" alt="área para colocar foto">
             <label for="file-upload">
@@ -33,6 +34,10 @@
             </label>
             <input type="file" id="file-upload" style="display: none;" accept="image/*">
         </div>
+
+        <div class="welcome2">  
+            <h3><div id="welcome-message" class="nameUser"></div></h3>
+         </div>
 
         <!-- Formulário de edição do nome do perfil -->
     <form id="profile-form" onsubmit="return submitProfileForm()">
@@ -59,6 +64,97 @@
     <div id="success-message" class="success-message hidden">Nome de usuário alterado com sucesso!</div>
     </form>
 
+        <div class="perfil-content">
+            <p class="perfil-paragrafo">Perfil</p>
+            <div class="perfil-line">
+
+                <div class="icone-nome">
+                    <img src="Navegação/Assets/img/Perfil_Contorno.svg" width="20px" height="20px">
+                <p>Conta</p>
+                </div>
+
+                <img src="Navegação/Assets/img/Vector.svg">
+
+            </div>
+            <div class="perfil-line2">
+
+                <div class="icone-nome">
+                    <img src="Navegação/Assets/img/lingua.svg">
+                <p>Idiomas</p>
+                </div>
+
+                <img src="Navegação/Assets/img/Vector.svg">
+
+            </div>
+            <div class="perfil-line3">
+
+                <div class="icone-nome">
+                    <img src="Navegação/Assets/img/localizapin.svg">
+                <p>Ativar minha localização</p>
+                </div>
+
+                <img src="Navegação/Assets/img/Switch.svg">
+
+            </div>
+
+        </div>
+
+        <div class="notificacao-content">
+            <p class="perfil-paragrafo">Notificações</p>
+            
+            <div class="perfil-line3">
+
+                <div class="icone-nome">
+                    <img src="Navegação/Assets/img/email.svg">
+                <p>Notificações no e-mail</p>
+                </div>
+
+                <img src="Navegação/Assets/img/SwitchOff.svg">
+
+            </div>
+
+            <div class="perfil-line3">
+
+                <div class="icone-nome">
+                    <img src="Navegação/Assets/img/bel.svg">
+                <p>Notificações de atividade</p>
+                </div>
+
+                <img src="Navegação/Assets/img/Switch.svg">
+
+            </div>
+
+        </div>
+
+        <div class="config-content">
+            <p class="perfil-paragrafo">Configurações</p>
+            <div class="perfil-line4">
+
+                <div class="icone-nome">
+                    <img src="Navegação/Assets/img/privacidade.svg">
+                <p>Privacidade</p>
+                </div>
+
+                <img src="Navegação/Assets/img/Vector.svg">
+
+            </div>
+            <!-- linkado com o index -->
+            <a href="index.html">
+
+                <div class="perfil-line2">
+
+                    <div class="icone-nome">
+                        <img src="Navegação/Assets/img/sair.svg">
+                        <p>Log out</p>
+                    </div>
+    
+                        <img src="Navegação/Assets/img/Vector.svg">
+    
+                </div>
+            </a>
+            
+        </div>
+
       </main>
     
         <!-- Inicio da area de navegação -->
@@ -82,5 +178,7 @@
         <script src="./Raíz/js/jsforms.js"></script>
        <script src="./Páginas/Home/Assets/Button-Pocurar_Oferecer/fotoPerfil.js"></script>
        <script src="./Páginas/Home/Assets/Button-Pocurar_Oferecer/popupsPerfil.js"> </script>
+       <script src="./Páginas/Home/Assets/Button-Pocurar_Oferecer/Switch.js"></script>
+
 </body>
 </html>
