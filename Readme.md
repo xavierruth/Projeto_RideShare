@@ -11,7 +11,7 @@
 
 
 
-## Sessões do aplicativo Ta Pago:
+## Sessões do aplicativo RideShare:
 
 > * Área de Login
 > * Área de cadastro
