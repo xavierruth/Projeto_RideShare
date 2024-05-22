@@ -1,6 +1,6 @@
  ## RideShare: 🚗
   O aplicativo que conecta colaboradores que compartilham rotas semelhantes para o trabalho. 
-
+_____________________
 
 ### Objetivo
  * Reduzir o número de veículos nas estradas
@@ -63,14 +63,14 @@
 
 ### Equipe envolvida
 
-Beatriz Nader 
+> Beatriz Nader 
 * E-mail: bianader3@gmail.com
 
 * Link Linkedin: https://www.linkedin.com/in/bia-nader-22a382268/
 
 * Link Github: https://github.com/BiaNader
 
-Carlos Campos 
+> Carlos Campos 
 * E-mail: carloscampos.bn@gmail.com
 
 * Link Linkedin: https://www.linkedin.com/in/devcarloscampos/
@@ -78,7 +78,7 @@ Carlos Campos
 * Link Github: https://github.com/carloscamposb
 
 
-Lucas Teixeira
+> Lucas Teixeira
 * E-mail: lucasgayosot@gmail.com
 
 * Link Linkedin:https://www.linkedin.com/in/lucas-gteixeira/
@@ -86,7 +86,7 @@ Lucas Teixeira
 * Linkgithub: https://github.com/Lukgt
 
 
-Ruth Xavier
+> Ruth Xavier
 * E-mail: ruthmarianne.xavier@gmail.com
 
 * Link Linkedin: https://www.linkedin.com/in/ruthxavier/
