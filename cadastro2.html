@@ -49,12 +49,14 @@
                 </div>
             </div>
             <div class="form-group senha-group">
-                <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                <input type="password" id="senha" name="senha" placeholder="Senha" required onblur="validatePassword()">
                 <i id="btnSenha" class="fa-solid fa-eye" onclick="showing()"></i>
+                <div id="senhaError" class="error-message">A senha deve ter pelo menos 5 caracteres e começar com uma letra maiúscula.</div>
             </div>
             <div class="form-group senha-group">
-                <input type="password" id="confirmaSenha" name="confirmaSenha" placeholder="Confirme sua senha" required>
+                <input type="password" id="confirmaSenha" name="confirmaSenha" placeholder="Confirme sua senha" required onblur="validateConfirmPassword()">
                 <i id="btnSenha2" class="fa-solid fa-eye" onclick="showingConfirm()"></i>
+                <div id="confirmaSenhaError" class="error-message">As senhas não coincidem.</div>
             </div>
             <div class="checkboxes">
                 <input type="checkbox" id="lembrarSenha" name="lembrarSenha">
@@ -78,6 +80,14 @@
       const confirmarSenha = document.getElementById('confirmaSenha').value;
       const lembrarSenha = document.getElementById('lembrarSenha').checked;
     
+
+    if (logradouro.trim() === '' || numero.trim() === '' || bairro.trim() === '' || 
+      cidade.trim() === '' || uf.trim() === '' || senha.trim() === '' || 
+      confirmarSenha.trim() === '') {
+    alert('Por favor, preencha todos os campos obrigatórios.');
+    return; // Impede o envio dos dados se algum campo estiver vazio
+  }
+
       const cadastroCompleto = {
         ...cadastroParte1,
         logradouro,
@@ -115,5 +125,6 @@
     }
     </script>
     <script src="./Páginas/Home/Assets/Button-Pocurar_Oferecer/passwordView.js"></script>
+    <script src="./Páginas/Home/Assets/Button-Pocurar_Oferecer/confirmaSenha.js"></script>
        
 </html>
