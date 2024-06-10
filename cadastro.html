@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Raíz/css/styles.css">
     <link rel="stylesheet" href="/Raíz/css/root.css">
@@ -13,77 +10,60 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
     <title>RideShare - Cadastro 1</title>
 </head>
-
 <body>
-<!-- Inicío do header -->
+<!-- Início do header -->
     <header>
         <div class="header">
-
             <div class="cadastro_title">
-                <a class="back" href="login.html"><img class="back-img" src="./Navegação/Assets/img/seta_voltar.svg"
-                        alt="seta de voltar ao login"></a>
-
+                <a class="back" href="login.html"><img class="back-img" src="./Navegação/Assets/img/seta_voltar.svg" alt="seta de voltar ao login"></a>
                 <h2>Crie uma conta</h2>
             </div>
-
         </div>
     </header>
 <!-- Fim do header -->
     <div class="cadastro_corpo">
-<!-- Inicio do Form de cadastro -->
-        
-        <form class="cadastro-form" action="cadastro2.html">
-           <div class="passo-div">
+<!-- Início do Formulário de cadastro -->
+        <form class="cadastro-form" onsubmit="saveFirstPart(); return false;">
+            <div class="passo-div">
                 <div class="passo"><p>Passo 1/2</p></div>
-           </div>
-       
-           
+            </div>
             <p class="dados-titulo">Dados pessoais</p>
-           
-            <form class="cadastro-form">
-            
-
-                <div class="form-group">
-                    <input type="text" id="nome" name="nome" placeholder="Nome" required>
-                </div>
-
-                <div class="form-group">
-                    <input type="email" id="email" name="email"
-                        placeholder="E-mail institucional. Ex: joanasilva@rideshare.com" required>
-                </div>
-
-                <div class="form-group">
-                    <input type="email" id="confirmarEmail" name="confirmarEmail" placeholder="Confirme o seu email"
-                        required>
-                </div>
-
-                <div class="form-group">
-                    <select id="empresa" name="empresa" required placeholder="Empresa">
-                        <option value="">Selecione a Empresa onde trabalha</option>
-                        <option value="empresa1">Refinaria Abreu e Lima</option>
-                        <option value="empresa2">Faculdade Senac</option>
-                        <option value="empresa3">Porto Digital</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <input type="text" id="matricula" name="matricula" placeholder="Matrícula" required>
-                </div>
-
-                <!-- <div class="etapa-cadastro">
-                    <hr class="linha-cadastro">
-                    <hr class="circulo">
-                </div> -->
-                <!-- button é direcionado para outra pagina atraves do action na tag form -->
-                <button type="submit" id="btn-cadastro" href="cadastro2.html">Continuar</button>
-            </form>
+            <div class="form-group">
+                <input type="text" id="nome" name="nome" placeholder="Nome" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="E-mail institucional. Ex: joanasilva@rideshare.com" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="confirmarEmail" name="confirmarEmail" placeholder="Confirme o seu email" required>
+            </div>
+            <div class="form-group">
+                <select id="empresa" name="empresa" required>
+                    <option value="">Selecione a Empresa onde trabalha</option>
+                    <option value="empresa1">Refinaria Abreu e Lima</option>
+                    <option value="empresa2">Faculdade Senac</option>
+                    <option value="empresa3">Porto Digital</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="text" id="matricula" name="matricula" placeholder="Matrícula" required>
+            </div>
+            <button type="submit" id="btn-cadastro">Continuar</button>
         </form>
-
-        </div>
     </div>
-<!-- Fim do form de cadastro -->
+<!-- Fim do formulário de cadastro -->
 </body>
+<script>
+function saveFirstPart() {
+  const nome = document.getElementById('nome').value;
+  const email = document.getElementById('email').value;
+  const confirmarEmail = document.getElementById('confirmarEmail').value;
+  const empresa = document.getElementById('empresa').value;
+  const matricula = document.getElementById('matricula').value;
 
-
-<script src="Raíz/js/scripts.js"></script>
+  localStorage.setItem('cadastro', JSON.stringify({ nome, email, confirmarEmail, empresa, matricula }));
+  window.location.href = 'cadastro2.html';
+}
+</script>
 </html>
+

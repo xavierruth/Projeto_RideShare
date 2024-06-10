@@ -2,9 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Raíz/css/styles.css">
     <link rel="stylesheet" href="/Raíz/css/root.css">
@@ -15,33 +12,26 @@
     <title>RideShare - Cadastro 2</title>
 </head>
 <body>
-    <!-- Inicío do header -->
+<!-- Início do header -->
     <header>
         <div class="header">
-           
             <div class="cadastro_title">
-              <a class="back" href="login.html"><img class="back-img" src="./Navegação/Assets/img/seta_voltar.svg" alt="seta de voltar ao login"></a>  
-           
-              <h2>Crie uma conta</h2>
+                <a class="back" href="login.html"><img class="back-img" src="./Navegação/Assets/img/seta_voltar.svg" alt="seta de voltar ao login"></a>
+                <h2>Crie uma conta</h2>
             </div>
-          
         </div>
     </header>
-    <!-- Fim do header -->
-    <!-- Inicío da segunda parte do form de cadastro -->
+<!-- Fim do header -->
+<!-- Início da segunda parte do formulário de cadastro -->
     <div class="cadastro_corpo">
-        <!-- action direciona quando apertar o butao -->
-        <form class="cadastro-form" action="login.html"> 
-           <div class="passo-div">
+        <form class="cadastro-form" onsubmit="submitForm(); return false;">
+            <div class="passo-div">
                 <div class="passo"><p>Passo 2/2</p></div>
-           </div>
-      
+            </div>
             <p class="dados-titulo">Endereço</p>
-            
             <div class="form-group">
                 <input type="text" id="logradouro" name="logradouro" placeholder="Logradouro" required>
             </div>
-    
             <div class="endereco-row">
                 <div class="form-group form-menor">
                     <input type="text" id="numero" name="numero" placeholder="Número" required>
@@ -50,7 +40,6 @@
                     <input type="text" id="bairro" name="bairro" placeholder="Bairro" required>
                 </div>
             </div>
-    
             <div class="endereco-row">
                 <div class="form-group">
                     <input type="text" id="cidade" name="cidade" placeholder="Cidade" required>
@@ -59,7 +48,6 @@
                     <input type="text" id="uf" name="uf" placeholder="UF" required>
                 </div>
             </div>
-    
             <div class="form-group senha-group">
                 <input type="password" id="senha" name="senha" placeholder="Senha" required>
                 <i id="btnSenha" class="fa-solid fa-eye" onclick="showing()"></i>
@@ -70,22 +58,62 @@
             </div>
             <div class="checkboxes">
                 <input type="checkbox" id="lembrarSenha" name="lembrarSenha">
-                <label for="lembrarSenha">Aceitar os termos de <a>uso e privacidade.
-                </a>   
-                </label>
+                <label for="lembrarSenha">Aceitar os termos de <a>uso e privacidade.</a></label>
             </div>
-            <!-- Inicío da barra de Carregamento -->
-            <!-- <div class="etapa-cadastro">
-                <hr class="linha-cadastro2">
-                <hr class="circulo2">
-            </div> -->
-            <!-- Fim da barra de Carregamento -->
             <button type="submit" id="btn-cadastro2">Concluir Cadastro</button>
         </form>
     </div>
-    <!-- Fim da segunda parte do form de cadastro -->
+<!-- Fim da segunda parte do formulário de cadastro -->
 </body>
+<script>
+    function submitForm() {
+      console.log("Submetendo formulário...");
+      const cadastroParte1 = JSON.parse(localStorage.getItem('cadastro'));
+      const logradouro = document.getElementById('logradouro').value;
+      const numero = document.getElementById('numero').value;
+      const bairro = document.getElementById('bairro').value;
+      const cidade = document.getElementById('cidade').value;
+      const uf = document.getElementById('uf').value;
+      const senha = document.getElementById('senha').value;
+      const confirmarSenha = document.getElementById('confirmaSenha').value;
+      const lembrarSenha = document.getElementById('lembrarSenha').checked;
+    
+      const cadastroCompleto = {
+        ...cadastroParte1,
+        logradouro,
+        numero,
+        bairro,
+        cidade,
+        uf,
+        senha,
+        confirmarSenha,
+        lembrarSenha
+      };
+    
+      console.log("Dados do formulário:", cadastroCompleto);
+    
+      fetch('http://localhost:3000/cadastro/add', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(cadastroCompleto)
+      })
+      .then(response => {
+        console.log("Resposta recebida:", response);
+        if (response.ok) {
+          alert('Cadastro realizado com sucesso');
+          localStorage.removeItem('cadastro');
+          window.location.href = 'login.html';
+        } else {
+          alert('Erro ao realizar o cadastro');
+        }
+      })
+      .catch(error => {
+        console.error('Erro ao enviar formulário:', error);
+      });
+    }
+    </script>
+    
 
-<script src="Raíz/js/scripts.js"></script>
-<script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/passwordView.js"></script>
 </html>
