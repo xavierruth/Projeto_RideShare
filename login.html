@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Raíz/css/styles.css">
     <link rel="stylesheet" href="/Raíz/css/root.css">
@@ -15,34 +13,26 @@
     <title>RideShare - Login</title>
 </head>
 <body>
-    <!-- Inicío do header (animação) -->
     <header>
         <div class="login-header">
-            <img  class="img-capa" src="./Navegação/Assets/img/carro-escuro-capa.svg" alt="logo">
-            <!-- <img src="Navegação/Assets/img/rideshare_login.svg" alt="titulo do aplicativo"> -->
+            <img class="img-capa" src="./Navegação/Assets/img/carro-escuro-capa.svg" alt="logo">
             <h1 class="rideshare-index"><span>Ride</span>Share</h1>
         </div>
     </header>
-    <!-- Fim do header (animação) -->
-
-
-    <!-- Inicío do form de login -->
     <main class="login-input">
         <p class="subtitulo-login">Login</p>
         <br>
-        <form class="login-form" action="home.html">
+        <form class="login-form" onsubmit="login(); return false;">
             <div class="form-group">
-                <label for="username">Username</label>
+                <label for="matricula">Matricula</label>
                 <br>
-                <input type="text" id="username" name="username" 
-                placeholder="Digite o seu nome" required>
+                <input type="text" id="matricula" name="matricula" placeholder="Digite o sua matricula" required>
             </div>
             <div class="form-group senha-group">
                 <label for="senha">Senha</label>
                 <br>
                 <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
-                <i id="btnSenha" class="fa-solid fa-eye" onclick="showing()" ></i>
-
+                <i id="btnSenha" class="fa-solid fa-eye" onclick="showing()"></i>
             </div>
             <div class="form-group-2">
                 <div class="checkboxes">
@@ -53,36 +43,53 @@
                     <a href="">Esqueceu a senha?</a>
                 </div>
             </div>
-            <!-- button direciona através do action na tag form-->
             <button id="btn-login" type="submit">Login</button>
         </form>
-
-        <!-- Inicío do form de login -->
-            <p class= "legenda-login">Ou</p>
-        <!-- Inicío login alternativo -->
+        <p class="legenda-login">Ou</p>
         <div class="login-buttons-Alternative">
-             <a href="home.html" class="facebook-button">
-                <img src="Navegação/Assets/img/facebook.svg" alt="Facebook Logo">
-                    Continue com Facebook
+            <a href="home.html" class="facebook-button">
+                <img src="Navegação/Assets/img/facebook.svg" alt="Facebook Logo"> Continue com Facebook
             </a>
             <a href="home.html" class="google-button">
-                <img src="Navegação/Assets/img/google.svg" alt="Google Logo">
-                    Continue com Google
+                <img src="Navegação/Assets/img/google.svg" alt="Google Logo"> Continue com Google
             </a>
             <a href="home.html" class="apple-button">
-                <img src="Navegação/Assets/img/apple.svg" alt="Apple Logo">
-                    Continue com Apple
+                <img src="Navegação/Assets/img/apple.svg" alt="Apple Logo"> Continue com Apple
             </a>
         </div>
-        <!-- Fim login alternativo -->
-            <p class="legenda-login-2">Não tem conta? <a href="cadastro.html"> Cadastre-se </a></p>
-
+        <p class="legenda-login-2">Não tem conta? <a href="cadastro.html"> Cadastre-se </a></p>
     </main>
 
+    <script>
+        // Login form submit function
+        function login() {
+            const nome = document.getElementById('matricula').value;
+            const senha = document.getElementById('senha').value;
+
+            fetch('http://localhost:3000/api/cadastros/login', {
+                method: 'POST',
+                headers: {
+                'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ nome, senha })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                alert('Login realizado com sucesso!');
+                window.location.href = 'home.html';
+                } else {
+                alert('Erro no login: ' + data.mssg);
+                }
+            })
+            .catch(error => {
+                console.error('Erro:', error);
+                alert('Erro ao enviar os dados. Tente novamente mais tarde.');
+            });
+            }
+
+    </script>
     <script src="./Páginas/Home/Assets/Button-Pocurar_Oferecer/passwordView.js"></script>
-    
-    <script src="./Raíz/js/jsforms.js"></script>  
-
-
+    <script src="./Raíz/js/jsforms.js"></script>
 </body>
 </html>
