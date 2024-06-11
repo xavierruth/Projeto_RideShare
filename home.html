@@ -891,7 +891,7 @@
             // Se o nome do usuário e a empresa estiverem no localStorage, exiba-os na mensagem de boas-vindas
             if (storedUserName && storedUserEmpresa) {
                 const welcomeMessage = document.getElementById('welcomeMessage');
-                welcomeMessage.innerHTML = `<p>Olá, ${storedUserName} da empresa ${storedUserEmpresa}! Seja Bem-Vindo!</p>`;
+                welcomeMessage.innerHTML = `<p>Olá, ${storedUserName} da empresa ${storedUserEmpresa}! </p>`;
                 
                 // Preencher os inputs com a empresa escolhida pelo usuário
                 const inputCaronaDestino = document.getElementsByClassName('inputCarona')[0];

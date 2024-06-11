@@ -48,10 +48,11 @@ body {
 
 #welcomeMessage {
   color: #333; /* Cor do texto */
-  padding: 10px; /* Espaçamento interno */
+  padding: 10px 50px; /* Espaçamento interno */
   border-radius: 5px; /* Bordas arredondadas */
-  font-size: 18px; /* Tamanho da fonte */
+  font-size: 20px; /* Tamanho da fonte */
   font-weight: 800;
+  text-align: center;
 }
 
 
