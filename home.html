@@ -2,10 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-
-
-    
+    <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Raíz/css/styles.css">
     <link rel="stylesheet" href="/Raíz/css/root.css">
@@ -36,9 +33,10 @@
 
 
         <main class="main_content">
-           <div class="welcome"> 
-               <h2 id="bemvinde" class="helloUser">Olá, </h2> 
-               <div id="welcome-message" class="nameUser"></div>
+            <div id="welcomeMessage">
+                <span>Olá, </span>
+                <span id="userName">Nome do Usuário</span>
+                <span>! Seja Bem-Vindo!</span>
             </div>
 
             <!-- inicio da área de busca -->
@@ -55,7 +53,7 @@
                
                <div>
                     <label for="input-carona-destino">Para:</label>
-                    <input type="text" id="input-carona-destino" value="Refinaria Abreu e Lima" readonly>
+                    <input type="text" id="input-carona-destino" class="inputCarona"  readonly>
                </div>
                
                
@@ -64,7 +62,7 @@
 
             <div id="motorista-content" class="content hidden">
                 <label for="input-carona-destino"> Para:</label>
-                <input type="text" id="input-carona-destino" value="Refinaria Abreu e Lima" readonly>
+                <input type="text" id="input-carona-destino"  class="inputMotorista" readonly>
                 <button id="btn-oferecer" class="btn">Oferecer</button>
             </div>
             <!-- Fim da área de busca -->
@@ -863,12 +861,52 @@
         <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/button.js"></script>
         <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/popup.js"></script>
         <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/pontos.json"></script>
-        <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/"></script>
+        <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer.js/"></script>
         <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/locHome.js"></script>
         <script src="/Páginas/Home/Assets/Button-Pocurar_Oferecer/distanciaMotorista.js"></script>
         <script src="./Raíz/js/jsforms.js"></script>
         <script src="./Páginas/Home/Assets/Button-Pocurar_Oferecer/homeOrganizar.js"></script>
- 
+         
+        <script>
+            // Obtenha o nome do usuário e a empresa escolhida do armazenamento local
+            const storedUserName = localStorage.getItem('userName');
+            let storedUserEmpresa = localStorage.getItem('userEmpresa');
+        
+            // Substituir o nome da empresa pelas identidades especificadas
+            switch (storedUserEmpresa) {
+                case 'empresa1':
+                    storedUserEmpresa = 'Refinaria Abreu e Lima';
+                    break;
+                case 'empresa2':
+                    storedUserEmpresa = 'Faculdade Senac';
+                    break;
+                case 'empresa3':
+                    storedUserEmpresa = 'Porto Digital';
+                    break;
+                default:
+                    // Caso a empresa não seja uma das especificadas, mantenha o nome original
+                    break;
+            }
+        
+            // Se o nome do usuário e a empresa estiverem no localStorage, exiba-os na mensagem de boas-vindas
+            if (storedUserName && storedUserEmpresa) {
+                const welcomeMessage = document.getElementById('welcomeMessage');
+                welcomeMessage.innerHTML = `<p>Olá, ${storedUserName} da empresa ${storedUserEmpresa}! Seja Bem-Vindo!</p>`;
+                
+                // Preencher os inputs com a empresa escolhida pelo usuário
+                const inputCaronaDestino = document.getElementsByClassName('inputCarona')[0];
+                if (inputCaronaDestino) {
+                    inputCaronaDestino.value = storedUserEmpresa;
+                }
+        
+                const inputCaronaDestinoMotorista = document.getElementsByClassName('inputMotorista')[0];
+                if (inputCaronaDestinoMotorista) {
+                    inputCaronaDestinoMotorista.value = storedUserEmpresa;
+                }
+            }
+        </script>
+        
+        
         
         <script>
             // Carrega a foto do armazenamento local, se existir
@@ -877,8 +915,9 @@
                 document.querySelector('.img-foto').src = storedPhoto;
             }
         </script>
-
-
+         
+         
+            
      
     </body>
 

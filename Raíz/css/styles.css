@@ -46,6 +46,20 @@ body {
 }
 
 
+#welcomeMessage {
+  color: #333; /* Cor do texto */
+  padding: 10px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 18px; /* Tamanho da fonte */
+  font-weight: 800;
+}
+
+
+#welcomeMessages span{
+    background-color: #0E3D34;
+}
+
+
 /* frase Olá */
 
 .welcome{ /* nome do usuário*/

@@ -44,7 +44,7 @@
                 <div class="form-group">
                     <input type="text" id="cidade" name="cidade" placeholder="Cidade" required>
                 </div>
-                <div class="form-group form-menor" >
+                <div class="form-group form-menor">
                     <input type="text" id="uf" name="uf" placeholder="UF" required>
                 </div>
             </div>
@@ -66,9 +66,9 @@
         </form>
     </div>
 <!-- Fim da segunda parte do formulário de cadastro -->
-</body>
+
 <script>
-    function submitForm() {
+ function submitForm() {
       console.log("Submetendo formulário...");
       const cadastroParte1 = JSON.parse(localStorage.getItem('cadastro'));
       const logradouro = document.getElementById('logradouro').value;
@@ -102,7 +102,7 @@
     
       console.log("Dados do formulário:", cadastroCompleto);
     
-      fetch('http://localhost:3000/cadastro/add', {
+      fetch('http://localhost:3000/rideshare/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -123,8 +123,10 @@
         console.error('Erro ao enviar formulário:', error);
       });
     }
-    </script>
-    <script src="./Páginas/Home/Assets/Button-Pocurar_Oferecer/passwordView.js"></script>
-    <script src="./Páginas/Home/Assets/Button-Pocurar_Oferecer/confirmaSenha.js"></script>
-       
+</script>
+
+<script src="./Páginas/Home/Assets/Button-Pocurar_Oferecer/passwordView.js"></script>
+<script src="./Páginas/Home/Assets/Button-Pocurar_Oferecer/confirmaSenha.js"></script>
+</body>
 </html>
+

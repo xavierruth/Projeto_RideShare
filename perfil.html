@@ -41,30 +41,6 @@
             <h3><div id="welcome-message" class="nameUser"></div></h3>
          </div>
 
-        <!-- Formulário de edição do nome do perfil -->
-    <form id="profile-form" onsubmit="return submitProfileForm()">
-         <label for="new-username">Novo Nome de Usuário:</label>
-             <input type="text" id="new-username" name="new-username" placeholder="digite seu novo nome de usuário..." id="place" required>
-            <div class="btnDivPerfil">
-                <button id="modalButton" class="btn-perfil" type="submit" >Salvar</button>
-                  <dialog id="abrirModalPerfil" >
-                    <div class="titlePerfil">
-                        <h2> Nome do usuário <br> 
-                            atualizado com sucesso
-                        </h2>
-                        <div class="buttonDivPerfil">
-                            <button id="closeBtn">Voltar</button> 
-                        </div>
-
-                    </div>
-
-                  </dialog>
-            </div>
-     
-
-            <!-- Mensagem de confirmação -->
-    <div id="success-message" class="success-message hidden">Nome de usuário alterado com sucesso!</div>
-    </form>
 
         <div class="perfil-content">
             <p class="perfil-paragrafo">Perfil</p>
@@ -181,6 +157,18 @@
        <script src="./Páginas/Home/Assets/Button-Pocurar_Oferecer/fotoPerfil.js"></script>
        <script src="./Páginas/Home/Assets/Button-Pocurar_Oferecer/popupsPerfil.js"> </script>
        <script src="./Páginas/Home/Assets/Button-Pocurar_Oferecer/Switch.js"></script>
+
+       <script>
+        // Obtenha o nome do usuário do armazenamento local
+        const storedUserName = localStorage.getItem('userName');
+    
+        // Se o nome do usuário estiver no localStorage, exiba-o no elemento com o ID "welcome-message"
+        if (storedUserName) {
+            const welcomeMessage = document.getElementById('welcome-message');
+            welcomeMessage.innerText = storedUserName;
+        }
+        </script>
+    
 
 </body>
 </html>

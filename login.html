@@ -22,7 +22,7 @@
     <main class="login-input">
         <p class="subtitulo-login">Login</p>
         <br>
-        <form class="login-form" onsubmit="login(); return false;">
+        <form class="login-form" id="loginForm">
             <div class="form-group">
                 <label for="matricula">Matricula</label>
                 <br>
@@ -60,36 +60,79 @@
         <p class="legenda-login-2">Não tem conta? <a href="cadastro.html"> Cadastre-se </a></p>
     </main>
 
-    <script>
-        // Login form submit function
-        function login() {
-            const nome = document.getElementById('matricula').value;
-            const senha = document.getElementById('senha').value;
-
-            fetch('http://localhost:3000/api/cadastros/login', {
-                method: 'POST',
-                headers: {
-                'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ nome, senha })
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.status === 'success') {
-                alert('Login realizado com sucesso!');
-                window.location.href = 'home.html';
-                } else {
-                alert('Erro no login: ' + data.mssg);
-                }
-            })
-            .catch(error => {
-                console.error('Erro:', error);
-                alert('Erro ao enviar os dados. Tente novamente mais tarde.');
-            });
-            }
-
-    </script>
     <script src="./Páginas/Home/Assets/Button-Pocurar_Oferecer/passwordView.js"></script>
     <script src="./Raíz/js/jsforms.js"></script>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+    
+            const matricula = document.getElementById('matricula').value;
+            const senha = document.getElementById('senha').value;
+    
+            try {
+                const response = await fetch('http://localhost:3000/rideshare/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ matricula, senha })
+                });
+    
+                const data = await response.json();
+    
+                if (response.ok) {
+                    // Login bem-sucedido, extrair ID do usuário
+                    const userId = data.userId;
+    
+                    // Use o ID do usuário para fazer uma solicitação para obter o nome do usuário
+                    const nameResponse = await fetch(`http://localhost:3000/user/${userId}/nome`, {
+                        method: 'GET',
+                        headers: {
+                            'Authorization': `Bearer ${data.token}`
+                        }
+                    });
+    
+                    const nameData = await nameResponse.json();
+    
+                    // Use o ID do usuário para fazer uma solicitação para obter a empresa escolhida pelo usuário
+                    const empresaResponse = await fetch(`http://localhost:3000/user/${userId}/empresa`, {
+                        method: 'GET',
+                        headers: {
+                            'Authorization': `Bearer ${data.token}`
+                        }
+                    });
+    
+                    const empresaData = await empresaResponse.json();
+    
+                    // Salvar o nome do usuário e a empresa escolhida no localStorage
+                    localStorage.setItem('userName', nameData.nome);
+                    localStorage.setItem('userEmpresa', empresaData.empresa);
+    
+                    // Redirecionar para a página home com os parâmetros de consulta
+                    window.location.href = `home.html?nomeUsuario=${nameData.nome}&empresa=${empresaData.empresa}`;
+                } else {
+                    // Exibir mensagem de erro
+                    alert(data.msg);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Erro ao fazer login. Por favor, tente novamente mais tarde.');
+            }
+        });
+    
+        // Verificar se há um nome de usuário armazenado no localStorage ao carregar a página inicial
+        window.addEventListener('DOMContentLoaded', function() {
+            const storedUserName = localStorage.getItem('userName');
+    
+            if (storedUserName) {
+                // Exibir a mensagem de boas-vindas com o nome do usuário
+                const welcomeMessage = document.getElementById('welcomeMessage');
+                welcomeMessage.innerHTML = `<p>Olá, ${storedUserName}! Seja Bem-Vindo!</p>`;
+            }
+        });
+    </script>
+    
+
 </body>
 </html>
