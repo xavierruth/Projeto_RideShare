@@ -86,7 +86,7 @@
                     const userId = data.userId;
     
                     // Use o ID do usuário para fazer uma solicitação para obter o nome do usuário
-                    const nameResponse = await fetch(`https://rideshare-backend-xxez.onrender.com/user/${userId}/nome`, {
+                    const nameResponse = await fetch(`https://rideshare-backend-6wmh.onrender.com/user/${userId}/nome`, {
                         method: 'GET',
                         headers: {
                             'Authorization': `Bearer ${data.token}`
@@ -96,7 +96,7 @@
                     const nameData = await nameResponse.json();
     
                     // Use o ID do usuário para fazer uma solicitação para obter a empresa escolhida pelo usuário
-                    const empresaResponse = await fetch(`https://rideshare-backend-xxez.onrender.com/user/${userId}/empresa`, {
+                    const empresaResponse = await fetch(`https://rideshare-backend-6wmh.onrender.com/user/${userId}/empresa`, {
                         method: 'GET',
                         headers: {
                             'Authorization': `Bearer ${data.token}`
